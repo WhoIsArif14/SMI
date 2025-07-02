@@ -46,6 +46,43 @@ Route::get('/services', function () {
     return view('services.static'); // Pastikan Anda memiliki resources/views/services.blade.php
 })->name('services');
 
+// Halaman Statis: Layanan Outbound
+Route::get('/services/rekrutmen', function () {
+    return view('services.rekrutmen');
+})->name('services.rekrutmen');
+
+Route::get('/services/asesmen', function () {
+    return view('services.asesmen');
+})->name('services.asesmen');
+
+Route::get('/services/test', function () {
+    return view('services.test');
+})->name('services.test');
+
+Route::get('/services/coaching', function () {
+    return view('services.coaching');
+})->name('services.coaching');
+
+Route::get('/services/seminar', function () {
+    return view('services.seminat');
+})->name('services.seminar');
+
+Route::get('/services/konseling', function () {
+    return view('services.konseling');
+})->name('services.konseling');
+
+Route::get('/services/pengembangan', function () {
+    return view('services.pengembangan');
+})->name('services.pengembangan');
+
+Route::get('/services/pelatihan', function () {
+    return view('services.pelatihan');
+})->name('services.pelatihan');
+
+Route::get('/services/outbond', function () {
+    return view('services.outbond');
+})->name('services.outbond');
+
 // Halaman Statis: Contact
 Route::get('/contacts', function () {
     return view('contacts.static'); // Pastikan Anda memiliki resources/views/contact.blade.php
