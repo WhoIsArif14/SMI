@@ -1,4 +1,3 @@
-{{-- resources/views/pages/show.blade.php --}}
 @extends('components.frontend-layout') {{-- Menggunakan layout frontend Anda --}}
 
 @section('content')

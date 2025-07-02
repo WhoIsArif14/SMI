@@ -5,63 +5,43 @@
         </h2>
     </x-slot>
 
-    <div class="py-12">
-        <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
-            <div class="bg-white overflow-hidden shadow-sm sm:rounded-lg">
-                <div class="p-6 text-gray-900">
-                    <form method="POST" action="{{ route('admin.pages.update', $page) }}">
-                        @csrf
-                        @method('PUT') {{-- Penting untuk metode UPDATE --}}
+     <div class="py-12">
+       <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
+           <div class="bg-white dark:bg-gray-800 overflow-hidden shadow-sm sm:rounded-lg p-6">
+               <form method="POST" action="{{ route('admin.pages.update', $page) }}">
+                   @csrf
+                   @method('PUT')
 
-                        {{-- Judul Halaman --}}
-                        <div class="mb-4">
-                            <label for="title" class="block text-sm font-medium text-gray-700">Judul Halaman</label>
-                            <input type="text" name="title" id="title" value="{{ old('title', $page->title) }}" required autofocus
-                                   class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50">
-                            @error('title')
-                                <p class="text-red-500 text-xs mt-1">{{ $message }}</p>
-                            @enderror
-                        </div>
+                   {{-- Judul Halaman --}}
+                   <div class="mb-4">
+                       <x-input-label for="title" :value="__('Judul')" />
+                       <x-text-input id="title" class="block mt-1 w-full" type="text" name="title" :value="old('title', $page->title)" required autofocus />
+                       <x-input-error class="mt-2" :messages="$errors->get('title')" />
+                   </div>
 
-                        {{-- Konten Halaman --}}
-                        <div class="mb-4">
-                            <label for="content" class="block text-sm font-medium text-gray-700">Konten Halaman</label>
-                            <textarea name="content" id="content" rows="10" required
-                                      class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50">{{ old('content', $page->content) }}</textarea>
-                            @error('content')
-                                <p class="text-red-500 text-xs mt-1">{{ $message }}</p>
-                            @enderror
-                        </div>
+                   {{-- Konten Halaman --}}
+                   <div class="mb-4">
+                       <x-input-label for="content" :value="__('Konten')" />
+                       <textarea id="content" name="content" rows="10" class="border-gray-300 dark:border-gray-700 dark:bg-gray-900 dark:text-gray-300 focus:border-indigo-500 dark:focus:border-indigo-600 focus:ring-indigo-500 dark:focus:ring-indigo-600 rounded-md shadow-sm block mt-1 w-full">{{ old('content', $page->content) }}</textarea>
+                       <x-input-error class="mt-2" :messages="$errors->get('content')" />
+                   </div>
 
-                        {{-- Meta Title (untuk SEO) --}}
-                        <div class="mb-4">
-                            <label for="meta_title" class="block text-sm font-medium text-gray-700">Meta Title (SEO, Opsional)</label>
-                            <input type="text" name="meta_title" id="meta_title" value="{{ old('meta_title', $page->meta_title) }}"
-                                   class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50">
-                            @error('meta_title')
-                                <p class="text-red-500 text-xs mt-1">{{ $message }}</p>
-                            @enderror
-                        </div>
+                   {{-- Status Publikasi --}}
+                   <div class="mb-4">
+                       <label for="is_published" class="inline-flex items-center">
+                           <input id="is_published" type="checkbox" class="rounded dark:bg-gray-900 border-gray-300 dark:border-gray-700 text-indigo-600 shadow-sm focus:ring-indigo-500 dark:focus:ring-indigo-600 dark:focus:ring-offset-gray-800" name="is_published" value="1" {{ old('is_published', $page->is_published) ? 'checked' : '' }}>
+                           <span class="ms-2 text-sm text-gray-600 dark:text-gray-400">{{ __('Publikasikan') }}</span>
+                       </label>
+                       <x-input-error class="mt-2" :messages="$errors->get('is_published')" />
+                   </div>
 
-                        {{-- Meta Description (untuk SEO) --}}
-                        <div class="mb-4">
-                            <label for="meta_description" class="block text-sm font-medium text-gray-700">Meta Description (SEO, Opsional)</label>
-                            <textarea name="meta_description" id="meta_description" rows="3"
-                                      class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50">{{ old('meta_description', $page->meta_description) }}</textarea>
-                            @error('meta_description')
-                                <p class="text-red-500 text-xs mt-1">{{ $message }}</p>
-                            @enderror
-                        </div>
-
-                        <div class="flex items-center justify-end mt-6">
-                            <a href="{{ route('admin.pages.index') }}" class="text-gray-600 hover:text-gray-900 mr-4">Batal</a>
-                            <button type="submit" class="inline-flex items-center px-4 py-2 bg-blue-600 border border-transparent rounded-md font-semibold text-xs text-white uppercase tracking-widest hover:bg-blue-700 focus:bg-blue-700 active:bg-blue-900 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 transition ease-in-out duration-150">
-                                Update Halaman
-                            </button>
-                        </div>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </div>
+                   <div class="flex items-center justify-end mt-6">
+                       <x-primary-button>
+                           {{ __('Update Halaman') }}
+                       </x-primary-button>
+                   </div>
+               </form>
+           </div>
+       </div>
+   </div>
 </x-admin-layout>

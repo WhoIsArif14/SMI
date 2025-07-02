@@ -1,4 +1,8 @@
-<x-frontend-layout>
+@extends('layouts.frontend')
+
+@section('title', 'Selamat Datang di Website Kami')
+
+@section('content')
     <div class="py-12 px-4">
         {{-- Menggunakan flexbox untuk layout responsif: kolom di mobile, baris di desktop --}}
         <div class="flex flex-col md:flex-row items-center justify-center gap-8">
@@ -36,7 +40,7 @@
             Untuk Anda yang belum bermitra bersama kami, kami siap menunggu kabar dari Anda.
         </p>
         <div class="text-center mt-6">
-            <a href="{{ route('pages.show', 'about-us') }}" class="text-blue-600 hover:underline">Baca Selengkapnya
+            <a href="{{ route('about-us') }}" class="text-blue-600 hover:underline">Baca Selengkapnya
                 Tentang Kami →</a>
         </div>
     </section>
@@ -65,4 +69,68 @@
             <p class="text-center text-gray-500">Belum ada klien yang ditambahkan.</p>
         @endif
     </section>
-</x-frontend-layout>
+
+    <section class="bg-blue-700 text-white py-16 px-4">
+        <div class="container mx-auto text-center">
+            <h2 class="text-3xl md:text-4xl font-bold mb-12">Mengapa memilih kami</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 justify-items-center">
+
+                <div class="relative w-40 h-40 transform rotate-45 flex items-center justify-center bg-blue-900 shadow-xl rounded-lg">
+                    <div class="absolute w-full h-full transform -rotate-45 flex items-center justify-center p-4">
+                        <span class="text-center font-semibold text-lg">Kept Confidential</span>
+                    </div>
+                </div>
+
+                <div class="relative w-40 h-40 transform rotate-45 flex items-center justify-center bg-yellow-500 shadow-xl rounded-lg">
+                    <div class="absolute w-full h-full transform -rotate-45 flex items-center justify-center p-4">
+                        <span class="text-center font-semibold text-lg">Monitoring Proses</span>
+                    </div>
+                </div>
+
+                <div class="relative w-40 h-40 transform rotate-45 flex items-center justify-center bg-white text-blue-800 shadow-xl rounded-lg">
+                    <div class="absolute w-full h-full transform -rotate-45 flex items-center justify-center p-4">
+                        <span class="text-center font-semibold text-lg">Simple</span>
+                    </div>
+                </div>
+
+                <div class="relative w-40 h-40 transform rotate-45 flex items-center justify-center bg-blue-900 shadow-xl rounded-lg">
+                    <div class="absolute w-full h-full transform -rotate-45 flex items-center justify-center p-4">
+                        <span class="text-center font-semibold text-lg">Unlimited Participant</span>
+                    </div>
+                </div>
+
+                <div class="relative w-40 h-40 transform rotate-45 flex items-center justify-center bg-white text-blue-800 shadow-xl rounded-lg">
+                    <div class="absolute w-full h-full transform -rotate-45 flex items-center justify-center p-4">
+                        <span class="text-center font-semibold text-lg">Fleksibel</span>
+                    </div>
+                </div>
+
+                <div class="relative w-40 h-40 transform rotate-45 flex items-center justify-center bg-blue-900 shadow-xl rounded-lg">
+                    <div class="absolute w-full h-full transform -rotate-45 flex items-center justify-center p-4">
+                        <span class="text-center font-semibold text-lg">Hasil Terverifikasi</span>
+                    </div>
+                </div>
+
+                <div class="relative w-40 h-40 transform rotate-45 flex items-center justify-center bg-yellow-500 shadow-xl rounded-lg">
+                    <div class="absolute w-full h-full transform -rotate-45 flex items-center justify-center p-4">
+                        <span class="text-center font-semibold text-lg">Customize</span>
+                    </div>
+                </div>
+
+                <div class="relative w-40 h-40 transform rotate-45 flex items-center justify-center bg-white text-blue-800 shadow-xl rounded-lg">
+                    <div class="absolute w-full h-full transform -rotate-45 flex items-center justify-center p-4">
+                        <span class="text-center font-semibold text-lg">Tools Up to Date</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mt-16">
+                <a href="{{ route('contact') }}" class="bg-yellow-500 text-blue-900 px-10 py-4 rounded-full text-xl font-bold hover:bg-yellow-400 transition duration-300 shadow-lg">
+                    KONSULTASI SEKARANG
+                </a>
+                <p class="mt-4 text-sm">
+                    <a href="{{ route('services') }}" class="text-white hover:underline">Kembali ke menu layanan</a>
+                </p>
+            </div>
+        </div>
+@endsection

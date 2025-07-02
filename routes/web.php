@@ -2,8 +2,8 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
-use App\Http\Controllers\PageController;
-use App\Http\Controllers\PostController;
+use App\Http\Controllers\PageController; // Masih diperlukan jika Anda punya halaman dinamis lain selain about/services/contact
+use App\Http\Controllers\PostController; // Untuk berita/artikel
 
 // Controllers untuk Admin Panel
 use App\Http\Controllers\Admin\DashboardController;
@@ -28,11 +28,7 @@ use App\Http\Controllers\ProfileController;
 // --- RUTE SISI PUBLIK (FRONTEND) ---
 
 // Halaman Depan (Homepage)
-// Menggunakan HomeController untuk merender welcome.blade.php
 Route::get('/', [HomeController::class, 'index'])->name('home');
-
-// Rute untuk Halaman Dinamis (misalnya About Us, Services, Contact)
-Route::get('/pages/{slug}', [PageController::class, 'show'])->name('pages.show');
 
 // Rute untuk Daftar Berita/Artikel
 Route::get('/news', [PostController::class, 'index'])->name('news.index');
@@ -40,40 +36,60 @@ Route::get('/news', [PostController::class, 'index'])->name('news.index');
 // Rute untuk Detail Berita/Artikel
 Route::get('/news/{slug}', [PostController::class, 'show'])->name('news.show');
 
-// Rute tambahan untuk halaman statis
-Route::get('/about', function () {
-    return redirect()->route('pages.show', 'about-us');
-})->name('about');
+// Halaman Statis: Tentang Kami
+Route::get('/abouts', function () {
+    return view('abouts.static'); // Pastikan Anda memiliki resources/views/about-us.blade.php
+})->name('about-us');
 
+// Halaman Statis: Services
 Route::get('/services', function () {
-    return redirect()->route('pages.show', 'services');
+    return view('services.static'); // Pastikan Anda memiliki resources/views/services.blade.php
 })->name('services');
 
+// Halaman Statis: Expert Kami
+Route::get('/experts', function () {
+    return view('experts.static'); // Pastikan Anda memiliki resources/views/experts/static.blade.php
+})->name('experts.index');
+
+Route::get('/careers', function () {
+    return view('careers.static');
+})->name('careers.index');
+
+// Halaman Statis: Contact
 Route::get('/contact', function () {
-    return redirect()->route('pages.show', 'contact');
+    return view('contact'); // Pastikan Anda memiliki resources/views/contact.blade.php
 })->name('contact');
+
+// Redirect /pages ke home untuk mencegah akses langsung
+Route::get('/pages', function () {
+    return redirect()->route('home');
+});
+
 
 // --- RUTE UNTUK PENGGUNA TERAUTENTIKASI (Laravel Breeze) ---
 
-// Rute /dashboard default Breeze yang mengarahkan ke admin dashboard setelah login
-Route::middleware(['auth'])->get('/dashboard', function () {
+// Dashboard redirect ke admin dashboard
+Route::middleware(['auth', 'verified'])->get('/dashboard', function () {
     return redirect()->route('admin.dashboard');
 })->name('dashboard');
 
-// Rute untuk manajemen profil pengguna Breeze (edit, update, delete)
-Route::middleware(['auth'])->group(function () {
+// Rute untuk manajemen profil pengguna
+Route::middleware('auth')->group(function () {
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
     Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
 });
 
 // --- RUTE SISI ADMIN (BACKEND) ---
-// Semua rute di sini dilindungi oleh middleware 'auth' dan 'verified' (jika email verification aktif)
-// Memiliki prefiks URL '/admin' dan prefiks nama rute 'admin.'
 Route::middleware(['auth', 'verified'])->prefix('admin')->name('admin.')->group(function () {
 
     // Dashboard Admin
     Route::get('/dashboard', [DashboardController::class, 'index'])->name('dashboard');
+
+    // Redirect /admin ke dashboard
+    Route::get('/', function () {
+        return redirect()->route('admin.dashboard');
+    });
 
     // Manajemen Berita (Posts) - CRUD
     Route::resource('posts', AdminPostController::class);
@@ -84,19 +100,18 @@ Route::middleware(['auth', 'verified'])->prefix('admin')->name('admin.')->group(
     // Manajemen Klien (Clients) - CRUD
     Route::resource('clients', ClientController::class);
 
-    // --- Rute tambahan untuk manajemen lainnya ---
+    // --- Rute tambahan untuk manajemen lainnya (uncomment jika diperlukan) ---
     // Route::resource('portfolios', App\Http\Controllers\Admin\PortfolioController::class);
     // Route::resource('testimonials', App\Http\Controllers\Admin\TestimonialController::class);
     // Route::resource('galleries', App\Http\Controllers\Admin\GalleryController::class);
-    
+
     // Rute untuk pengaturan sistem
     // Route::get('/settings', [App\Http\Controllers\Admin\SettingController::class, 'index'])->name('settings.index');
     // Route::post('/settings', [App\Http\Controllers\Admin\SettingController::class, 'update'])->name('settings.update');
-    
+
     // Rute untuk manajemen user (jika diperlukan)
     // Route::resource('users', App\Http\Controllers\Admin\UserController::class);
 });
 
-// RUTE AUTENTIKASI BAWAAN BREEZE (Login, Register, Logout, Reset Password, dll.)
-// Ini harus di bagian paling bawah file untuk menghindari konflik rute
+// RUTE AUTENTIKASI BAWAAN BREEZE
 require __DIR__.'/auth.php';

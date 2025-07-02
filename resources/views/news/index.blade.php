@@ -1,4 +1,5 @@
-<x-frontend-layout>
+@extends('layouts.frontend')
+@section('content')
     <h1 class="text-4xl font-bold text-gray-900 mb-8 text-center">Berita Terbaru</h1>
 
     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -26,4 +27,4 @@
     <div class="mt-8">
         {{ $posts->links() }} {{-- Menampilkan link paginasi --}}
     </div>
-</x-frontend-layout>
+@endsection
