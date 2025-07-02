@@ -79,6 +79,18 @@
                 {{ $slot }} {{-- Ini adalah tempat konten utama halaman admin akan diinjeksikan --}}
             </main>
         </div>
+
+        {{-- Footer Admin --}}
+        <footer class="bg-gray-800 dark:bg-gray-900 text-white p-4">
+            <div class="max-w-7xl mx-auto">
+                <div class="flex flex-col md:flex-row justify-between items-center">
+                    <div class="mb-4 md:mb-0">
+                        <p class="text-gray-300">&copy; {{ date('Y') }} {{ config('app.name', 'Selaras Mitra Integra') }}. All rights reserved.</p>
+                    </div>
+                    <x-social-media size="w-5 h-5" />
+                </div>
+            </div>
+        </footer>
     </div>
 </body>
 </html>

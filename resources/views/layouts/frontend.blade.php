@@ -40,8 +40,40 @@
     </main>
 
     <footer class="bg-gray-800 text-white p-6 mt-8">
-        <div class="container mx-auto text-center">
-            &copy; {{ date('Y') }} {{ config('app.name', 'Nama Perusahaan Anda') }}. All rights reserved.
+        <div class="container mx-auto">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-6">
+                {{-- Kolom 1: Informasi Perusahaan --}}
+                <div>
+                    <h3 class="text-xl font-bold mb-4">{{ config('app.name', 'Selaras Mitra Integra') }}</h3>
+                    <p class="text-gray-300 mb-4">Solusi terbaik untuk kebutuhan bisnis Anda dengan layanan profesional dan berkualitas tinggi.</p>
+                </div>
+
+                {{-- Kolom 2: Link Cepat --}}
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Link Cepat</h3>
+                    <ul class="space-y-2">
+                        <li><a href="{{ route('home') }}" class="text-gray-300 hover:text-white transition duration-300">Beranda</a></li>
+                        <li><a href="{{ route('about-us') }}" class="text-gray-300 hover:text-white transition duration-300">Tentang Kami</a></li>
+                        <li><a href="{{ route('services') }}" class="text-gray-300 hover:text-white transition duration-300">Layanan</a></li>
+                        <li><a href="{{ route('news.index') }}" class="text-gray-300 hover:text-white transition duration-300">Berita</a></li>
+                    </ul>
+                </div>
+
+                {{-- Kolom 3: Media Sosial --}}
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Ikuti Kami</h3>
+                    <x-social-media />
+                    <div class="mt-4">
+                        <p class="text-gray-300 text-sm">Email: {{ config('social.contact.email') }}</p>
+                        <p class="text-gray-300 text-sm">Phone: {{ config('social.contact.phone') }}</p>
+                    </div>
+                </div>
+            </div>
+
+            {{-- Copyright --}}
+            <div class="border-t border-gray-700 pt-4 text-center">
+                <p class="text-gray-300">&copy; {{ date('Y') }} {{ config('app.name', 'Selaras Mitra Integra') }}. All rights reserved.</p>
+            </div>
         </div>
     </footer>
 
