@@ -6,7 +6,7 @@
 
         <div class="bg-white rounded-lg shadow-lg p-8 mb-8">
             <p class="text-lg text-gray-700 text-center mb-6">
-                Temukan informasi lebih lanjut mengenai TENTANG KAMI melalui materi presentasi di bawah ini.
+                Temukan informasi lebih lanjut mengenai KARIR DAN KEPELATIHAN melalui materi presentasi di bawah ini.
             </p>
 
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">

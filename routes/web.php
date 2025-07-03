@@ -41,6 +41,18 @@ Route::get('/abouts', function () {
     return view('abouts.static'); // Pastikan Anda memiliki resources/views/about-us.blade.php
 })->name('about-us');
 
+Route::get('/abouts/tentang', function () {
+    return view('abouts.tentang'); // Pastikan Anda memiliki resources/views/about-us.blade.php
+})->name('abouts.tentang');
+
+Route::get('/abouts/visi', function () {
+    return view('abouts.visi'); // Pastikan Anda memiliki resources/views/about-us.blade.php
+})->name('abouts.visi');
+
+Route::get('/abouts/milestone', function () {
+    return view('abouts.milestone'); // Pastikan Anda memiliki resources/views/about-us.blade.php
+})->name('abouts.milestone');
+
 // Halaman Statis: Services
 Route::get('/services', function () {
     return view('services.static'); // Pastikan Anda memiliki resources/views/services.blade.php
@@ -79,9 +91,9 @@ Route::get('/services/pelatihan', function () {
     return view('services.pelatihan');
 })->name('services.pelatihan');
 
-Route::get('/services/outbond', function () {
-    return view('services.outbond');
-})->name('services.outbond');
+Route::get('/services/outbound', function () {
+    return view('services.outbound');
+})->name('services.outbound');
 
 // Halaman Statis: Contact
 Route::get('/contacts', function () {
@@ -92,6 +104,26 @@ Route::get('/contacts', function () {
 Route::get('/experts', function () {
     return view('experts.static'); // Pastikan Anda memiliki resources/views/experts/static.blade.php
 })->name('experts.index');
+
+Route::get('/experts/profil-psikolog', function () {
+    return view('experts.profil-psikolog');
+})->name('experts.profil-psikolog');
+
+Route::get('/experts/daftar-psikolog', function () {
+    return view('experts.daftar-psikolog');
+})->name('experts.daftar-psikolog');
+
+Route::get('/experts/psikolog-klinis', function () {
+    return view('experts.psikolog-klinis');
+})->name('experts.psikolog-klinis');
+
+Route::get('/experts/psikolog-anak', function () {
+    return view('experts.psikolog-anak');
+})->name('experts.psikolog-anak');
+
+Route::get('/experts/psikolog-remaja', function () {
+    return view('experts.psikolog-remaja');
+})->name('experts.psikolog-remaja');
 
 Route::get('/careers', function () {
     return view('careers.static');

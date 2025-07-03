@@ -1,31 +1,27 @@
 @extends('layouts.frontend') {{-- Pastikan ini mengacu pada layout utama Anda --}}
 
-@section('title', 'Rekrutmen - Selaras Mitra Integra')
+@section('title', 'Tes Bakat Minat - Selaras Mitra Integra')
 
 @section('content')
     <div class="container mx-auto px-4 py-8">
+        {{-- Bagian Atas: Gambar dan Deskripsi --}}
         <div class="bg-white rounded-lg shadow-lg overflow-hidden mb-8">
             <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center p-8">
                 {{-- Bagian Kiri: Gambar --}}
                 <div>
-                    <img src="{{ asset('images/rekrutmen-main.jpg') }}" alt="Ilustrasi Rekrutmen" class="w-full h-auto rounded-lg shadow-md">
-                    {{-- Pastikan Anda memiliki gambar ini di public/images/rekrutmen-main.jpg --}}
+                    <img src="{{ asset('images/talent-test-main.jpg') }}" alt="Ilustrasi Tes Bakat Minat" class="w-full h-auto rounded-lg shadow-md">
+                    {{-- Pastikan Anda memiliki gambar ini di public/images/talent-test-main.jpg --}}
                 </div>
 
-                {{-- Bagian Kanan: Teks Rekrutmen --}}
+                {{-- Bagian Kanan: Teks Tes Bakat Minat --}}
                 <div class="text-gray-800">
-                    <h1 class="text-4xl font-bold text-blue-800 mb-4">REKRUTMEN</h1>
-                    <p class="text-lg mb-4">
-                        Menempatkan orang yang tepat dalam posisi yang tepat menjadi salah satu kunci kesuksesan bisnis.
+                    <h1 class="text-4xl font-bold text-blue-800 mb-4">TES BAKAT MINAT</h1>
+                    <p class="text-lg font-semibold mb-4">
+                        Menggali Potensi Anda: Tes Bakat dan Minat yang Menginspirasi
                     </p>
                     <p class="text-lg mb-6">
-                        Kami percaya bahwa organisasi membutuhkan sumber daya manusia yang dapat berkembang di dalam organisasi secara produktif. Oleh karenanya, rekrutmen merupakan proses yang penting bagi suatu organisasi untuk mendapatkan orang yang tepat untuk posisi yang tepat. PT Selaras Mitra Integra menawarkan solusi yang terintegrasi untuk mencapai tujuan tersebut.
+                        Layanan dalam lingkup individual / klasikal berupa tes psikologi, interview psikolog hingga pembuatan laporan sesuai kebutuhan seperti penelusuran bakat dan minat individu yang berkaitan dengan karir, kesiapan sekolah, penerimaan siswa baru, maupun siswa akselerasi.
                     </p>
-                    <p class="text-lg font-semibold mb-2">Layanan kami terdiri dari:</p>
-                    <ul class="list-disc list-inside text-lg mb-6">
-                        <li>Pencarian Kandidat</li>
-                        <li>Proses Seleksi</li>
-                    </ul>
                     <p class="text-right text-gray-600">
                         <a href="{{ route('services') }}" class="text-blue-600 hover:underline">Kembali ke menu layanan</a>
                     </p>
@@ -33,69 +29,52 @@
             </div>
         </div>
 
-        {{-- Bagian "Mengapa Memilih Kami" --}}
-        <div class="bg-blue-600 text-white p-8 rounded-lg shadow-lg text-center mt-12">
-            <h2 class="text-3xl font-bold mb-8">Mengapa memilih kami</h2>
-            <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-6 justify-items-center">
-                {{-- Item 1: Kept Confidential --}}
-                <div class="w-32 h-32 bg-white text-blue-800 flex flex-col justify-center items-center transform rotate-45 rounded-lg shadow-md hover:-translate-y-1 transition duration-300">
-                    <div class="transform -rotate-45 text-center p-2">
-                        <span class="block font-semibold text-base md:text-lg">Kept</span>
-                        <span class="block font-semibold text-base md:text-lg">Confidential</span>
-                    </div>
+        {{-- Bagian Bawah: Tujuan Tes Bakat Minat --}}
+        <div class="bg-blue-600 text-white p-8 rounded-lg shadow-lg text-center mt-12 relative overflow-hidden">
+            <h2 class="text-3xl font-bold mb-8">TUJUAN TES BAKAT MINAT</h2>
+
+            {{-- Gambar background panel surya (optional) --}}
+            <img src="{{ asset('images/solar-panels-bg.jpg') }}" alt="Background Solar Panels" class="absolute inset-0 w-full h-full object-cover opacity-20 z-0">
+            {{-- Pastikan Anda memiliki gambar ini di public/images/solar-panels-bg.jpg --}}
+
+            <div class="relative z-10 flex flex-wrap justify-center items-center gap-6 py-8">
+                {{-- Item 1 --}}
+                <div class="bg-blue-800 text-white px-6 py-3 rounded-full shadow-md text-lg hover:bg-blue-700 transition duration-300">
+                    Seleksi siswa baru
                 </div>
-                {{-- Item 2: Monitoring Proses --}}
-                <div class="w-32 h-32 bg-yellow-400 text-blue-800 flex flex-col justify-center items-center transform rotate-45 rounded-lg shadow-md hover:-translate-y-1 transition duration-300">
-                    <div class="transform -rotate-45 text-center p-2">
-                        <span class="block font-semibold text-base md:text-lg">Monitoring</span>
-                        <span class="block font-semibold text-base md:text-lg">Proses</span>
-                    </div>
+
+                {{-- Item 2 (lebih panjang) --}}
+                <div class="bg-yellow-400 text-blue-800 px-6 py-3 rounded-full shadow-md text-lg font-semibold hover:bg-yellow-500 transition duration-300">
+                    Promosi guru/ dosen/ tenaga pendidik/ kepala sekolah
                 </div>
-                {{-- Item 3: Simple --}}
-                <div class="w-32 h-32 bg-white text-blue-800 flex flex-col justify-center items-center transform rotate-45 rounded-lg shadow-md hover:-translate-y-1 transition duration-300">
-                    <div class="transform -rotate-45 text-center p-2">
-                        <span class="block font-semibold text-base md:text-lg">Simple</span>
-                    </div>
+
+                {{-- Item 3 --}}
+                <div class="bg-blue-800 text-white px-6 py-3 rounded-full shadow-md text-lg hover:bg-blue-700 transition duration-300">
+                    Asesmen karir
                 </div>
-                {{-- Item 4: Unlimited Participant --}}
-                <div class="w-32 h-32 bg-yellow-400 text-blue-800 flex flex-col justify-center items-center transform rotate-45 rounded-lg shadow-md hover:-translate-y-1 transition duration-300">
-                    <div class="transform -rotate-45 text-center p-2">
-                        <span class="block font-semibold text-base md:text-lg">Unlimited</span>
-                        <span class="block font-semibold text-base md:text-lg">Participant</span>
-                    </div>
+
+                {{-- Item 4 --}}
+                <div class="bg-blue-800 text-white px-6 py-3 rounded-full shadow-md text-lg hover:bg-blue-700 transition duration-300">
+                    Seleksi siswa akselerasi
                 </div>
-                {{-- Item 5: Fleksibel --}}
-                <div class="w-32 h-32 bg-white text-blue-800 flex flex-col justify-center items-center transform rotate-45 rounded-lg shadow-md hover:-translate-y-1 transition duration-300">
-                    <div class="transform -rotate-45 text-center p-2">
-                        <span class="block font-semibold text-base md:text-lg">Fleksibel</span>
-                    </div>
+
+                {{-- Item 5 (tengah) --}}
+                <div class="bg-yellow-400 text-blue-800 px-6 py-3 rounded-full shadow-md text-lg font-semibold hover:bg-yellow-500 transition duration-300">
+                    Psikotes penjurusan siswa
                 </div>
-                {{-- Item 6: Hasil Terverifikasi --}}
-                <div class="w-32 h-32 bg-yellow-400 text-blue-800 flex flex-col justify-center items-center transform rotate-45 rounded-lg shadow-md hover:-translate-y-1 transition duration-300">
-                    <div class="transform -rotate-45 text-center p-2">
-                        <span class="block font-semibold text-base md:text-lg">Hasil</span>
-                        <span class="block font-semibold text-base md:text-lg">Terverifikasi</span>
-                    </div>
+
+                {{-- Item 6 --}}
+                <div class="bg-blue-800 text-white px-6 py-3 rounded-full shadow-md text-lg hover:bg-blue-700 transition duration-300">
+                    Asesmen kepribadian
                 </div>
-                {{-- Item 7: Customize --}}
-                <div class="w-32 h-32 bg-white text-blue-800 flex flex-col justify-center items-center transform rotate-45 rounded-lg shadow-md hover:-translate-y-1 transition duration-300">
-                    <div class="transform -rotate-45 text-center p-2">
-                        <span class="block font-semibold text-base md:text-lg">Customize</span>
-                    </div>
-                </div>
-                {{-- Item 8: Tools Up to Date --}}
-                <div class="w-32 h-32 bg-yellow-400 text-blue-800 flex flex-col justify-center items-center transform rotate-45 rounded-lg shadow-md hover:-translate-y-1 transition duration-300">
-                    <div class="transform -rotate-45 text-center p-2">
-                        <span class="block font-semibold text-base md:text-lg">Tools Up</span>
-                        <span class="block font-semibold text-base md:text-lg">to Date</span>
-                    </div>
+
+                {{-- Item 7 --}}
+                <div class="bg-blue-800 text-white px-6 py-3 rounded-full shadow-md text-lg hover:bg-blue-700 transition duration-300">
+                    Asesmen pendidik/ tenaga pendidik
                 </div>
             </div>
 
-            <a href="{{ route('contact') }}" class="inline-block bg-white text-blue-600 font-bold px-8 py-4 rounded-full text-lg hover:bg-gray-100 transition duration-300 mt-12">
-                KONSULTASI SEKARANG
-            </a>
-            <p class="mt-4 text-gray-200">
+            <p class="mt-4 text-gray-200 relative z-10">
                 <a href="{{ route('services') }}" class="text-white hover:underline">Kembali ke menu layanan</a>
             </p>
         </div>
