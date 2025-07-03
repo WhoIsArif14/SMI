@@ -76,7 +76,7 @@
             </aside>
 
             <main class="flex-grow p-4">
-                {{ $slot }} {{-- Ini adalah tempat konten utama halaman admin akan diinjeksikan --}}
+                {{ $slot }}
             </main>
         </div>
 

@@ -64,7 +64,7 @@ Route::get('/services/coaching', function () {
 })->name('services.coaching');
 
 Route::get('/services/seminar', function () {
-    return view('services.seminat');
+    return view('services.seminar');
 })->name('services.seminar');
 
 Route::get('/services/konseling', function () {
