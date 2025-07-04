@@ -164,9 +164,6 @@ Route::middleware(['auth', 'verified'])->prefix('admin')->name('admin.')->group(
     // Manajemen Berita (Posts) - CRUD
     Route::resource('posts', AdminPostController::class);
 
-    // Manajemen Halaman (Pages) - CRUD
-    Route::resource('pages', AdminPageController::class);
-
     // Manajemen Klien (Clients) - CRUD
     Route::resource('clients', ClientController::class);
 
