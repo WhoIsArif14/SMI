@@ -95,11 +95,6 @@ Route::get('/services/outbound', function () {
     return view('services.outbound');
 })->name('services.outbound');
 
-// Halaman Statis: Contact
-Route::get('/contacts', function () {
-    return view('contacts.static'); // Pastikan Anda memiliki resources/views/contact.blade.php
-})->name('contact');
-
 // Halaman Statis: Expert Kami
 Route::get('/experts', function () {
     return view('experts.static'); // Pastikan Anda memiliki resources/views/experts/static.blade.php
@@ -129,6 +124,10 @@ Route::get('/careers', function () {
     return view('careers.static');
 })->name('careers.index');
 
+// Halaman Statis: Contact
+Route::get('/contacts', function () {
+    return view('contacts.static'); // Pastikan Anda memiliki resources/views/contact.blade.php
+})->name('contact');
 
 // Redirect /pages ke home untuk mencegah akses langsung
 Route::get('/pages', function () {
