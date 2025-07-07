@@ -65,17 +65,14 @@
                         <div class="absolute inset-0 bg-gradient-to-r from-pink-500 to-rose-500 rounded-xl opacity-0 group-hover:opacity-100 transition-all duration-300 transform scale-90 group-hover:scale-100 shadow-lg"></div>
                     </a>
                     
-<<<<<<< HEAD
-                    <!-- <a href="{{ route('login') }}" class="group relative px-6 py-3 ml-4 font-black text-lg bg-gradient-to-r from-yellow-400 to-orange-500 text-blue-900 rounded-2xl hover:from-yellow-300 hover:to-orange-400 transition-all duration-300 transform hover:scale-110 hover:shadow-xl hover:-translate-y-1 tracking-wide">
+                    {{-- <!-- <a href="{{ route('login') }}" class="group relative px-6 py-3 ml-4 font-black text-lg bg-gradient-to-r from-yellow-400 to-orange-500 text-blue-900 rounded-2xl hover:from-yellow-300 hover:to-orange-400 transition-all duration-300 transform hover:scale-110 hover:shadow-xl hover:-translate-y-1 tracking-wide">
                         <span class="relative z-10">Login Admin</span>
                         <div class="absolute inset-0 bg-white opacity-0 group-hover:opacity-20 rounded-2xl transition-opacity duration-300"></div>
                     </a> -->
-=======
                     {{-- <a href="{{ route('login') }}" class="group relative px-6 py-3 ml-4 font-black text-lg bg-gradient-to-r from-yellow-400 to-orange-500 text-blue-900 rounded-2xl hover:from-yellow-300 hover:to-orange-400 transition-all duration-300 transform hover:scale-110 hover:shadow-xl hover:-translate-y-1 tracking-wide">
                         <span class="relative z-10">Login Admin</span>
                         <div class="absolute inset-0 bg-white opacity-0 group-hover:opacity-20 rounded-2xl transition-opacity duration-300"></div>
-                    </a> --}}
->>>>>>> 06221c18f89bde3412ec2f7cac0598430453a0d8
+                    </a> --}} 
                 </nav>
 
                 {{-- Mobile Menu Button --}}
