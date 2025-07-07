@@ -27,8 +27,12 @@
                         <li>Proses Seleksi</li>
                     </ul>
                     <p class="text-right text-gray-600">
-                        <a href="{{ route('services') }}" class="text-blue-600 hover:underline">Kembali ke menu layanan</a>
-                    </p>
+                      <a href="{{ route('services') }}" class="group inline-flex items-center px-6 py-3 text-lg font-bold text-white bg-blue-600 bg-opacity-100 rounded-xl border border-white border-opacity-30 hover:bg-opacity-40 hover:border-opacity-60 transition-all duration-500 ease-in-out transform hover:scale-110 hover:shadow-xl backdrop-blur-sm">
+                            <span class="mr-3">Kembali ke Menu Layanan</span>
+                            <svg class="w-5 h-5 transition-all duration-500 group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"></path>
+                            </svg>
+                        </a>
                 </div>
             </div>
         </div>

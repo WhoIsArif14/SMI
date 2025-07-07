@@ -70,7 +70,7 @@
                 {{-- Bagian Video Lokal --}}
                 <div class="md:w-1/2 flex justify-center px-4">
                     <video controls autoplay muted loop class="rounded-lg shadow-xl w-full max-w-lg md:max-w-none">
-                        <source src="{{ asset('videos/acol.mp4') }}" type="video/mp4">
+                        <source src="{{ asset('videos/Compro_Selaras.mp4') }}" type="video/mp4">
                         {{-- Anda bisa menambahkan source lain untuk format video berbeda jika diperlukan --}}
                         {{-- <source src="{{ asset('videos/video_profil.webm') }}" type="video/webm"> --}}
                         Browser Anda tidak mendukung tag video.
@@ -185,57 +185,116 @@
         </div>
     </section>
 
-    <section class="bg-blue-700 text-white py-16 px-4">
-        <div class="container mx-auto text-center">
+    <section class="bg-gradient-to-br from-blue-900 via-blue-800 to-indigo-900 text-white py-16 px-4 relative overflow-hidden">
+        <!-- Background Pattern -->
+        <div class="absolute inset-0 opacity-10">
+            <div class="absolute top-0 left-0 w-full h-full" style="background-image: radial-gradient(circle at 25% 25%, rgba(255,255,255,0.1) 0%, transparent 70%), radial-gradient(circle at 75% 75%, rgba(255,255,255,0.05) 0%, transparent 70%);"></div>
+        </div>
+        
+        <div class="container mx-auto text-center relative z-10">
             <h2 class="text-4xl md:text-6xl font-black mb-16 bg-gradient-to-r from-white via-yellow-200 to-yellow-400 bg-clip-text text-transparent tracking-tight leading-tight">Mengapa memilih kami?</h2>
-            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 justify-items-center">
-
-                <div class="relative w-40 h-40 transform rotate-45 flex items-center justify-center bg-blue-900 shadow-xl rounded-lg transition-all duration-500 hover:scale-110 hover:shadow-2xl hover:rotate-[50deg] cursor-pointer group">
-                    <div class="absolute w-full h-full transform -rotate-45 flex items-center justify-center p-4 transition-transform duration-300 group-hover:scale-105">
-                        <span class="text-center font-bold text-lg tracking-wide">Kept Confidential</span>
+            
+            <!-- Carousel Container -->
+            <div class="relative max-w-lg mx-auto px-20">
+                <!-- Main Card Display -->
+                <div class="carousel-container relative overflow-hidden">
+                    <div class="carousel-track flex transition-transform duration-500 ease-in-out" id="carouselTrack">
+                        <!-- Card 1 -->
+                        <div class="carousel-item w-full flex-shrink-0 flex justify-center">
+                            <div class="relative w-40 h-40 transform rotate-45 flex items-center justify-center bg-blue-900 shadow-xl rounded-lg transition-all duration-500 hover:scale-110 hover:shadow-2xl hover:rotate-[50deg] cursor-pointer group">
+                                <div class="absolute w-full h-full transform -rotate-45 flex items-center justify-center p-4 transition-transform duration-300 group-hover:scale-105">
+                                    <span class="text-center font-bold text-lg tracking-wide">Kept Confidential</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Card 2 -->
+                        <div class="carousel-item w-full flex-shrink-0 flex justify-center">
+                            <div class="relative w-40 h-40 transform rotate-45 flex items-center justify-center bg-yellow-500 shadow-xl rounded-lg transition-all duration-500 hover:scale-110 hover:shadow-2xl hover:rotate-[50deg] cursor-pointer group">
+                                <div class="absolute w-full h-full transform -rotate-45 flex items-center justify-center p-4 transition-transform duration-300 group-hover:scale-105">
+                                    <span class="text-center font-bold text-lg tracking-wide">Monitoring Proses</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Card 3 -->
+                        <div class="carousel-item w-full flex-shrink-0 flex justify-center">
+                            <div class="relative w-40 h-40 transform rotate-45 flex items-center justify-center bg-white text-blue-800 shadow-xl rounded-lg transition-all duration-500 hover:scale-110 hover:shadow-2xl hover:rotate-[50deg] cursor-pointer group">
+                                <div class="absolute w-full h-full transform -rotate-45 flex items-center justify-center p-4 transition-transform duration-300 group-hover:scale-105">
+                                    <span class="text-center font-bold text-lg tracking-wide">Simple</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Card 4 -->
+                        <div class="carousel-item w-full flex-shrink-0 flex justify-center">
+                            <div class="relative w-40 h-40 transform rotate-45 flex items-center justify-center bg-blue-900 shadow-xl rounded-lg transition-all duration-500 hover:scale-110 hover:shadow-2xl hover:rotate-[50deg] cursor-pointer group">
+                                <div class="absolute w-full h-full transform -rotate-45 flex items-center justify-center p-4 transition-transform duration-300 group-hover:scale-105">
+                                    <span class="text-center font-bold text-lg tracking-wide">Unlimited Participant</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Card 5 -->
+                        <div class="carousel-item w-full flex-shrink-0 flex justify-center">
+                            <div class="relative w-40 h-40 transform rotate-45 flex items-center justify-center bg-white text-blue-800 shadow-xl rounded-lg transition-all duration-500 hover:scale-110 hover:shadow-2xl hover:rotate-[50deg] cursor-pointer group">
+                                <div class="absolute w-full h-full transform -rotate-45 flex items-center justify-center p-4 transition-transform duration-300 group-hover:scale-105">
+                                    <span class="text-center font-bold text-lg tracking-wide">Fleksibel</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Card 6 -->
+                        <div class="carousel-item w-full flex-shrink-0 flex justify-center">
+                            <div class="relative w-40 h-40 transform rotate-45 flex items-center justify-center bg-blue-900 shadow-xl rounded-lg transition-all duration-500 hover:scale-110 hover:shadow-2xl hover:rotate-[50deg] cursor-pointer group">
+                                <div class="absolute w-full h-full transform -rotate-45 flex items-center justify-center p-4 transition-transform duration-300 group-hover:scale-105">
+                                    <span class="text-center font-bold text-lg tracking-wide">Hasil Terverifikasi</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Card 7 -->
+                        <div class="carousel-item w-full flex-shrink-0 flex justify-center">
+                            <div class="relative w-40 h-40 transform rotate-45 flex items-center justify-center bg-yellow-500 shadow-xl rounded-lg transition-all duration-500 hover:scale-110 hover:shadow-2xl hover:rotate-[50deg] cursor-pointer group">
+                                <div class="absolute w-full h-full transform -rotate-45 flex items-center justify-center p-4 transition-transform duration-300 group-hover:scale-105">
+                                    <span class="text-center font-bold text-lg tracking-wide">Customize</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Card 8 -->
+                        <div class="carousel-item w-full flex-shrink-0 flex justify-center">
+                            <div class="relative w-40 h-40 transform rotate-45 flex items-center justify-center bg-white text-blue-800 shadow-xl rounded-lg transition-all duration-500 hover:scale-110 hover:shadow-2xl hover:rotate-[50deg] cursor-pointer group">
+                                <div class="absolute w-full h-full transform -rotate-45 flex items-center justify-center p-4 transition-transform duration-300 group-hover:scale-105">
+                                    <span class="text-center font-bold text-lg tracking-wide">Tools Up to Date</span>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
-
-                <div class="relative w-40 h-40 transform rotate-45 flex items-center justify-center bg-yellow-500 shadow-xl rounded-lg transition-all duration-500 hover:scale-110 hover:shadow-2xl hover:rotate-[50deg] cursor-pointer group">
-                    <div class="absolute w-full h-full transform -rotate-45 flex items-center justify-center p-4 transition-transform duration-300 group-hover:scale-105">
-                        <span class="text-center font-bold text-lg tracking-wide">Monitoring Proses</span>
-                    </div>
-                </div>
-
-                <div class="relative w-40 h-40 transform rotate-45 flex items-center justify-center bg-white text-blue-800 shadow-xl rounded-lg transition-all duration-500 hover:scale-110 hover:shadow-2xl hover:rotate-[50deg] cursor-pointer group">
-                    <div class="absolute w-full h-full transform -rotate-45 flex items-center justify-center p-4 transition-transform duration-300 group-hover:scale-105">
-                        <span class="text-center font-bold text-lg tracking-wide">Simple</span>
-                    </div>
-                </div>
-
-                <div class="relative w-40 h-40 transform rotate-45 flex items-center justify-center bg-blue-900 shadow-xl rounded-lg transition-all duration-500 hover:scale-110 hover:shadow-2xl hover:rotate-[50deg] cursor-pointer group">
-                    <div class="absolute w-full h-full transform -rotate-45 flex items-center justify-center p-4 transition-transform duration-300 group-hover:scale-105">
-                        <span class="text-center font-bold text-lg tracking-wide">Unlimited Participant</span>
-                    </div>
-                </div>
-
-                <div class="relative w-40 h-40 transform rotate-45 flex items-center justify-center bg-white text-blue-800 shadow-xl rounded-lg transition-all duration-500 hover:scale-110 hover:shadow-2xl hover:rotate-[50deg] cursor-pointer group">
-                    <div class="absolute w-full h-full transform -rotate-45 flex items-center justify-center p-4 transition-transform duration-300 group-hover:scale-105">
-                        <span class="text-center font-bold text-lg tracking-wide">Fleksibel</span>
-                    </div>
-                </div>
-
-                <div class="relative w-40 h-40 transform rotate-45 flex items-center justify-center bg-blue-900 shadow-xl rounded-lg transition-all duration-500 hover:scale-110 hover:shadow-2xl hover:rotate-[50deg] cursor-pointer group">
-                    <div class="absolute w-full h-full transform -rotate-45 flex items-center justify-center p-4 transition-transform duration-300 group-hover:scale-105">
-                        <span class="text-center font-bold text-lg tracking-wide">Hasil Terverifikasi</span>
-                    </div>
-                </div>
-
-                <div class="relative w-40 h-40 transform rotate-45 flex items-center justify-center bg-yellow-500 shadow-xl rounded-lg transition-all duration-500 hover:scale-110 hover:shadow-2xl hover:rotate-[50deg] cursor-pointer group">
-                    <div class="absolute w-full h-full transform -rotate-45 flex items-center justify-center p-4 transition-transform duration-300 group-hover:scale-105">
-                        <span class="text-center font-bold text-lg tracking-wide">Customize</span>
-                    </div>
-                </div>
-
-                <div class="relative w-40 h-40 transform rotate-45 flex items-center justify-center bg-white text-blue-800 shadow-xl rounded-lg transition-all duration-500 hover:scale-110 hover:shadow-2xl hover:rotate-[50deg] cursor-pointer group">
-                    <div class="absolute w-full h-full transform -rotate-45 flex items-center justify-center p-4 transition-transform duration-300 group-hover:scale-105">
-                        <span class="text-center font-bold text-lg tracking-wide">Tools Up to Date</span>
-                    </div>
+                
+                <!-- Navigation Buttons -->
+                <button type="button" class="carousel-btn carousel-btn-prev absolute left-0 top-1/2 transform -translate-y-1/2 bg-white bg-opacity-20 hover:bg-opacity-40 text-white p-3 rounded-full transition-all duration-300 hover:scale-110 shadow-lg backdrop-blur-sm border border-white border-opacity-30" id="prevBtn">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path>
+                    </svg>
+                </button>
+                <button type="button" class="carousel-btn carousel-btn-next absolute right-0 top-1/2 transform -translate-y-1/2 bg-white bg-opacity-20 hover:bg-opacity-40 text-white p-3 rounded-full transition-all duration-300 hover:scale-110 shadow-lg backdrop-blur-sm border border-white border-opacity-30" id="nextBtn">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                    </svg>
+                </button>
+                
+                <!-- Dots Indicator -->
+                <div class="flex justify-center mt-8 space-x-2">
+                    <button class="dot w-3 h-3 rounded-full bg-white bg-opacity-30 hover:bg-opacity-60 transition-all duration-300 active"></button>
+                    <button class="dot w-3 h-3 rounded-full bg-white bg-opacity-30 hover:bg-opacity-60 transition-all duration-300"></button>
+                    <button class="dot w-3 h-3 rounded-full bg-white bg-opacity-30 hover:bg-opacity-60 transition-all duration-300"></button>
+                    <button class="dot w-3 h-3 rounded-full bg-white bg-opacity-30 hover:bg-opacity-60 transition-all duration-300"></button>
+                    <button class="dot w-3 h-3 rounded-full bg-white bg-opacity-30 hover:bg-opacity-60 transition-all duration-300"></button>
+                    <button class="dot w-3 h-3 rounded-full bg-white bg-opacity-30 hover:bg-opacity-60 transition-all duration-300"></button>
+                    <button class="dot w-3 h-3 rounded-full bg-white bg-opacity-30 hover:bg-opacity-60 transition-all duration-300"></button>
+                    <button class="dot w-3 h-3 rounded-full bg-white bg-opacity-30 hover:bg-opacity-60 transition-all duration-300"></button>
                 </div>
             </div>
 
@@ -255,9 +314,275 @@
                 </p>
             </div>
         </div>
+    </section>
 @endsection
 
+<script>
+// Carousel functionality
+let currentSlideIndex = 0;
+const totalSlides = 8;
+
+function showSlide(index) {
+    const track = document.getElementById('carouselTrack');
+    const dots = document.querySelectorAll('.dot');
+    
+    console.log('showSlide called with index:', index, 'current index:', currentSlideIndex);
+    
+    // Ensure index is a number
+    index = parseInt(index);
+    
+    // Keep index within bounds
+    if (index >= totalSlides) {
+        currentSlideIndex = 0;
+    } else if (index < 0) {
+        currentSlideIndex = totalSlides - 1;
+    } else {
+        currentSlideIndex = index;
+    }
+    
+    console.log('Final slide index:', currentSlideIndex);
+    
+    if (!track) {
+        console.error('Carousel track not found!');
+        return;
+    }
+    
+    // Move carousel track
+    track.style.transform = `translateX(-${currentSlideIndex * 100}%)`;
+    
+    // Update dots
+    dots.forEach((dot, i) => {
+        dot.classList.remove('active');
+        if (i === currentSlideIndex) {
+            dot.classList.add('active');
+        }
+    });
+    
+    console.log('Slide changed to:', currentSlideIndex);
+}
+
+function nextSlide() {
+    console.log('nextSlide called, current index:', currentSlideIndex);
+    showSlide(currentSlideIndex + 1);
+}
+
+function prevSlide() {
+    console.log('prevSlide called, current index:', currentSlideIndex);
+    showSlide(currentSlideIndex - 1);
+}
+
+function goToSlide(index) {
+    console.log('goToSlide called with index:', index);
+    showSlide(index);
+}
+
+// Event listeners
+document.addEventListener('DOMContentLoaded', function() {
+    const nextBtn = document.getElementById('nextBtn');
+    const prevBtn = document.getElementById('prevBtn');
+    
+    console.log('DOM loaded, buttons found:', { nextBtn, prevBtn });
+    
+    // Initialize first slide
+    showSlide(0);
+    
+    if (nextBtn) {
+        nextBtn.addEventListener('click', function(e) {
+            e.preventDefault();
+            e.stopPropagation();
+            console.log('Next button clicked via event listener');
+            nextSlide();
+        });
+    }
+    
+    if (prevBtn) {
+        prevBtn.addEventListener('click', function(e) {
+            e.preventDefault();
+            e.stopPropagation();
+            console.log('Prev button clicked via event listener');
+            prevSlide();
+        });
+    }
+    
+    // Keyboard navigation
+    document.addEventListener('keydown', function(e) {
+        if (e.key === 'ArrowLeft') {
+            prevSlide();
+        } else if (e.key === 'ArrowRight') {
+            nextSlide();
+        }
+    });
+    
+    // Touch/swipe support for mobile
+    let startX = 0;
+    let endX = 0;
+    
+    const carousel = document.querySelector('.carousel-container');
+    
+    if (carousel) {
+        carousel.addEventListener('touchstart', function(e) {
+            startX = e.touches[0].clientX;
+        });
+        
+        carousel.addEventListener('touchend', function(e) {
+            endX = e.changedTouches[0].clientX;
+            handleSwipe();
+        });
+    }
+    
+    function handleSwipe() {
+        const threshold = 50;
+        const diff = startX - endX;
+        
+        if (Math.abs(diff) > threshold) {
+            if (diff > 0) {
+                nextSlide();
+            } else {
+                prevSlide();
+            }
+        }
+    }
+    
+    // Handle dot clicks
+    const dots = document.querySelectorAll('.dot');
+    dots.forEach((dot, index) => {
+        dot.addEventListener('click', function(e) {
+            e.preventDefault();
+            console.log('Dot clicked, index:', index);
+            goToSlide(index);
+        });
+    });
+});
+</script>
+
 <style>
+/* Carousel Styles */
+.carousel-container {
+    position: relative;
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+    border-radius: 1rem;
+    margin: 0 auto;
+}
+
+.carousel-track {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    height: 100%;
+}
+
+.carousel-item {
+    width: 100%;
+    flex-shrink: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.carousel-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1000;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    transition: all 0.3s ease;
+    cursor: pointer;
+    outline: none;
+    user-select: none;
+    pointer-events: auto;
+}
+
+.carousel-btn:hover {
+    background: rgba(255, 255, 255, 0.4);
+    transform: translateY(-50%) scale(1.1);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+.carousel-btn:active {
+    transform: translateY(-50%) scale(0.95);
+}
+
+.carousel-btn-prev {
+    left: -60px;
+}
+
+.carousel-btn-next {
+    right: -60px;
+}
+
+.dot {
+    cursor: pointer;
+    transition: all 0.3s ease;
+    z-index: 1000;
+    pointer-events: auto;
+    user-select: none;
+    outline: none;
+    border: none;
+}
+
+.dot.active {
+    background: rgba(255, 255, 255, 0.9) !important;
+    transform: scale(1.2);
+}
+
+.dot:hover {
+    transform: scale(1.1);
+}
+
+.dot:active {
+    transform: scale(0.9);
+}
+
+/* Responsive adjustments for carousel */
+@media (max-width: 768px) {
+    .carousel-btn-prev {
+        left: -50px;
+    }
+    
+    .carousel-btn-next {
+        right: -50px;
+    }
+    
+    .carousel-btn {
+        padding: 0.5rem;
+    }
+    
+    .carousel-btn svg {
+        width: 1rem;
+        height: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .carousel-btn-prev {
+        left: -30px;
+    }
+    
+    .carousel-btn-next {
+        right: -30px;
+    }
+    
+    .carousel-btn {
+        padding: 0.4rem;
+        width: 2.5rem;
+        height: 2.5rem;
+    }
+    
+    .carousel-btn svg {
+        width: 0.9rem;
+        height: 0.9rem;
+    }
+    
+    /* Adjust container padding for mobile */
+    .relative.max-w-lg.mx-auto.px-20 {
+        padding-left: 3rem;
+        padding-right: 3rem;
+    }
+}
+
 /* Floating Animation Keyframes */
 @keyframes float {
     0%, 100% { transform: translateY(0px) rotate(0deg); }

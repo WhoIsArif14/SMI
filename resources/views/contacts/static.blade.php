@@ -118,22 +118,19 @@
 
         <!-- Business Hours -->
         <div class="text-center bg-gradient-to-r from-gray-800 to-gray-900 rounded-3xl p-12 text-white">
-            <h2 class="text-3xl font-bold mb-8">Jam Operasional</h2>
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                <div>
-                    <h3 class="text-xl font-semibold mb-3 text-yellow-400">Senin - Jumat</h3>
-                    <p class="text-lg">08:00 - 16:00 WIB</p>
-                </div>
-                <div>
-                    <h3 class="text-xl font-semibold mb-3 text-yellow-400">Sabtu</h3>
-                    <p class="text-lg">09:00 - 15:00 WIB</p>
-                </div>
-                <div>
-                    <h3 class="text-xl font-semibold mb-3 text-yellow-400">Minggu</h3>
-                    <p class="text-lg">Tutup</p>
-                </div>
-            </div>
+    <h2 class="text-3xl font-bold mb-8">Jam Operasional</h2>
+    
+    <div class="inline-grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-16">
+        
+        <div>
+            <h3 class="text-xl font-semibold mb-3 text-yellow-400">Senin - Jumat</h3>
+            <p class="text-lg">08:00 - 16:00 WIB</p>
         </div>
+        <div>
+            <h3 class="text-xl font-semibold mb-3 text-yellow-400">Sabtu & Minggu</h3>
+            <p class="text-lg">Tutup</p>
+        </div>
+
     </div>
 </div>
 

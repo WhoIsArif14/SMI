@@ -181,9 +181,12 @@
                     HUBUNGI KAMI SEKARANG
                 </a>
                 <p class="mt-4 text-blue-200">
-                    <a href="{{ route('services') }}" class="text-blue-100 hover:text-white border-b border-blue-300 hover:border-white transition duration-300">
-                        Lihat Layanan Kami
-                    </a>
+                   <a href="{{ route('services') }}" class="group inline-flex items-center px-6 py-3 text-lg font-bold text-white bg-blue-600 bg-opacity-20 rounded-xl border border-white border-opacity-30 hover:bg-opacity-40 hover:border-opacity-60 transition-all duration-500 ease-in-out transform hover:scale-110 hover:shadow-xl backdrop-blur-sm">
+                            <span class="mr-3">Lihat Layanan Kami</span>
+                            <svg class="w-5 h-5 transition-all duration-500 group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"></path>
+                            </svg>
+                        </a>
                 </p>
             </div>
         </div>

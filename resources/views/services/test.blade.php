@@ -23,7 +23,12 @@
                         Layanan dalam lingkup individual / klasikal berupa tes psikologi, interview psikolog hingga pembuatan laporan sesuai kebutuhan seperti penelusuran bakat dan minat individu yang berkaitan dengan karir, kesiapan sekolah, penerimaan siswa baru, maupun siswa akselerasi.
                     </p>
                     <p class="text-right text-gray-600">
-                        <a href="{{ route('services') }}" class="text-blue-600 hover:underline">Kembali ke menu layanan</a>
+                        <a href="{{ route('services') }}" class="group inline-flex items-center px-6 py-3 text-lg font-bold text-white bg-blue-600 bg-opacity-100 rounded-xl border border-white border-opacity-30 hover:bg-opacity-40 hover:border-opacity-60 transition-all duration-500 ease-in-out transform hover:scale-110 hover:shadow-xl backdrop-blur-sm">
+                            <span class="mr-3">Kembali ke Menu Layanan</span>
+                            <svg class="w-5 h-5 transition-all duration-500 group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"></path>
+                            </svg>
+                        </a>
                     </p>
                 </div>
             </div>
@@ -34,7 +39,7 @@
             <h2 class="text-3xl font-bold mb-8">TUJUAN TES BAKAT MINAT</h2>
 
             {{-- Gambar background panel surya (optional) --}}
-            <img src="{{ asset('images/solar-panels-bg.jpg') }}" alt="Background Solar Panels" class="absolute inset-0 w-full h-full object-cover opacity-20 z-0">
+            <img src="{{ asset('images/solar-panels-bg.jpg') }}" class="absolute inset-0 w-full h-full object-cover opacity-20 z-0">
             {{-- Pastikan Anda memiliki gambar ini di public/images/solar-panels-bg.jpg --}}
 
             <div class="relative z-10 flex flex-wrap justify-center items-center gap-6 py-8">
@@ -75,7 +80,6 @@
             </div>
 
             <p class="mt-4 text-gray-200 relative z-10">
-                <a href="{{ route('services') }}" class="text-white hover:underline">Kembali ke menu layanan</a>
             </p>
         </div>
     </div>

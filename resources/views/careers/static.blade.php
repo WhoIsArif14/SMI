@@ -70,7 +70,7 @@
                     
                     <!-- CTA Buttons -->
                     <div class="space-y-4">
-                        <a href="https://selarasmitragemilang.co.id/auth/register" target="_blank" 
+                        <a href="https://selarasmitragemilang.co.id" target="_blank" 
                            class="inline-block w-full max-w-md bg-gradient-to-r from-blue-600 to-purple-600 text-white font-bold py-6 px-12 rounded-2xl hover:from-blue-700 hover:to-purple-700 transform hover:scale-105 transition-all duration-300 shadow-xl hover:shadow-2xl text-xl">
                             🚀 DAFTAR SEKARANG
                         </a>
@@ -152,7 +152,7 @@
                 <h2 class="text-4xl font-bold mb-4">Siap Memulai Perjalanan Karirmu?</h2>
                 <p class="text-xl mb-8 opacity-90">Jangan biarkan kesempatan emas ini terlewatkan!</p>
                 <div class="flex flex-col sm:flex-row gap-4 justify-center">
-                    <a href="https://selarasmitragemilang.co.id/auth/register" target="_blank" 
+                    <a href="https://selarasmitragemilang.co.id" target="_blank" 
                        class="bg-white text-purple-600 font-bold py-4 px-8 rounded-2xl hover:bg-gray-100 transform hover:scale-105 transition-all duration-300 shadow-lg inline-flex items-center justify-center">
                         <span class="text-2xl mr-2">🚀</span>
                         Daftar Program
