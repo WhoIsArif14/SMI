@@ -16,7 +16,7 @@
                     <p class="text-gray-600 mb-4">Materi presentasi mengenai para ahli di bidang psikologi industri dan organisasi.</p>
                     <a href="{{ route('abouts.tentang') }}" class="inline-flex items-center px-4 py-2 bg-blue-600 text-white font-semibold rounded-lg hover:bg-blue-700 transition duration-300">
                         <svg class="me-2 w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
-                        Lihat di Canva
+                        Lihat Detail
                     </a>
                 </div>
 
@@ -26,7 +26,7 @@
                     <p class="text-gray-600 mb-4">Materi presentasi mengenai para ahli di bidang psikologi industri dan organisasi.</p>
                     <a href="{{ route('abouts.visi') }}" class="inline-flex items-center px-4 py-2 bg-blue-600 text-white font-semibold rounded-lg hover:bg-blue-700 transition duration-300">
                         <svg class="me-2 w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
-                        Lihat detail
+                        Lihat Detail
                     </a>
                 </div>
 
@@ -36,7 +36,7 @@
                     <p class="text-gray-600 mb-4">Presentasi singkat mengenai area spesialisasi psikolog klinis umum.</p>
                     <a href="{{ route('abouts.milestone') }}" class="inline-flex items-center px-4 py-2 bg-purple-600 text-white font-semibold rounded-lg hover:bg-purple-700 transition duration-300">
                         <svg class="me-2 w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
-                        Lihat di Canva
+                        Lihat Detail
                     </a>
                 </div>
             </div>
