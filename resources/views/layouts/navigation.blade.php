@@ -28,11 +28,6 @@
                         <div class="absolute inset-0 bg-gradient-to-r from-green-600 to-teal-600 rounded-lg opacity-0 group-hover:opacity-100 transition-all duration-300 transform scale-95 group-hover:scale-100"></div>
                     </x-nav-link>
 
-                    <x-nav-link :href="route('admin.pages.index')" :active="request()->routeIs('admin.pages.*')"
-                        class="group relative px-6 py-3 text-white/90 hover:text-white font-semibold transition-all duration-300 hover:scale-105">
-                        <span class="relative z-10">{{ __('Halaman') }}</span>
-                        <div class="absolute inset-0 bg-gradient-to-r from-purple-600 to-pink-600 rounded-lg opacity-0 group-hover:opacity-100 transition-all duration-300 transform scale-95 group-hover:scale-100"></div>
-                    </x-nav-link>
 
                     {{-- Link ke Manajemen Klien --}}
                     <x-nav-link :href="route('admin.clients.index')" :active="request()->routeIs('admin.clients.*')"
@@ -128,15 +123,6 @@
                 <div class="flex items-center space-x-3">
                     <div class="w-2 h-2 bg-green-400 rounded-full group-hover:bg-green-300 transition-colors duration-300"></div>
                     <span>{{ __('Berita') }}</span>
-                </div>
-            </x-responsive-nav-link>
-
-            {{-- Link ke Manajemen Halaman --}}
-            <x-responsive-nav-link :href="route('admin.pages.index')" :active="request()->routeIs('admin.pages.*')"
-                class="group block px-4 py-3 mx-2 rounded-xl text-white/90 hover:text-white font-semibold bg-white/5 hover:bg-white/15 transition-all duration-300 transform hover:scale-105 hover:translate-x-2">
-                <div class="flex items-center space-x-3">
-                    <div class="w-2 h-2 bg-purple-400 rounded-full group-hover:bg-purple-300 transition-colors duration-300"></div>
-                    <span>{{ __('Halaman') }}</span>
                 </div>
             </x-responsive-nav-link>
 
