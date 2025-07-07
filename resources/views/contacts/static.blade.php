@@ -1,46 +1,224 @@
 @extends('layouts.frontend')
 @section('content')
 
-    <div class="container mx-auto px-4 py-8">
-        <h1 class="text-4xl font-bold text-center text-blue-800 mb-10">KONTAK KAMI</h1>
+<div class="min-h-screen bg-gradient-to-br from-blue-50 via-indigo-50 to-purple-50 relative overflow-hidden">
+    <!-- Background Decorations -->
+    <div class="absolute inset-0 overflow-hidden">
+        <div class="absolute top-20 left-20 w-32 h-32 bg-gradient-to-br from-blue-400 to-purple-400 rounded-full opacity-20 animate-pulse"></div>
+        <div class="absolute bottom-20 right-20 w-40 h-40 bg-gradient-to-br from-pink-400 to-yellow-400 rounded-full opacity-15 animate-pulse delay-1000"></div>
+        <div class="absolute top-1/2 left-10 w-24 h-24 bg-gradient-to-br from-green-400 to-blue-400 rounded-full opacity-25 animate-pulse delay-2000"></div>
+        <div class="absolute bottom-1/3 right-10 w-28 h-28 bg-gradient-to-br from-orange-400 to-red-400 rounded-full opacity-20 animate-pulse delay-3000"></div>
+    </div>
 
-        <div class="bg-white rounded-lg shadow-lg p-8 mb-8">
-            <p class="text-lg text-gray-700 text-center mb-6">
-                Temukan informasi lebih lanjut mengenai tim expert kami melalui materi presentasi di bawah ini.
+    <div class="container mx-auto px-4 py-16 relative z-10">
+        <!-- Header Section -->
+        <div class="text-center mb-16">
+            <h1 class="text-6xl md:text-7xl font-extrabold bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 bg-clip-text text-transparent mb-8 leading-tight">
+                KONTAK KAMI
+            </h1>
+            <p class="text-xl text-gray-700 max-w-3xl mx-auto leading-relaxed mb-8">
+                Hubungi kami untuk konsultasi dan informasi lebih lanjut mengenai layanan 
+                <span class="font-bold text-transparent bg-clip-text bg-gradient-to-r from-purple-600 to-pink-600">HR Consultant</span>
+                terbaik
             </p>
+        </div>
 
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                {{-- Contoh Tautan ke Presentasi Canva --}}
-                <div class="bg-blue-100 p-6 rounded-lg shadow-md text-center">
-                    <h2 class="text-xl font-semibold text-blue-800 mb-3">Profil Psikolog Industri dan Organisasi</h2>
-                    <p class="text-gray-600 mb-4">Materi presentasi mengenai para ahli di bidang psikologi industri dan organisasi.</p>
-                    <a href="https://www.canva.com/design/DAGN6UX4smU/CFj7iH9OP9Vfr_3pzHM3og/edit?utm_content=DAGN6UX4smU&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton" target="_blank" class="inline-flex items-center px-4 py-2 bg-blue-600 text-white font-semibold rounded-lg hover:bg-blue-700 transition duration-300">
-                        <svg class="me-2 w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
-                        Lihat di Canva
-                    </a>
+        <!-- Contact Information Cards -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
+            <!-- Phone Contact -->
+            <div class="bg-white rounded-3xl shadow-2xl p-8 hover:shadow-3xl transform hover:-translate-y-4 transition-all duration-500 border border-gray-100 relative overflow-hidden">
+                <div class="absolute top-0 right-0 w-24 h-24 bg-gradient-to-br from-green-500 to-blue-500 rounded-full opacity-10 transform translate-x-8 -translate-y-8"></div>
+                <div class="relative z-10 text-center">
+                    <div class="w-20 h-20 bg-gradient-to-br from-green-500 to-blue-500 rounded-full flex items-center justify-center mx-auto mb-6 shadow-lg">
+                        <span class="text-3xl text-white">📞</span>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-800 mb-4">Telepon</h3>
+                    <div class="space-y-3">
+                        <a href="tel:+6287752636196" class="block text-lg text-gray-600 hover:text-blue-600 transition-colors duration-300">
+                            +62 877-5263-6196
+                        </a>
+                    </div>
                 </div>
+            </div>
 
-                {{-- Contoh Tautan ke Dokumen PDF --}}
-                <div class="bg-green-100 p-6 rounded-lg shadow-md text-center">
-                    <h2 class="text-xl font-semibold text-green-800 mb-3">Daftar Psikolog Pendidikan</h2>
-                    <p class="text-gray-600 mb-4">Unduh dokumen PDF berisi daftar lengkap psikolog pendidikan kami.</p>
-                    {{-- Jika PDF ada di folder public Anda, contoh: public/documents/psikolog-pendidikan.pdf --}}
-                    <a href="{{ asset('documents/psikolog-pendidikan.pdf') }}" target="_blank" class="inline-flex items-center px-4 py-2 bg-green-600 text-white font-semibold rounded-lg hover:bg-green-700 transition duration-300">
-                        <svg class="me-2 w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path></svg>
-                        Unduh PDF
-                    </a>
+            <!-- Email Contact -->
+            <div class="bg-white rounded-3xl shadow-2xl p-8 hover:shadow-3xl transform hover:-translate-y-4 transition-all duration-500 border border-gray-100 relative overflow-hidden">
+                <div class="absolute top-0 right-0 w-24 h-24 bg-gradient-to-br from-blue-500 to-purple-500 rounded-full opacity-10 transform translate-x-8 -translate-y-8"></div>
+                <div class="relative z-10 text-center">
+                    <div class="w-20 h-20 bg-gradient-to-br from-blue-500 to-purple-500 rounded-full flex items-center justify-center mx-auto mb-6 shadow-lg">
+                        <span class="text-3xl text-white">✉️</span>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-800 mb-4">Email</h3>
+                    <div class="space-y-3">
+                        <a href="mailto:customercare@selarasmitraintegra.com" class="block text-lg text-gray-600 hover:text-blue-600 transition-colors duration-300">
+                            customercare@selarasmitraintegra.com
+                        </a>
+                    </div>
                 </div>
+            </div>
 
-                {{-- Tambahkan lebih banyak item sesuai kebutuhan Anda --}}
-                <div class="bg-purple-100 p-6 rounded-lg shadow-md text-center">
-                    <h2 class="text-xl font-semibold text-purple-800 mb-3">Ringkasan Spesialisasi Klinis</h2>
-                    <p class="text-gray-600 mb-4">Presentasi singkat mengenai area spesialisasi psikolog klinis umum.</p>
-                    <a href="https://www.canva.com/design/ContohLinkCanva2" target="_blank" class="inline-flex items-center px-4 py-2 bg-purple-600 text-white font-semibold rounded-lg hover:bg-purple-700 transition duration-300">
-                        <svg class="me-2 w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
-                        Lihat di Canva
-                    </a>
+            <!-- Address Contact -->
+            <div class="bg-white rounded-3xl shadow-2xl p-8 hover:shadow-3xl transform hover:-translate-y-4 transition-all duration-500 border border-gray-100 relative overflow-hidden">
+                <div class="absolute top-0 right-0 w-24 h-24 bg-gradient-to-br from-purple-500 to-pink-500 rounded-full opacity-10 transform translate-x-8 -translate-y-8"></div>
+                <div class="relative z-10 text-center">
+                    <div class="w-20 h-20 bg-gradient-to-br from-purple-500 to-pink-500 rounded-full flex items-center justify-center mx-auto mb-6 shadow-lg">
+                        <span class="text-3xl text-white">📍</span>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-800 mb-4">Alamat</h3>
+                    <p class="text-lg text-gray-600 leading-relaxed">
+                        Jl. Ketintang Madya No. 80<br>
+                        Ketintang, Gayungan 60231<br>
+                        Surabaya, Jawa Timur 
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Social Media Section -->
+        <div class="bg-gradient-to-r from-blue-600 to-purple-600 rounded-3xl p-12 text-white shadow-2xl mb-16">
+            <div class="text-center mb-12">
+                <h2 class="text-4xl font-bold mb-4">Ikuti Media Sosial Kami</h2>
+                <p class="text-xl opacity-90">Dapatkan update terbaru dan tips karir dari para ahli</p>
+            </div>
+            
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
+                <!-- WhatsApp -->
+                <a href="https://wa.me/+6287752636196" target="_blank" 
+                   class="bg-white bg-opacity-20 rounded-2xl p-6 text-center hover:bg-opacity-30 transform hover:scale-105 transition-all duration-300 group">
+                    <div class="text-4xl mb-3 group-hover:scale-110 transition-transform duration-300">💬</div>
+                    <h3 class="text-lg font-semibold mb-2">WhatsApp</h3>
+                    <p class="text-sm opacity-80">Chat Langsung</p>
+                </a>
+                
+                <!-- Instagram -->
+                <a href="https://instagram.com/selaras_mitraintegra" target="_blank" 
+                   class="bg-white bg-opacity-20 rounded-2xl p-6 text-center hover:bg-opacity-30 transform hover:scale-105 transition-all duration-300 group">
+                    <div class="text-4xl mb-3 group-hover:scale-110 transition-transform duration-300">📸</div>
+                    <h3 class="text-lg font-semibold mb-2">Instagram</h3>
+                    <p class="text-sm opacity-80">@selaras_mitraintegra</p>
+                </a>
+                
+                <!-- LinkedIn -->
+                <a href="https://www.linkedin.com/company/pt-selarasmitraintegra/" target="_blank" 
+                   class="bg-white bg-opacity-20 rounded-2xl p-6 text-center hover:bg-opacity-30 transform hover:scale-105 transition-all duration-300 group">
+                    <div class="text-4xl mb-3 group-hover:scale-110 transition-transform duration-300">💼</div>
+                    <h3 class="text-lg font-semibold mb-2">LinkedIn</h3>
+                    <p class="text-sm opacity-80">PT Selaras Mitra Integra</p>
+                </a>
+                
+                <!-- Facebook -->
+                <a href="http://facebook.com/selarasmitraintegra" target="_blank" 
+                   class="bg-white bg-opacity-20 rounded-2xl p-6 text-center hover:bg-opacity-30 transform hover:scale-105 transition-all duration-300 group">
+                    <div class="text-4xl mb-3 group-hover:scale-110 transition-transform duration-300">📘</div>
+                    <h3 class="text-lg font-semibold mb-2">Facebook</h3>
+                    <p class="text-sm opacity-80">Selaras Mitra Integra</p>
+                </a>
+            </div>
+        </div>
+
+        <!-- Business Hours -->
+        <div class="text-center bg-gradient-to-r from-gray-800 to-gray-900 rounded-3xl p-12 text-white">
+            <h2 class="text-3xl font-bold mb-8">Jam Operasional</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div>
+                    <h3 class="text-xl font-semibold mb-3 text-yellow-400">Senin - Jumat</h3>
+                    <p class="text-lg">08:00 - 16:00 WIB</p>
+                </div>
+                <div>
+                    <h3 class="text-xl font-semibold mb-3 text-yellow-400">Sabtu</h3>
+                    <p class="text-lg">09:00 - 15:00 WIB</p>
+                </div>
+                <div>
+                    <h3 class="text-xl font-semibold mb-3 text-yellow-400">Minggu</h3>
+                    <p class="text-lg">Tutup</p>
                 </div>
             </div>
         </div>
     </div>
-    @endsection
+</div>
+
+<!-- Custom Styles -->
+<style>
+.shadow-3xl {
+    box-shadow: 0 35px 60px -12px rgba(0, 0, 0, 0.25);
+}
+
+.delay-1000 { animation-delay: 1s; }
+.delay-2000 { animation-delay: 2s; }
+.delay-3000 { animation-delay: 3s; }
+
+/* Form focus effects */
+input:focus, textarea:focus {
+    transform: scale(1.02);
+}
+
+/* Hover animation for contact cards */
+.group:hover .group-hover\:scale-110 {
+    transform: scale(1.1);
+}
+</style>
+
+<!-- JavaScript for Enhanced Interactions -->
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    // Contact form submission
+    const contactForm = document.getElementById('contactForm');
+    contactForm.addEventListener('submit', function(e) {
+        e.preventDefault();
+        
+        // Get form data
+        const formData = new FormData(this);
+        const name = this.querySelector('input[type="text"]').value;
+        const email = this.querySelector('input[type="email"]').value;
+        const phone = this.querySelector('input[type="tel"]').value;
+        const message = this.querySelector('textarea').value;
+        
+        // Create WhatsApp message
+        const whatsappMessage = `Halo SMI,%0A%0ANama: ${name}%0AEmail: ${email}%0ATelepon: ${phone}%0A%0APesan:%0A${message}`;
+        const whatsappUrl = `https://wa.me/6281234567890?text=${whatsappMessage}`;
+        
+        // Show loading state
+        const submitBtn = this.querySelector('button[type="submit"]');
+        const originalText = submitBtn.textContent;
+        submitBtn.textContent = 'Mengirim...';
+        submitBtn.disabled = true;
+        
+        // Simulate sending and redirect to WhatsApp
+        setTimeout(() => {
+            window.open(whatsappUrl, '_blank');
+            submitBtn.textContent = originalText;
+            submitBtn.disabled = false;
+            this.reset();
+            alert('Pesan Anda akan dikirim melalui WhatsApp!');
+        }, 1000);
+    });
+    
+    // Add click tracking for social media links
+    const socialLinks = document.querySelectorAll('a[href*="wa.me"], a[href*="instagram"], a[href*="linkedin"], a[href*="facebook"]');
+    socialLinks.forEach(link => {
+        link.addEventListener('click', function() {
+            console.log('Social media link clicked:', this.href);
+        });
+    });
+    
+    // Add entrance animations
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.style.opacity = '1';
+                entry.target.style.transform = 'translateY(0)';
+            }
+        });
+    });
+    
+    // Observe elements for entrance animation
+    document.querySelectorAll('.bg-white, .bg-gradient-to-r').forEach(el => {
+        el.style.opacity = '0';
+        el.style.transform = 'translateY(20px)';
+        el.style.transition = 'all 0.6s ease-out';
+        observer.observe(el);
+    });
+});
+</script>
+
+@endsection
