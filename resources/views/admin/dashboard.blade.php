@@ -23,16 +23,6 @@
                             </a>
                         </div>
 
-                        {{-- Card untuk Halaman --}}
-                        <div class="bg-green-100 dark:bg-green-700 p-6 rounded-lg shadow-md hover:shadow-lg transition duration-300">
-                            <h3 class="text-xl font-semibold text-green-800 dark:text-green-100 mb-2">Manajemen Halaman</h3>
-                            <p class="text-green-700 dark:text-green-200 mb-4">Kelola halaman statis seperti Tentang Kami.</p>
-                            <a href="{{ route('admin.pages.index') }}" class="inline-flex items-center px-4 py-2 bg-green-600 border border-transparent rounded-md font-semibold text-xs text-white uppercase tracking-widest hover:bg-green-700 focus:bg-green-700 active:bg-green-900 focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-offset-2 transition ease-in-out duration-150">
-                                Lihat Halaman
-                                <svg class="ms-2 -me-0.5 h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>
-                            </a>
-                        </div>
-
                         {{-- Card untuk Klien --}}
                         <div class="bg-purple-100 dark:bg-purple-700 p-6 rounded-lg shadow-md hover:shadow-lg transition duration-300">
                             <h3 class="text-xl font-semibold text-purple-800 dark:text-purple-100 mb-2">Manajemen Klien</h3>

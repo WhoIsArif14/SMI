@@ -4,12 +4,13 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\PageController; // Masih diperlukan jika Anda punya halaman dinamis lain selain about/services/contact
 use App\Http\Controllers\PostController; // Untuk berita/artikel
+use App\Http\Controllers\ExpertController;
 
 // Controllers untuk Admin Panel
 use App\Http\Controllers\Admin\DashboardController;
 use App\Http\Controllers\Admin\PostController as AdminPostController;
-use App\Http\Controllers\Admin\PageController as AdminPageController;
 use App\Http\Controllers\Admin\ClientController;
+use App\Http\Controllers\Admin\AdminExpertController; // Tambahkan ini
 
 // Controller Profile dari Laravel Breeze
 use App\Http\Controllers\ProfileController;
@@ -95,40 +96,19 @@ Route::get('/services/outbound', function () {
     return view('services.outbound');
 })->name('services.outbound');
 
-// Halaman Statis: Contact
-Route::get('/contacts', function () {
-    return view('contacts.static'); // Pastikan Anda memiliki resources/views/contact.blade.php
-})->name('contact');
-
 // Halaman Statis: Expert Kami
 Route::get('/experts', function () {
-    return view('experts.static'); // Pastikan Anda memiliki resources/views/experts/static.blade.php
+    return view('experts.index'); // Pastikan Anda memiliki resources/views/experts/static.blade.php
 })->name('experts.index');
-
-Route::get('/experts/profil-psikolog', function () {
-    return view('experts.profil-psikolog');
-})->name('experts.profil-psikolog');
-
-Route::get('/experts/daftar-psikolog', function () {
-    return view('experts.daftar-psikolog');
-})->name('experts.daftar-psikolog');
-
-Route::get('/experts/psikolog-klinis', function () {
-    return view('experts.psikolog-klinis');
-})->name('experts.psikolog-klinis');
-
-Route::get('/experts/psikolog-anak', function () {
-    return view('experts.psikolog-anak');
-})->name('experts.psikolog-anak');
-
-Route::get('/experts/psikolog-remaja', function () {
-    return view('experts.psikolog-remaja');
-})->name('experts.psikolog-remaja');
 
 Route::get('/careers', function () {
     return view('careers.static');
 })->name('careers.index');
 
+// Halaman Statis: Contact
+Route::get('/contacts', function () {
+    return view('contacts.static'); // Pastikan Anda memiliki resources/views/contact.blade.php
+})->name('contact');
 
 // Redirect /pages ke home untuk mencegah akses langsung
 Route::get('/pages', function () {
@@ -164,9 +144,6 @@ Route::middleware(['auth', 'verified'])->prefix('admin')->name('admin.')->group(
     // Manajemen Berita (Posts) - CRUD
     Route::resource('posts', AdminPostController::class);
 
-    // Manajemen Halaman (Pages) - CRUD
-    Route::resource('pages', AdminPageController::class);
-
     // Manajemen Klien (Clients) - CRUD
     Route::resource('clients', ClientController::class);
 
@@ -181,6 +158,11 @@ Route::middleware(['auth', 'verified'])->prefix('admin')->name('admin.')->group(
 
     // Rute untuk manajemen user (jika diperlukan)
     // Route::resource('users', App\Http\Controllers\Admin\UserController::class);
+});
+
+Route::middleware(['auth'])->prefix('admin')->name('admin.')->group(function () {
+    // Rute untuk manajemen Expert
+    Route::resource('experts', AdminExpertController::class);
 });
 
 // RUTE AUTENTIKASI BAWAAN BREEZE
