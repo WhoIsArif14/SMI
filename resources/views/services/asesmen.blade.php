@@ -8,7 +8,7 @@
             <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center p-8">
                 {{-- Bagian Kiri: Gambar --}}
                 <div>
-                    <img src="{{ asset('images/assesment-main.jpg') }}" alt="Ilustrasi Asesmen" class="w-full h-auto rounded-lg shadow-md">
+                    <img src="{{ asset('images/asesmen.jpg') }}" alt="Ilustrasi Asesmen" class="w-full h-auto rounded-lg shadow-md">
                     {{-- Pastikan Anda memiliki gambar ini di public/images/assesment-main.jpg --}}
                 </div>
 
