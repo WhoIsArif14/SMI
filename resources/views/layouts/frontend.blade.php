@@ -59,11 +59,16 @@
                         <span class="relative z-10">Karir dan Pelatihan</span>
                         <div class="absolute inset-0 bg-gradient-to-r from-pink-500 to-rose-500 rounded-xl opacity-0 group-hover:opacity-100 transition-all duration-300 transform scale-90 group-hover:scale-100 shadow-lg"></div>
                     </a>
+
+                     <a href="{{ route('contact') }}" class="group relative px-5 py-3 text-white/90 hover:text-white font-bold text-lg transition-all duration-300 hover:scale-105 tracking-wide">
+                        <span class="relative z-10">Kontak Kami</span>
+                        <div class="absolute inset-0 bg-gradient-to-r from-pink-500 to-rose-500 rounded-xl opacity-0 group-hover:opacity-100 transition-all duration-300 transform scale-90 group-hover:scale-100 shadow-lg"></div>
+                    </a>
                     
-                    <a href="{{ route('login') }}" class="group relative px-6 py-3 ml-4 font-black text-lg bg-gradient-to-r from-yellow-400 to-orange-500 text-blue-900 rounded-2xl hover:from-yellow-300 hover:to-orange-400 transition-all duration-300 transform hover:scale-110 hover:shadow-xl hover:-translate-y-1 tracking-wide">
+                    <!-- <a href="{{ route('login') }}" class="group relative px-6 py-3 ml-4 font-black text-lg bg-gradient-to-r from-yellow-400 to-orange-500 text-blue-900 rounded-2xl hover:from-yellow-300 hover:to-orange-400 transition-all duration-300 transform hover:scale-110 hover:shadow-xl hover:-translate-y-1 tracking-wide">
                         <span class="relative z-10">Login Admin</span>
                         <div class="absolute inset-0 bg-white opacity-0 group-hover:opacity-20 rounded-2xl transition-opacity duration-300"></div>
-                    </a>
+                    </a> -->
                 </nav>
 
                 {{-- Mobile Menu Button --}}
@@ -105,6 +110,11 @@
                     <a href="{{ route('careers.index') }}" class="group flex items-center px-4 py-3 rounded-xl text-white/90 hover:text-white font-bold bg-white/5 hover:bg-white/15 transition-all duration-300 transform hover:scale-105 hover:translate-x-2">
                         <div class="w-2 h-2 bg-pink-400 rounded-full mr-3 group-hover:bg-pink-300 transition-colors duration-300"></div>
                         <span>Karir dan Pelatihan</span>
+                    </a>
+
+                    <a href="{{ route('contact') }}" class="group flex items-center px-4 py-3 rounded-xl text-white/90 hover:text-white font-bold bg-white/5 hover:bg-white/15 transition-all duration-300 transform hover:scale-105 hover:translate-x-2">
+                        <div class="w-2 h-2 bg-pink-400 rounded-full mr-3 group-hover:bg-pink-300 transition-colors duration-300"></div>
+                        <span>Kontak Kami</span>
                     </a>
                     
                     <a href="{{ route('login') }}" class="group flex items-center px-4 py-3 mt-2 rounded-xl font-black bg-gradient-to-r from-yellow-400 to-orange-500 text-blue-900 hover:from-yellow-300 hover:to-orange-400 transition-all duration-300 transform hover:scale-105">
