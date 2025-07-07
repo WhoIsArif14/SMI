@@ -27,7 +27,7 @@
             {{-- Bagian Video Lokal --}}
             <div class="md:w-1/2 flex justify-center">
                 <video controls autoplay muted loop class="rounded-lg shadow-xl w-full max-w-lg md:max-w-none">
-                    <source src="{{ asset('videos/video_profil.mkv') }}" type="video/mkv">
+                    <source src="{{ asset('videos/acol.mp4') }}" type="video/mp4">
                     {{-- Anda bisa menambahkan source lain untuk format video berbeda jika diperlukan --}}
                     {{-- <source src="{{ asset('videos/video_profil.webm') }}" type="video/webm"> --}}
                     Browser Anda tidak mendukung tag video.
