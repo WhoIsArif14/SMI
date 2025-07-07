@@ -32,94 +32,72 @@
         </div>
 
         <!-- Main Content -->
-        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-            <!-- Left Side - Registration Form -->
-            <div class="bg-white rounded-3xl shadow-2xl p-8 backdrop-blur-sm bg-opacity-95 border border-white/20">
-                <div class="text-center mb-8">
-                    <h2 class="text-3xl font-bold text-gray-800 mb-2">Daftar Sekarang</h2>
-                    <p class="text-gray-600">Mulai perjalanan karirmu bersama kami</p>
-                </div>
-
-                <form class="space-y-6" method="POST" action="#" id="registrationForm">
-                    @csrf
-                    <!-- Username Field -->
-                    <div class="relative">
-                        <input type="text" 
-                               id="username" 
-                               name="username" 
-                               placeholder="USERNAME" 
-                               class="w-full px-6 py-4 bg-gradient-to-r from-blue-500 to-cyan-500 text-white placeholder-white/80 rounded-2xl border-0 focus:ring-4 focus:ring-blue-300 focus:outline-none text-center font-semibold text-lg shadow-lg transform hover:scale-105 transition-all duration-300"
-                               required>
-                    </div>
-
-                    <!-- Email/Phone Field -->
-                    <div class="relative">
-                        <input type="text" 
-                               id="contact" 
-                               name="contact" 
-                               placeholder="EMAIL / HANDPHONE" 
-                               class="w-full px-6 py-4 bg-gradient-to-r from-blue-500 to-cyan-500 text-white placeholder-white/80 rounded-2xl border-0 focus:ring-4 focus:ring-blue-300 focus:outline-none text-center font-semibold text-lg shadow-lg transform hover:scale-105 transition-all duration-300"
-                               required>
-                    </div>
-
-                    <!-- Password Field -->
-                    <div class="relative">
-                        <input type="password" 
-                               id="password" 
-                               name="password" 
-                               placeholder="PASSWORD" 
-                               class="w-full px-6 py-4 bg-gradient-to-r from-blue-500 to-cyan-500 text-white placeholder-white/80 rounded-2xl border-0 focus:ring-4 focus:ring-blue-300 focus:outline-none text-center font-semibold text-lg shadow-lg transform hover:scale-105 transition-all duration-300"
-                               required>
-                    </div>
-
-                    <!-- Forgot Password Link -->
-                    <div class="text-center">
-                        <a href="#" class="text-blue-600 hover:text-blue-800 font-medium text-sm transition-colors duration-300">
-                            Lupa password?
-                        </a>
-                    </div>
-
-                    <!-- Submit Button -->
-                    <div class="pt-4">
-                        <button type="submit" 
-                                class="w-full bg-gradient-to-r from-green-500 to-blue-600 text-white font-bold py-4 px-8 rounded-2xl hover:from-green-600 hover:to-blue-700 transform hover:scale-105 transition-all duration-300 shadow-xl hover:shadow-2xl text-lg">
-                            DAFTAR SEKARANG
-                        </button>
-                    </div>
-
-                    <!-- Login Link -->
-                    <div class="text-center pt-4">
-                        <p class="text-gray-600">
-                            Sudah punya akun? 
-                            <a href="#" class="text-blue-600 hover:text-blue-800 font-semibold transition-colors duration-300">
-                                Login Disini!
-                            </a>
-                        </p>
-                    </div>
-                </form>
-            </div>
-
-            <!-- Right Side - Illustration -->
-            <div class="flex items-center justify-center">
-                <div class="relative">
+        <div class="flex justify-center">
+            <!-- Main Illustration and CTA -->
+            <div class="text-center max-w-4xl">
+                <div class="relative mb-12">
                     <!-- Character Illustration -->
-                    <div class="w-80 h-80 bg-gradient-to-br from-purple-400 to-pink-400 rounded-full flex items-center justify-center shadow-2xl">
+                    <div class="w-96 h-96 mx-auto bg-gradient-to-br from-purple-400 to-pink-400 rounded-full flex items-center justify-center shadow-2xl mb-8">
                         <div class="text-center">
                             <div class="text-8xl mb-4">🎯</div>
-                            <h3 class="text-2xl font-bold text-white mb-2">Target Karir</h3>
-                            <p class="text-white/90">Raih impianmu!</p>
+                            <h3 class="text-3xl font-bold text-white mb-2">Target Karir</h3>
+                            <p class="text-white/90 text-lg">Raih impianmu bersama kami!</p>
                         </div>
                     </div>
 
                     <!-- Floating Elements -->
-                    <div class="absolute -top-8 -left-8 w-16 h-16 bg-gradient-to-br from-yellow-400 to-orange-400 rounded-full flex items-center justify-center shadow-lg animate-bounce">
-                        <span class="text-2xl">⭐</span>
+                    <div class="absolute top-8 left-8 w-20 h-20 bg-gradient-to-br from-yellow-400 to-orange-400 rounded-full flex items-center justify-center shadow-lg animate-bounce">
+                        <span class="text-3xl">⭐</span>
                     </div>
-                    <div class="absolute -bottom-8 -right-8 w-16 h-16 bg-gradient-to-br from-green-400 to-blue-400 rounded-full flex items-center justify-center shadow-lg animate-bounce delay-1000">
-                        <span class="text-2xl">🚀</span>
+                    <div class="absolute bottom-8 right-8 w-20 h-20 bg-gradient-to-br from-green-400 to-blue-400 rounded-full flex items-center justify-center shadow-lg animate-bounce delay-1000">
+                        <span class="text-3xl">🚀</span>
                     </div>
-                    <div class="absolute top-4 -right-12 w-12 h-12 bg-gradient-to-br from-pink-400 to-purple-400 rounded-full flex items-center justify-center shadow-lg animate-bounce delay-2000">
-                        <span class="text-xl">💡</span>
+                    <div class="absolute top-16 right-16 w-16 h-16 bg-gradient-to-br from-pink-400 to-purple-400 rounded-full flex items-center justify-center shadow-lg animate-bounce delay-2000">
+                        <span class="text-2xl">💡</span>
+                    </div>
+                    <div class="absolute bottom-16 left-16 w-18 h-18 bg-gradient-to-br from-blue-400 to-cyan-400 rounded-full flex items-center justify-center shadow-lg animate-bounce delay-3000">
+                        <span class="text-2xl">🌟</span>
+                    </div>
+                </div>
+
+                <!-- Main CTA Section -->
+                <div class="bg-white rounded-3xl shadow-2xl p-12 backdrop-blur-sm bg-opacity-95 border border-white/20 mb-12">
+                    <h2 class="text-4xl font-bold text-gray-800 mb-6">Mulai Perjalanan Karirmu!</h2>
+                    <p class="text-xl text-gray-600 mb-8 leading-relaxed">
+                        Bergabunglah dengan program karir dan pelatihan terbaik untuk mengembangkan potensi dirimu. 
+                        Klik tombol di bawah untuk mendaftar dan memulai transformasi karirmu.
+                    </p>
+                    
+                    <!-- CTA Buttons -->
+                    <div class="space-y-4">
+                        <a href="https://selarasmitragemilang.co.id/auth/register" target="_blank" 
+                           class="inline-block w-full max-w-md bg-gradient-to-r from-blue-600 to-purple-600 text-white font-bold py-6 px-12 rounded-2xl hover:from-blue-700 hover:to-purple-700 transform hover:scale-105 transition-all duration-300 shadow-xl hover:shadow-2xl text-xl">
+                            🚀 DAFTAR SEKARANG
+                        </a>
+                        <p class="text-sm text-gray-500 mt-4">
+                            *Klik tombol di atas untuk mengakses platform pendaftaran resmi
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Quick Info Cards -->
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
+                    <div class="bg-white rounded-2xl p-6 shadow-lg hover:shadow-xl transition-all duration-300">
+                        <div class="text-4xl mb-4">📚</div>
+                        <h3 class="text-lg font-bold text-gray-800 mb-2">Pelatihan Intensif</h3>
+                        <p class="text-gray-600 text-sm">Program pelatihan yang dirancang untuk meningkatkan skill profesional</p>
+                    </div>
+                    
+                    <div class="bg-white rounded-2xl p-6 shadow-lg hover:shadow-xl transition-all duration-300">
+                        <div class="text-4xl mb-4">🤝</div>
+                        <h3 class="text-lg font-bold text-gray-800 mb-2">Mentoring Ahli</h3>
+                        <p class="text-gray-600 text-sm">Bimbingan langsung dari para ahli berpengalaman di industri</p>
+                    </div>
+                    
+                    <div class="bg-white rounded-2xl p-6 shadow-lg hover:shadow-xl transition-all duration-300">
+                        <div class="text-4xl mb-4">🎖️</div>
+                        <h3 class="text-lg font-bold text-gray-800 mb-2">Sertifikasi Resmi</h3>
+                        <p class="text-gray-600 text-sm">Dapatkan sertifikat yang diakui oleh industri dan perusahaan</p>
                     </div>
                 </div>
             </div>
@@ -174,52 +152,92 @@
                 <h2 class="text-4xl font-bold mb-4">Siap Memulai Perjalanan Karirmu?</h2>
                 <p class="text-xl mb-8 opacity-90">Jangan biarkan kesempatan emas ini terlewatkan!</p>
                 <div class="flex flex-col sm:flex-row gap-4 justify-center">
-                    <button class="bg-white text-purple-600 font-bold py-4 px-8 rounded-2xl hover:bg-gray-100 transform hover:scale-105 transition-all duration-300 shadow-lg">
-                        Konsultasi Gratis
-                    </button>
-                    <button class="border-2 border-white text-white font-bold py-4 px-8 rounded-2xl hover:bg-white hover:text-purple-600 transform hover:scale-105 transition-all duration-300">
-                        Pelajari Lebih Lanjut
-                    </button>
+                    <a href="https://selarasmitragemilang.co.id/auth/register" target="_blank" 
+                       class="bg-white text-purple-600 font-bold py-4 px-8 rounded-2xl hover:bg-gray-100 transform hover:scale-105 transition-all duration-300 shadow-lg inline-flex items-center justify-center">
+                        <span class="text-2xl mr-2">🚀</span>
+                        Daftar Program
+                    </a>
+                    <a href="https://wa.me/6287752636196?text=Halo%20SMI,%20saya%20tertarik%20untuk%20konsultasi%20program%20karir" target="_blank"
+                       class="border-2 border-white text-white font-bold py-4 px-8 rounded-2xl hover:bg-white hover:text-purple-600 transform hover:scale-105 transition-all duration-300 inline-flex items-center justify-center">
+                        <span class="text-2xl mr-2">💬</span>
+                        Konsultasi WhatsApp
+                    </a>
                 </div>
             </div>
         </div>
     </div>
 </div>
 
-<!-- Custom JavaScript for Form Enhancement -->
+<!-- Custom Styles -->
+<style>
+.delay-1000 { animation-delay: 1s; }
+.delay-2000 { animation-delay: 2s; }
+.delay-3000 { animation-delay: 3s; }
+
+/* Enhanced hover effects */
+a[target="_blank"]:hover {
+    text-decoration: none;
+}
+
+/* Pulse animation for main CTA */
+@keyframes pulse-glow {
+    0%, 100% { box-shadow: 0 0 20px rgba(59, 130, 246, 0.5); }
+    50% { box-shadow: 0 0 40px rgba(59, 130, 246, 0.8); }
+}
+
+.animate-pulse-glow {
+    animation: pulse-glow 2s ease-in-out infinite;
+}
+</style>
+
+<!-- JavaScript for Enhanced Interactions -->
 <script>
 document.addEventListener('DOMContentLoaded', function() {
-    const form = document.getElementById('registrationForm');
-    const inputs = form.querySelectorAll('input');
+    // Add click tracking for external links
+    const externalLinks = document.querySelectorAll('a[href*="selarasmitragemilang.co.id"]');
     
-    // Add focus effects
-    inputs.forEach(input => {
-        input.addEventListener('focus', function() {
-            this.parentElement.classList.add('scale-105');
-        });
-        
-        input.addEventListener('blur', function() {
-            this.parentElement.classList.remove('scale-105');
+    externalLinks.forEach(link => {
+        link.addEventListener('click', function(e) {
+            // Add visual feedback
+            this.style.transform = 'scale(0.95)';
+            setTimeout(() => {
+                this.style.transform = 'scale(1.05)';
+            }, 100);
+            
+            // Add analytics tracking
+            console.log('External registration link clicked:', this.href);
+            
+            // Optional: Add a small delay to ensure tracking
+            // e.preventDefault();
+            // setTimeout(() => {
+            //     window.open(this.href, '_blank');
+            // }, 100);
         });
     });
     
-    // Form submission
-    form.addEventListener('submit', function(e) {
-        e.preventDefault();
-        
-        // Add loading state
-        const submitBtn = form.querySelector('button[type="submit"]');
-        const originalText = submitBtn.textContent;
-        submitBtn.textContent = 'MENDAFTAR...';
-        submitBtn.disabled = true;
-        
-        // Simulate API call
-        setTimeout(() => {
-            alert('Pendaftaran berhasil! Kami akan menghubungi Anda segera.');
-            submitBtn.textContent = originalText;
-            submitBtn.disabled = false;
-            form.reset();
-        }, 2000);
+    // Add floating animation to cards
+    const cards = document.querySelectorAll('.bg-white.rounded-2xl');
+    cards.forEach((card, index) => {
+        card.style.animationDelay = `${index * 0.2}s`;
+        card.classList.add('animate-pulse-glow');
+    });
+    
+    // Add entrance animations
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.style.opacity = '1';
+                entry.target.style.transform = 'translateY(0)';
+            }
+        });
+    });
+    
+    // Observe elements for entrance animation
+    document.querySelectorAll('.bg-white').forEach(el => {
+        el.style.opacity = '0';
+        el.style.transform = 'translateY(20px)';
+        el.style.transition = 'all 0.6s ease-out';
+        observer.observe(el);
     });
 });
 </script>

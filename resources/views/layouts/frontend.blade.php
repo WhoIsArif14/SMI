@@ -12,6 +12,66 @@
 
     <style>
         /* Your custom CSS here */
+        
+        /* Enhanced active navbar styling */
+        .navbar-active {
+            position: relative;
+        }
+        
+        .navbar-active::after {
+            content: '';
+            position: absolute;
+            bottom: -8px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 8px;
+            height: 8px;
+            background: linear-gradient(45deg, #06b6d4, #3b82f6);
+            border-radius: 50%;
+            box-shadow: 0 0 10px rgba(6, 182, 212, 0.5);
+            animation: pulse 2s infinite;
+        }
+        
+        @keyframes pulse {
+            0% {
+                transform: translateX(-50%) scale(1);
+                opacity: 1;
+            }
+            50% {
+                transform: translateX(-50%) scale(1.2);
+                opacity: 0.8;
+            }
+            100% {
+                transform: translateX(-50%) scale(1);
+                opacity: 1;
+            }
+        }
+        
+        /* Enhanced mobile active styling */
+        .mobile-active {
+            position: relative;
+            border-left: 4px solid #06b6d4;
+        }
+        
+        .mobile-active::before {
+            content: '';
+            position: absolute;
+            left: -4px;
+            top: 0;
+            bottom: 0;
+            width: 4px;
+            background: linear-gradient(to bottom, #06b6d4, #3b82f6);
+            animation: slideIn 0.3s ease-out;
+        }
+        
+        @keyframes slideIn {
+            from {
+                transform: scaleY(0);
+            }
+            to {
+                transform: scaleY(1);
+            }
+        }
     </style>
 </head>
 <body class="bg-gray-50 text-gray-800">
@@ -30,39 +90,39 @@
 
                 {{-- Desktop Navigation --}}
                 <nav class="hidden lg:flex items-center space-x-2">
-                    <a href="{{ route('home') }}" class="group relative px-5 py-3 text-white/90 hover:text-white font-bold text-lg transition-all duration-300 hover:scale-105 tracking-wide">
+                    <a href="{{ route('home') }}" class="group relative px-5 py-3 {{ request()->routeIs('home') ? 'text-white navbar-active' : 'text-white/90' }} hover:text-white font-bold text-lg transition-all duration-300 hover:scale-105 tracking-wide">
                         <span class="relative z-10">Beranda</span>
-                        <div class="absolute inset-0 bg-gradient-to-r from-blue-500 to-cyan-500 rounded-xl opacity-0 group-hover:opacity-100 transition-all duration-300 transform scale-90 group-hover:scale-100 shadow-lg"></div>
+                        <div class="absolute inset-0 bg-gradient-to-r from-blue-500 to-cyan-500 rounded-xl {{ request()->routeIs('home') ? 'opacity-100' : 'opacity-0' }} group-hover:opacity-100 transition-all duration-300 transform {{ request()->routeIs('home') ? 'scale-100' : 'scale-90' }} group-hover:scale-100 shadow-lg"></div>
                     </a>
                     
-                    <a href="{{ route('about-us') }}" class="group relative px-5 py-3 text-white/90 hover:text-white font-bold text-lg transition-all duration-300 hover:scale-105 tracking-wide">
+                    <a href="{{ route('about-us') }}" class="group relative px-5 py-3 {{ request()->routeIs('about-us') ? 'text-white navbar-active' : 'text-white/90' }} hover:text-white font-bold text-lg transition-all duration-300 hover:scale-105 tracking-wide">
                         <span class="relative z-10">Tentang Kami</span>
-                        <div class="absolute inset-0 bg-gradient-to-r from-purple-500 to-pink-500 rounded-xl opacity-0 group-hover:opacity-100 transition-all duration-300 transform scale-90 group-hover:scale-100 shadow-lg"></div>
+                        <div class="absolute inset-0 bg-gradient-to-r from-purple-500 to-pink-500 rounded-xl {{ request()->routeIs('about-us') ? 'opacity-100' : 'opacity-0' }} group-hover:opacity-100 transition-all duration-300 transform {{ request()->routeIs('about-us') ? 'scale-100' : 'scale-90' }} group-hover:scale-100 shadow-lg"></div>
                     </a>
                     
-                    <a href="{{ route('services') }}" class="group relative px-5 py-3 text-white/90 hover:text-white font-bold text-lg transition-all duration-300 hover:scale-105 tracking-wide">
+                    <a href="{{ route('services') }}" class="group relative px-5 py-3 {{ request()->routeIs('services*') ? 'text-white navbar-active' : 'text-white/90' }} hover:text-white font-bold text-lg transition-all duration-300 hover:scale-105 tracking-wide">
                         <span class="relative z-10">Layanan</span>
-                        <div class="absolute inset-0 bg-gradient-to-r from-green-500 to-teal-500 rounded-xl opacity-0 group-hover:opacity-100 transition-all duration-300 transform scale-90 group-hover:scale-100 shadow-lg"></div>
+                        <div class="absolute inset-0 bg-gradient-to-r from-green-500 to-teal-500 rounded-xl {{ request()->routeIs('services*') ? 'opacity-100' : 'opacity-0' }} group-hover:opacity-100 transition-all duration-300 transform {{ request()->routeIs('services*') ? 'scale-100' : 'scale-90' }} group-hover:scale-100 shadow-lg"></div>
                     </a>
                     
-                    <a href="{{ route('news.index') }}" class="group relative px-5 py-3 text-white/90 hover:text-white font-bold text-lg transition-all duration-300 hover:scale-105 tracking-wide">
+                    <a href="{{ route('news.index') }}" class="group relative px-5 py-3 {{ request()->routeIs('news*') ? 'text-white navbar-active' : 'text-white/90' }} hover:text-white font-bold text-lg transition-all duration-300 hover:scale-105 tracking-wide">
                         <span class="relative z-10">Berita</span>
-                        <div class="absolute inset-0 bg-gradient-to-r from-orange-500 to-red-500 rounded-xl opacity-0 group-hover:opacity-100 transition-all duration-300 transform scale-90 group-hover:scale-100 shadow-lg"></div>
+                        <div class="absolute inset-0 bg-gradient-to-r from-orange-500 to-red-500 rounded-xl {{ request()->routeIs('news*') ? 'opacity-100' : 'opacity-0' }} group-hover:opacity-100 transition-all duration-300 transform {{ request()->routeIs('news*') ? 'scale-100' : 'scale-90' }} group-hover:scale-100 shadow-lg"></div>
                     </a>
                     
-                    <a href="{{ route('experts.index') }}" class="group relative px-5 py-3 text-white/90 hover:text-white font-bold text-lg transition-all duration-300 hover:scale-105 tracking-wide">
+                    <a href="{{ route('experts.index') }}" class="group relative px-5 py-3 {{ request()->routeIs('experts*') ? 'text-white navbar-active' : 'text-white/90' }} hover:text-white font-bold text-lg transition-all duration-300 hover:scale-105 tracking-wide">
                         <span class="relative z-10">Expert Kami</span>
-                        <div class="absolute inset-0 bg-gradient-to-r from-indigo-500 to-purple-500 rounded-xl opacity-0 group-hover:opacity-100 transition-all duration-300 transform scale-90 group-hover:scale-100 shadow-lg"></div>
+                        <div class="absolute inset-0 bg-gradient-to-r from-indigo-500 to-purple-500 rounded-xl {{ request()->routeIs('experts*') ? 'opacity-100' : 'opacity-0' }} group-hover:opacity-100 transition-all duration-300 transform {{ request()->routeIs('experts*') ? 'scale-100' : 'scale-90' }} group-hover:scale-100 shadow-lg"></div>
                     </a>
                     
-                    <a href="{{ route('careers.index') }}" class="group relative px-5 py-3 text-white/90 hover:text-white font-bold text-lg transition-all duration-300 hover:scale-105 tracking-wide">
+                    <a href="{{ route('careers.index') }}" class="group relative px-5 py-3 {{ request()->routeIs('careers*') ? 'text-white navbar-active' : 'text-white/90' }} hover:text-white font-bold text-lg transition-all duration-300 hover:scale-105 tracking-wide">
                         <span class="relative z-10">Karir dan Pelatihan</span>
-                        <div class="absolute inset-0 bg-gradient-to-r from-pink-500 to-rose-500 rounded-xl opacity-0 group-hover:opacity-100 transition-all duration-300 transform scale-90 group-hover:scale-100 shadow-lg"></div>
+                        <div class="absolute inset-0 bg-gradient-to-r from-pink-500 to-rose-500 rounded-xl {{ request()->routeIs('careers*') ? 'opacity-100' : 'opacity-0' }} group-hover:opacity-100 transition-all duration-300 transform {{ request()->routeIs('careers*') ? 'scale-100' : 'scale-90' }} group-hover:scale-100 shadow-lg"></div>
                     </a>
 
-                     <a href="{{ route('contact') }}" class="group relative px-5 py-3 text-white/90 hover:text-white font-bold text-lg transition-all duration-300 hover:scale-105 tracking-wide">
+                     <a href="{{ route('contact') }}" class="group relative px-5 py-3 {{ request()->routeIs('contact*') ? 'text-white navbar-active' : 'text-white/90' }} hover:text-white font-bold text-lg transition-all duration-300 hover:scale-105 tracking-wide">
                         <span class="relative z-10">Kontak Kami</span>
-                        <div class="absolute inset-0 bg-gradient-to-r from-pink-500 to-rose-500 rounded-xl opacity-0 group-hover:opacity-100 transition-all duration-300 transform scale-90 group-hover:scale-100 shadow-lg"></div>
+                        <div class="absolute inset-0 bg-gradient-to-r from-pink-500 to-rose-500 rounded-xl {{ request()->routeIs('contact*') ? 'opacity-100' : 'opacity-0' }} group-hover:opacity-100 transition-all duration-300 transform {{ request()->routeIs('contact*') ? 'scale-100' : 'scale-90' }} group-hover:scale-100 shadow-lg"></div>
                     </a>
                     
                     {{-- <!-- <a href="{{ route('login') }}" class="group relative px-6 py-3 ml-4 font-black text-lg bg-gradient-to-r from-yellow-400 to-orange-500 text-blue-900 rounded-2xl hover:from-yellow-300 hover:to-orange-400 transition-all duration-300 transform hover:scale-110 hover:shadow-xl hover:-translate-y-1 tracking-wide">
@@ -86,38 +146,38 @@
             {{-- Mobile Navigation --}}
             <div id="mobile-menu" class="lg:hidden hidden mt-4 pb-4 border-t border-white/20">
                 <div class="flex flex-col space-y-2 pt-4">
-                    <a href="{{ route('home') }}" class="group flex items-center px-4 py-3 rounded-xl text-white/90 hover:text-white font-bold bg-white/5 hover:bg-white/15 transition-all duration-300 transform hover:scale-105 hover:translate-x-2">
-                        <div class="w-2 h-2 bg-cyan-400 rounded-full mr-3 group-hover:bg-cyan-300 transition-colors duration-300"></div>
+                    <a href="{{ route('home') }}" class="group flex items-center px-4 py-3 rounded-xl {{ request()->routeIs('home') ? 'text-white bg-white/20 mobile-active' : 'text-white/90 bg-white/5' }} hover:text-white font-bold hover:bg-white/15 transition-all duration-300 transform hover:scale-105 hover:translate-x-2">
+                        <div class="w-2 h-2 {{ request()->routeIs('home') ? 'bg-cyan-300' : 'bg-cyan-400' }} rounded-full mr-3 group-hover:bg-cyan-300 transition-colors duration-300"></div>
                         <span>Beranda</span>
                     </a>
                     
-                    <a href="{{ route('about-us') }}" class="group flex items-center px-4 py-3 rounded-xl text-white/90 hover:text-white font-bold bg-white/5 hover:bg-white/15 transition-all duration-300 transform hover:scale-105 hover:translate-x-2">
-                        <div class="w-2 h-2 bg-purple-400 rounded-full mr-3 group-hover:bg-purple-300 transition-colors duration-300"></div>
+                    <a href="{{ route('about-us') }}" class="group flex items-center px-4 py-3 rounded-xl {{ request()->routeIs('about-us') ? 'text-white bg-white/20 mobile-active' : 'text-white/90 bg-white/5' }} hover:text-white font-bold hover:bg-white/15 transition-all duration-300 transform hover:scale-105 hover:translate-x-2">
+                        <div class="w-2 h-2 {{ request()->routeIs('about-us') ? 'bg-purple-300' : 'bg-purple-400' }} rounded-full mr-3 group-hover:bg-purple-300 transition-colors duration-300"></div>
                         <span>Tentang Kami</span>
                     </a>
                     
-                    <a href="{{ route('services') }}" class="group flex items-center px-4 py-3 rounded-xl text-white/90 hover:text-white font-bold bg-white/5 hover:bg-white/15 transition-all duration-300 transform hover:scale-105 hover:translate-x-2">
-                        <div class="w-2 h-2 bg-green-400 rounded-full mr-3 group-hover:bg-green-300 transition-colors duration-300"></div>
+                    <a href="{{ route('services') }}" class="group flex items-center px-4 py-3 rounded-xl {{ request()->routeIs('services*') ? 'text-white bg-white/20 mobile-active' : 'text-white/90 bg-white/5' }} hover:text-white font-bold hover:bg-white/15 transition-all duration-300 transform hover:scale-105 hover:translate-x-2">
+                        <div class="w-2 h-2 {{ request()->routeIs('services*') ? 'bg-green-300' : 'bg-green-400' }} rounded-full mr-3 group-hover:bg-green-300 transition-colors duration-300"></div>
                         <span>Layanan</span>
                     </a>
                     
-                    <a href="{{ route('news.index') }}" class="group flex items-center px-4 py-3 rounded-xl text-white/90 hover:text-white font-bold bg-white/5 hover:bg-white/15 transition-all duration-300 transform hover:scale-105 hover:translate-x-2">
-                        <div class="w-2 h-2 bg-orange-400 rounded-full mr-3 group-hover:bg-orange-300 transition-colors duration-300"></div>
+                    <a href="{{ route('news.index') }}" class="group flex items-center px-4 py-3 rounded-xl {{ request()->routeIs('news*') ? 'text-white bg-white/20 mobile-active' : 'text-white/90 bg-white/5' }} hover:text-white font-bold hover:bg-white/15 transition-all duration-300 transform hover:scale-105 hover:translate-x-2">
+                        <div class="w-2 h-2 {{ request()->routeIs('news*') ? 'bg-orange-300' : 'bg-orange-400' }} rounded-full mr-3 group-hover:bg-orange-300 transition-colors duration-300"></div>
                         <span>Berita</span>
                     </a>
                     
-                    <a href="{{ route('experts.index') }}" class="group flex items-center px-4 py-3 rounded-xl text-white/90 hover:text-white font-bold bg-white/5 hover:bg-white/15 transition-all duration-300 transform hover:scale-105 hover:translate-x-2">
-                        <div class="w-2 h-2 bg-indigo-400 rounded-full mr-3 group-hover:bg-indigo-300 transition-colors duration-300"></div>
+                    <a href="{{ route('experts.index') }}" class="group flex items-center px-4 py-3 rounded-xl {{ request()->routeIs('experts*') ? 'text-white bg-white/20 mobile-active' : 'text-white/90 bg-white/5' }} hover:text-white font-bold hover:bg-white/15 transition-all duration-300 transform hover:scale-105 hover:translate-x-2">
+                        <div class="w-2 h-2 {{ request()->routeIs('experts*') ? 'bg-indigo-300' : 'bg-indigo-400' }} rounded-full mr-3 group-hover:bg-indigo-300 transition-colors duration-300"></div>
                         <span>Expert Kami</span>
                     </a>
                     
-                    <a href="{{ route('careers.index') }}" class="group flex items-center px-4 py-3 rounded-xl text-white/90 hover:text-white font-bold bg-white/5 hover:bg-white/15 transition-all duration-300 transform hover:scale-105 hover:translate-x-2">
-                        <div class="w-2 h-2 bg-pink-400 rounded-full mr-3 group-hover:bg-pink-300 transition-colors duration-300"></div>
+                    <a href="{{ route('careers.index') }}" class="group flex items-center px-4 py-3 rounded-xl {{ request()->routeIs('careers*') ? 'text-white bg-white/20 mobile-active' : 'text-white/90 bg-white/5' }} hover:text-white font-bold hover:bg-white/15 transition-all duration-300 transform hover:scale-105 hover:translate-x-2">
+                        <div class="w-2 h-2 {{ request()->routeIs('careers*') ? 'bg-pink-300' : 'bg-pink-400' }} rounded-full mr-3 group-hover:bg-pink-300 transition-colors duration-300"></div>
                         <span>Karir dan Pelatihan</span>
                     </a>
 
-                    <a href="{{ route('contact') }}" class="group flex items-center px-4 py-3 rounded-xl text-white/90 hover:text-white font-bold bg-white/5 hover:bg-white/15 transition-all duration-300 transform hover:scale-105 hover:translate-x-2">
-                        <div class="w-2 h-2 bg-pink-400 rounded-full mr-3 group-hover:bg-pink-300 transition-colors duration-300"></div>
+                    <a href="{{ route('contact') }}" class="group flex items-center px-4 py-3 rounded-xl {{ request()->routeIs('contact*') ? 'text-white bg-white/20 mobile-active' : 'text-white/90 bg-white/5' }} hover:text-white font-bold hover:bg-white/15 transition-all duration-300 transform hover:scale-105 hover:translate-x-2">
+                        <div class="w-2 h-2 {{ request()->routeIs('contact*') ? 'bg-pink-300' : 'bg-pink-400' }} rounded-full mr-3 group-hover:bg-pink-300 transition-colors duration-300"></div>
                         <span>Kontak Kami</span>
                     </a>
                     
@@ -129,7 +189,7 @@
         </div>
     </header>
 
-     <main class="container mx-auto py-8 px-4">
+     <main class="container mx-auto py-8 px-4 md:px-6 lg:px-8">
         @yield('content') {{-- Ini adalah tempat konten spesifik halaman akan diinjeksikan --}}
     </main>
 
