@@ -1,19 +1,8 @@
-@extends('layouts.app') {{-- Atau layout admin Anda --}}
-
-@section('content')
-    <div class="container mx-auto px-4 py-8">
-        <h1 class="text-3xl font-bold mb-6">Tambah Expert Baru</h1>
-
-        @if ($errors->any())
-            <div class="bg-red-100 border border-red-400 text-red-700 px-4 py-3 rounded relative mb-4" role="alert">
-                <ul>
-                    @foreach ($errors->all() as $error)
-                        <li>{{ $error }}</li>
-                    @endforeach
-                </ul>
-            </div>
-        @endif
-
+<x-app-layout>
+    <x-slot name="header">
+        <h2 class="font-semibold text-xl text-gray-800 dark:text-gray-200 leading-tight">
+            {{ __('Tambah Expert') }}
+            </h2>>
         <form action="{{ route('admin.experts.store') }}" method="POST" enctype="multipart/form-data" class="bg-white shadow-md rounded-lg p-6">
             @csrf
             <div class="mb-4">
@@ -56,4 +45,4 @@
             </div>
         </form>
     </div>
-@endsection
+</x-app-layout>
