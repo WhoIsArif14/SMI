@@ -1,23 +1,52 @@
 @extends('layouts.frontend')
 @section('content')
 
-<div class="min-h-screen bg-gradient-to-br from-blue-50 via-purple-50 to-pink-50 relative overflow-hidden">
-    <!-- Background Decorations -->
-    <div class="absolute inset-0 overflow-hidden">
-        <div class="absolute -top-10 -left-10 w-72 h-72 bg-gradient-to-br from-blue-300 to-purple-300 rounded-full opacity-20 animate-pulse"></div>
-        <div class="absolute -bottom-10 -right-10 w-96 h-96 bg-gradient-to-br from-pink-300 to-yellow-300 rounded-full opacity-20 animate-pulse delay-1000"></div>
-        <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-64 h-64 bg-gradient-to-br from-green-300 to-blue-300 rounded-full opacity-10 animate-pulse delay-2000"></div>
+<div class="min-h-screen bg-gradient-to-br from-slate-50 via-blue-50 to-indigo-50 relative overflow-hidden">
+    <!-- Professional Background Pattern -->
+    <div class="absolute inset-0 overflow-hidden pointer-events-none">
+        <!-- Grid Pattern -->
+        <div class="absolute inset-0 bg-grid-pattern opacity-5"></div>
+        
+        <!-- Professional Geometric Elements -->
+        <div class="absolute top-20 left-16 w-32 h-32 border-2 border-blue-200 opacity-20 transform rotate-12 animate-float-professional"></div>
+        <div class="absolute top-40 right-24 w-24 h-24 border border-slate-300 opacity-15 transform rotate-45 animate-drift-slow"></div>
+        <div class="absolute bottom-32 left-32 w-40 h-40 border-2 border-indigo-200 opacity-10 transform -rotate-12 animate-float-professional-delay"></div>
+        <div class="absolute bottom-20 right-20 w-28 h-28 border border-blue-300 opacity-20 transform rotate-45 animate-drift-slow-delay"></div>
+        
+        <!-- Corporate Hexagons -->
+        <div class="absolute top-16 left-1/2 w-12 h-12 border border-blue-200 opacity-25 transform rotate-30 animate-rotate-professional" style="clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%)"></div>
+        <div class="absolute top-48 right-1/2 w-16 h-16 border border-slate-300 opacity-20 transform -rotate-30 animate-rotate-professional-reverse" style="clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%)"></div>
+        <div class="absolute bottom-48 left-1/2 w-10 h-10 border border-indigo-200 opacity-30 transform rotate-45 animate-rotate-professional-delay" style="clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%)"></div>
+        <div class="absolute bottom-16 right-1/2 w-14 h-14 border border-blue-300 opacity-15 transform -rotate-45 animate-rotate-professional-reverse-delay" style="clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%)"></div>
+        
+        <!-- Subtle Accent Lines -->
+        <div class="absolute top-32 left-1/4 w-16 h-0.5 bg-gradient-to-r from-blue-300 to-transparent opacity-30 transform rotate-45 animate-pulse-professional"></div>
+        <div class="absolute top-60 right-1/3 w-20 h-0.5 bg-gradient-to-r from-slate-400 to-transparent opacity-25 transform -rotate-45 animate-pulse-professional-delay"></div>
+        <div class="absolute bottom-60 left-1/3 w-24 h-0.5 bg-gradient-to-r from-indigo-300 to-transparent opacity-20 transform rotate-12 animate-pulse-professional-delay-2"></div>
+        <div class="absolute bottom-40 right-1/4 w-18 h-0.5 bg-gradient-to-r from-blue-400 to-transparent opacity-30 transform -rotate-12 animate-pulse-professional-delay-3"></div>
+        
+        <!-- Minimalist Dots -->
+        <div class="absolute top-24 left-1/5 w-2 h-2 bg-blue-400 rounded-full opacity-40 animate-fade-professional"></div>
+        <div class="absolute top-56 right-1/5 w-3 h-3 bg-slate-400 rounded-full opacity-35 animate-fade-professional-delay"></div>
+        <div class="absolute bottom-56 left-4/5 w-1.5 h-1.5 bg-indigo-400 rounded-full opacity-45 animate-fade-professional-delay-2"></div>
+        <div class="absolute bottom-24 right-4/5 w-2.5 h-2.5 bg-blue-500 rounded-full opacity-30 animate-fade-professional-delay-3"></div>
+        
+        <!-- Professional Corner Elements -->
+        <div class="absolute top-0 left-0 w-20 h-20 border-l-2 border-t-2 border-blue-200 opacity-20"></div>
+        <div class="absolute top-0 right-0 w-20 h-20 border-r-2 border-t-2 border-slate-300 opacity-15"></div>
+        <div class="absolute bottom-0 left-0 w-20 h-20 border-l-2 border-b-2 border-indigo-200 opacity-20"></div>
+        <div class="absolute bottom-0 right-0 w-20 h-20 border-r-2 border-b-2 border-blue-300 opacity-15"></div>
     </div>
 
     <div class="container mx-auto px-4 py-12 relative z-10">
         <!-- Header Section -->
         <div class="text-center mb-16">
-            <h1 class="text-5xl md:text-6xl font-extrabold bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 bg-clip-text text-transparent mb-6">
+            <h1 class="text-5xl md:text-6xl font-extrabold bg-gradient-to-r from-blue-600 via-slate-700 to-indigo-800 bg-clip-text text-transparent mb-6">
                 KARIR DAN PELATIHAN
             </h1>
             <p class="text-xl text-gray-700 max-w-3xl mx-auto leading-relaxed">
                 Temukan karir yang sesuai dengan potensimu dan 
-                <span class="font-bold text-transparent bg-clip-text bg-gradient-to-r from-purple-600 to-pink-600">maksimalkan perkembangan potensimu</span> 
+                <span class="font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-indigo-700">maksimalkan perkembangan potensimu</span> 
                 dengan pelatihan dari kami.
             </p>
             <div class="mt-8">
@@ -36,8 +65,8 @@
             <!-- Main Illustration and CTA -->
             <div class="text-center max-w-4xl">
                 <div class="relative mb-12">
-                    <!-- Character Illustration -->
-                    <div class="w-96 h-96 mx-auto bg-gradient-to-br from-purple-400 to-pink-400 rounded-full flex items-center justify-center shadow-2xl mb-8">
+                    <!-- Professional Target Illustration -->
+                    <div class="w-96 h-96 mx-auto bg-gradient-to-br from-blue-600 to-indigo-700 rounded-full flex items-center justify-center shadow-2xl mb-8 border-4 border-white/20">
                         <div class="text-center">
                             <div class="text-8xl mb-4">🎯</div>
                             <h3 class="text-3xl font-bold text-white mb-2">Target Karir</h3>
@@ -45,17 +74,17 @@
                         </div>
                     </div>
 
-                    <!-- Floating Elements -->
-                    <div class="absolute top-8 left-8 w-20 h-20 bg-gradient-to-br from-yellow-400 to-orange-400 rounded-full flex items-center justify-center shadow-lg animate-bounce">
+                    <!-- Professional Floating Elements -->
+                    <div class="absolute top-8 left-8 w-20 h-20 bg-gradient-to-br from-blue-500 to-blue-600 rounded-lg flex items-center justify-center shadow-lg animate-float-professional transform rotate-12">
                         <span class="text-3xl">⭐</span>
                     </div>
-                    <div class="absolute bottom-8 right-8 w-20 h-20 bg-gradient-to-br from-green-400 to-blue-400 rounded-full flex items-center justify-center shadow-lg animate-bounce delay-1000">
+                    <div class="absolute bottom-8 right-8 w-20 h-20 bg-gradient-to-br from-indigo-500 to-slate-600 rounded-lg flex items-center justify-center shadow-lg animate-float-professional-delay transform -rotate-12">
                         <span class="text-3xl">🚀</span>
                     </div>
-                    <div class="absolute top-16 right-16 w-16 h-16 bg-gradient-to-br from-pink-400 to-purple-400 rounded-full flex items-center justify-center shadow-lg animate-bounce delay-2000">
+                    <div class="absolute top-16 right-16 w-16 h-16 bg-gradient-to-br from-slate-500 to-blue-600 rounded-lg flex items-center justify-center shadow-lg animate-drift-slow transform rotate-45">
                         <span class="text-2xl">💡</span>
                     </div>
-                    <div class="absolute bottom-16 left-16 w-18 h-18 bg-gradient-to-br from-blue-400 to-cyan-400 rounded-full flex items-center justify-center shadow-lg animate-bounce delay-3000">
+                    <div class="absolute bottom-16 left-16 w-18 h-18 bg-gradient-to-br from-blue-600 to-indigo-600 rounded-lg flex items-center justify-center shadow-lg animate-drift-slow-delay transform -rotate-45">
                         <span class="text-2xl">🌟</span>
                     </div>
                 </div>
@@ -71,7 +100,7 @@
                     <!-- CTA Buttons -->
                     <div class="space-y-4">
                         <a href="https://selarasmitragemilang.co.id" target="_blank" 
-                           class="inline-block w-full max-w-md bg-gradient-to-r from-blue-600 to-purple-600 text-white font-bold py-6 px-12 rounded-2xl hover:from-blue-700 hover:to-purple-700 transform hover:scale-105 transition-all duration-300 shadow-xl hover:shadow-2xl text-xl">
+                           class="inline-block w-full max-w-md bg-gradient-to-r from-blue-600 to-indigo-700 text-white font-bold py-6 px-12 rounded-2xl hover:from-blue-700 hover:to-indigo-800 transform hover:scale-105 transition-all duration-300 shadow-xl hover:shadow-2xl text-xl">
                             🚀 DAFTAR SEKARANG
                         </a>
                         <p class="text-sm text-gray-500 mt-4">
@@ -148,17 +177,19 @@
 
         <!-- Call to Action -->
         <div class="mt-20 text-center">
-            <div class="bg-gradient-to-r from-purple-600 to-pink-600 rounded-3xl p-12 text-white shadow-2xl">
+            <div class="bg-gradient-to-r from-blue-600 to-indigo-700 rounded-3xl p-12 text-white shadow-2xl">
                 <h2 class="text-4xl font-bold mb-4">Siap Memulai Perjalanan Karirmu?</h2>
                 <p class="text-xl mb-8 opacity-90">Jangan biarkan kesempatan emas ini terlewatkan!</p>
                 <div class="flex flex-col sm:flex-row gap-4 justify-center">
                     <a href="https://selarasmitragemilang.co.id" target="_blank" 
-                       class="bg-white text-purple-600 font-bold py-4 px-8 rounded-2xl hover:bg-gray-100 transform hover:scale-105 transition-all duration-300 shadow-lg inline-flex items-center justify-center">
+                       class="bg-white text-blue-600 font-bold py-4 px-8 rounded-2xl hover:bg-gray-100 transform hover:scale-105 transition-all duration-300 shadow-lg inline-flex items-center justify-center">
                         <span class="text-2xl mr-2">🚀</span>
                         Daftar Program
+
+                        
                     </a>
                     <a href="https://wa.me/6287752636196?text=Halo%20SMI,%20saya%20tertarik%20untuk%20konsultasi%20program%20karir" target="_blank"
-                       class="border-2 border-white text-white font-bold py-4 px-8 rounded-2xl hover:bg-white hover:text-purple-600 transform hover:scale-105 transition-all duration-300 inline-flex items-center justify-center">
+                       class="border-2 border-white text-white font-bold py-4 px-8 rounded-2xl hover:bg-white hover:text-blue-600 transform hover:scale-105 transition-all duration-300 inline-flex items-center justify-center">
                         <span class="text-2xl mr-2">💬</span>
                         Konsultasi WhatsApp
                     </a>
@@ -187,6 +218,128 @@ a[target="_blank"]:hover {
 
 .animate-pulse-glow {
     animation: pulse-glow 2s ease-in-out infinite;
+}
+
+/* Professional Animation Keyframes */
+@keyframes float-professional {
+    0%, 100% { transform: translateY(0px) rotate(0deg); opacity: 0.8; }
+    50% { transform: translateY(-10px) rotate(5deg); opacity: 1; }
+}
+
+@keyframes drift-slow {
+    0%, 100% { transform: translateX(0px) translateY(0px) rotate(0deg); }
+    33% { transform: translateX(5px) translateY(-3px) rotate(2deg); }
+    66% { transform: translateX(-3px) translateY(5px) rotate(-2deg); }
+}
+
+@keyframes pulse-professional {
+    0%, 100% { opacity: 0.2; transform: scaleX(1); }
+    50% { opacity: 0.5; transform: scaleX(1.2); }
+}
+
+@keyframes rotate-professional {
+    0% { transform: rotate(0deg); opacity: 0.25; }
+    50% { transform: rotate(180deg); opacity: 0.4; }
+    100% { transform: rotate(360deg); opacity: 0.25; }
+}
+
+@keyframes fade-professional {
+    0%, 100% { opacity: 0.3; }
+    50% { opacity: 0.6; }
+}
+
+/* Professional Animation Classes */
+.animate-float-professional {
+    animation: float-professional 8s ease-in-out infinite;
+}
+
+.animate-float-professional-delay {
+    animation: float-professional 8s ease-in-out infinite;
+    animation-delay: 2s;
+}
+
+.animate-drift-slow {
+    animation: drift-slow 12s ease-in-out infinite;
+}
+
+.animate-drift-slow-delay {
+    animation: drift-slow 12s ease-in-out infinite;
+    animation-delay: 3s;
+}
+
+.animate-pulse-professional {
+    animation: pulse-professional 6s ease-in-out infinite;
+}
+
+.animate-pulse-professional-delay {
+    animation: pulse-professional 6s ease-in-out infinite;
+    animation-delay: 1s;
+}
+
+.animate-pulse-professional-delay-2 {
+    animation: pulse-professional 6s ease-in-out infinite;
+    animation-delay: 2s;
+}
+
+.animate-pulse-professional-delay-3 {
+    animation: pulse-professional 6s ease-in-out infinite;
+    animation-delay: 3s;
+}
+
+.animate-rotate-professional {
+    animation: rotate-professional 15s linear infinite;
+}
+
+.animate-rotate-professional-reverse {
+    animation: rotate-professional 15s linear infinite reverse;
+}
+
+.animate-rotate-professional-delay {
+    animation: rotate-professional 15s linear infinite;
+    animation-delay: 3s;
+}
+
+.animate-rotate-professional-reverse-delay {
+    animation: rotate-professional 15s linear infinite reverse;
+    animation-delay: 5s;
+}
+
+.animate-fade-professional {
+    animation: fade-professional 4s ease-in-out infinite;
+}
+
+.animate-fade-professional-delay {
+    animation: fade-professional 4s ease-in-out infinite;
+    animation-delay: 1s;
+}
+
+.animate-fade-professional-delay-2 {
+    animation: fade-professional 4s ease-in-out infinite;
+    animation-delay: 2s;
+}
+
+.animate-fade-professional-delay-3 {
+    animation: fade-professional 4s ease-in-out infinite;
+    animation-delay: 3s;
+}
+
+/* Grid Pattern Background */
+.bg-grid-pattern {
+    background-image: 
+        linear-gradient(rgba(59, 130, 246, 0.1) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(59, 130, 246, 0.1) 1px, transparent 1px);
+    background-size: 50px 50px;
+}
+
+/* Responsive Professional Adjustments */
+@media (max-width: 768px) {
+    .animate-float-professional, 
+    .animate-drift-slow, 
+    .animate-pulse-professional,
+    .animate-rotate-professional,
+    .animate-fade-professional {
+        animation-duration: 6s;
+    }
 }
 </style>
 
