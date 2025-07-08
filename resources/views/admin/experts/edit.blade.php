@@ -1,4 +1,8 @@
-@extends('layouts.app') {{-- Atau layout admin Anda --}}
+<x-app-layout>
+    <x-slot name="header">
+        <h2 class="font-semibold text-xl text-gray-800 dark:text-gray-200 leading-tight">
+            {{ __('Edit Expert') }}
+            </h2>
 
 @section('content')
     <div class="container mx-auto px-4 py-8">
@@ -67,4 +71,4 @@
             </div>
         </form>
     </div>
-@endsection
+</x-app-layout>
