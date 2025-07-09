@@ -155,8 +155,8 @@
                     <div>
                         <h3 class="text-xl font-semibold mb-3 text-yellow-400">Minggu</h3>
                         <p class="text-lg">Tutup</p>
-                        =======
-                        >>>>>>> 6fe6716a8f0d790c6f92de5b6685062ca3f48df0
+
+
                     </div>
                 </div>
             </div>

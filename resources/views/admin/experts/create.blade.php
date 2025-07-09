@@ -62,7 +62,7 @@
             </div>
         </form>
         </div>
-        =======
+
         <div class="bg-gradient-to-r from-teal-900 via-teal-800 to-teal-900 rounded-lg p-6 shadow-lg">
             <h2 class="font-bold text-2xl text-white leading-tight flex items-center">
                 <svg class="w-8 h-8 mr-3 text-teal-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -286,5 +286,5 @@
             });
         });
     </script>
-    >>>>>>> 6fe6716a8f0d790c6f92de5b6685062ca3f48df0
+
 </x-app-layout>

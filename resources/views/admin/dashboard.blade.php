@@ -75,7 +75,7 @@
                         </div>
 
                         {{-- Tambahkan card lain untuk modul lain (layanan, users, settings, dll.) --}}
-                        =======
+
                         {{-- Welcome Section --}}
                         <div
                             class="bg-white dark:bg-gray-800 overflow-hidden shadow-xl sm:rounded-2xl mb-8 border border-blue-100 dark:border-blue-800">
@@ -95,7 +95,7 @@
                                             </svg>
                                         </div>
                                     </div>
-                                    >>>>>>> 6fe6716a8f0d790c6f92de5b6685062ca3f48df0
+
                                 </div>
                             </div>
 
