@@ -3,44 +3,41 @@
 @section('title', 'Selaras Mitra Integra')
 
 @section('content')
-    <div class="py-12 px-4 relative min-h-screen" style="overflow: visible;">
-        <!-- Hero Section Background Bubbles -->
+    <div class="py-12 px-4 relative min-h-screen bg-gradient-to-br from-slate-50 via-blue-50 to-indigo-50" style="overflow: visible;">
+        <!-- Professional Background Pattern -->
         <div class="absolute inset-0 pointer-events-none" style="overflow: hidden;">
-            <!-- Large Hero Bubbles -->
-            <div class="absolute top-20 left-8 w-40 h-40 bg-gradient-to-br from-blue-200 to-blue-300 rounded-full opacity-15 animate-float-slow"></div>
-            <div class="absolute top-40 right-16 w-32 h-32 bg-gradient-to-br from-purple-200 to-purple-300 rounded-full opacity-20 animate-float-slow-delay-1"></div>
-            <div class="absolute bottom-32 left-24 w-48 h-48 bg-gradient-to-br from-indigo-200 to-indigo-300 rounded-full opacity-12 animate-float-slow-delay-2"></div>
-            <div class="absolute bottom-16 right-8 w-36 h-36 bg-gradient-to-br from-cyan-200 to-cyan-300 rounded-full opacity-18 animate-float-slow-delay-3"></div>
+            <!-- Grid Pattern -->
+            <div class="absolute inset-0 bg-grid-pattern opacity-5"></div>
             
-            <!-- Medium Hero Bubbles -->
-            <div class="absolute top-32 left-1/3 w-24 h-24 bg-gradient-to-br from-yellow-200 to-yellow-300 rounded-full opacity-25 animate-float-medium"></div>
-            <div class="absolute top-56 right-1/3 w-28 h-28 bg-gradient-to-br from-pink-200 to-pink-300 rounded-full opacity-22 animate-float-medium-delay-1"></div>
-            <div class="absolute bottom-56 left-1/4 w-20 h-20 bg-gradient-to-br from-green-200 to-green-300 rounded-full opacity-30 animate-float-medium-delay-2"></div>
-            <div class="absolute bottom-40 right-1/4 w-26 h-26 bg-gradient-to-br from-orange-200 to-orange-300 rounded-full opacity-28 animate-float-medium-delay-3"></div>
+            <!-- Geometric Professional Elements -->
+            <div class="absolute top-20 left-10 w-32 h-32 border-2 border-blue-200 opacity-20 transform rotate-12 animate-float-professional"></div>
+            <div class="absolute top-40 right-20 w-24 h-24 border border-slate-300 opacity-15 transform rotate-45 animate-drift-slow"></div>
+            <div class="absolute bottom-32 left-32 w-40 h-40 border-2 border-indigo-200 opacity-10 transform -rotate-12 animate-float-professional-delay"></div>
+            <div class="absolute bottom-20 right-16 w-28 h-28 border border-blue-300 opacity-20 transform rotate-45 animate-drift-slow-delay"></div>
             
-            <!-- Small Hero Bubbles -->
-            <div class="absolute top-16 left-2/3 w-12 h-12 bg-gradient-to-br from-blue-300 to-blue-400 rounded-full opacity-35 animate-bounce-slow"></div>
-            <div class="absolute top-48 right-2/3 w-16 h-16 bg-gradient-to-br from-purple-300 to-purple-400 rounded-full opacity-32 animate-bounce-slow-delay-1"></div>
-            <div class="absolute bottom-48 left-3/4 w-10 h-10 bg-gradient-to-br from-indigo-300 to-indigo-400 rounded-full opacity-40 animate-bounce-slow-delay-2"></div>
-            <div class="absolute bottom-24 right-3/4 w-18 h-18 bg-gradient-to-br from-cyan-300 to-cyan-400 rounded-full opacity-33 animate-bounce-slow-delay-3"></div>
+            <!-- Subtle Accent Lines -->
+            <div class="absolute top-32 left-1/4 w-16 h-0.5 bg-gradient-to-r from-blue-300 to-transparent opacity-30 transform rotate-45 animate-pulse-professional"></div>
+            <div class="absolute top-60 right-1/3 w-20 h-0.5 bg-gradient-to-r from-slate-400 to-transparent opacity-25 transform -rotate-45 animate-pulse-professional-delay"></div>
+            <div class="absolute bottom-60 left-1/3 w-24 h-0.5 bg-gradient-to-r from-indigo-300 to-transparent opacity-20 transform rotate-12 animate-pulse-professional-delay-2"></div>
+            <div class="absolute bottom-40 right-1/4 w-18 h-0.5 bg-gradient-to-r from-blue-400 to-transparent opacity-30 transform -rotate-12 animate-pulse-professional-delay-3"></div>
             
-            <!-- Hero Decorative Shapes -->
-            <div class="absolute top-12 left-1/2 w-8 h-8 bg-gradient-to-br from-yellow-300 to-yellow-400 transform rotate-45 opacity-35 animate-spin-slow"></div>
-            <div class="absolute top-64 right-1/2 w-12 h-12 bg-gradient-to-br from-pink-300 to-pink-400 transform rotate-45 opacity-30 animate-spin-slow-reverse"></div>
-            <div class="absolute bottom-64 left-1/2 w-6 h-6 bg-gradient-to-br from-green-300 to-green-400 transform rotate-45 opacity-40 animate-spin-slow-delay-1"></div>
-            <div class="absolute bottom-12 right-1/2 w-14 h-14 bg-gradient-to-br from-orange-300 to-orange-400 transform rotate-45 opacity-28 animate-spin-slow-reverse-delay-1"></div>
+            <!-- Corporate Hexagons -->
+            <div class="absolute top-16 left-1/2 w-12 h-12 border border-blue-200 opacity-25 transform rotate-30 animate-rotate-professional" style="clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%)"></div>
+            <div class="absolute top-48 right-1/2 w-16 h-16 border border-slate-300 opacity-20 transform -rotate-30 animate-rotate-professional-reverse" style="clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%)"></div>
+            <div class="absolute bottom-48 left-1/2 w-10 h-10 border border-indigo-200 opacity-30 transform rotate-45 animate-rotate-professional-delay" style="clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%)"></div>
+            <div class="absolute bottom-16 right-1/2 w-14 h-14 border border-blue-300 opacity-15 transform -rotate-45 animate-rotate-professional-reverse-delay" style="clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%)"></div>
             
-            <!-- Additional Floating Elements -->
-            <div class="absolute top-24 left-1/6 w-7 h-7 bg-gradient-to-br from-blue-400 to-blue-500 rounded-full opacity-45 animate-pulse-slow"></div>
-            <div class="absolute top-72 right-1/6 w-9 h-9 bg-gradient-to-br from-purple-400 to-purple-500 rounded-full opacity-38 animate-pulse-slow-delay-1"></div>
-            <div class="absolute bottom-72 left-5/6 w-5 h-5 bg-gradient-to-br from-indigo-400 to-indigo-500 rounded-full opacity-50 animate-pulse-slow-delay-2"></div>
-            <div class="absolute bottom-24 right-5/6 w-11 h-11 bg-gradient-to-br from-cyan-400 to-cyan-500 rounded-full opacity-42 animate-pulse-slow-delay-3"></div>
+            <!-- Minimalist Dots -->
+            <div class="absolute top-24 left-1/5 w-2 h-2 bg-blue-400 rounded-full opacity-40 animate-fade-professional"></div>
+            <div class="absolute top-56 right-1/5 w-3 h-3 bg-slate-400 rounded-full opacity-35 animate-fade-professional-delay"></div>
+            <div class="absolute bottom-56 left-4/5 w-1.5 h-1.5 bg-indigo-400 rounded-full opacity-45 animate-fade-professional-delay-2"></div>
+            <div class="absolute bottom-24 right-4/5 w-2.5 h-2.5 bg-blue-500 rounded-full opacity-30 animate-fade-professional-delay-3"></div>
             
-            <!-- Geometric Accent Shapes -->
-            <div class="absolute top-36 left-1/5 w-4 h-4 bg-gradient-to-br from-yellow-400 to-yellow-500 transform rotate-45 opacity-48 animate-wiggle"></div>
-            <div class="absolute top-60 right-1/5 w-6 h-6 bg-gradient-to-br from-pink-400 to-pink-500 transform rotate-45 opacity-42 animate-wiggle-delay-1"></div>
-            <div class="absolute bottom-60 left-4/5 w-3 h-3 bg-gradient-to-br from-green-400 to-green-500 transform rotate-45 opacity-55 animate-wiggle-delay-2"></div>
-            <div class="absolute bottom-36 right-4/5 w-8 h-8 bg-gradient-to-br from-orange-400 to-orange-500 transform rotate-45 opacity-45 animate-wiggle-delay-3"></div>
+            <!-- Professional Corner Elements -->
+            <div class="absolute top-0 left-0 w-20 h-20 border-l-2 border-t-2 border-blue-200 opacity-20"></div>
+            <div class="absolute top-0 right-0 w-20 h-20 border-r-2 border-t-2 border-slate-300 opacity-15"></div>
+            <div class="absolute bottom-0 left-0 w-20 h-20 border-l-2 border-b-2 border-indigo-200 opacity-20"></div>
+            <div class="absolute bottom-0 right-0 w-20 h-20 border-r-2 border-b-2 border-blue-300 opacity-15"></div>
         </div>
         
         {{-- Container dengan padding yang cukup untuk mencegah button terpotong --}}
@@ -59,7 +56,7 @@
                     </p>
                     <div class="mb-8 btn-container flex justify-center">
                         <a href="{{ route('news.index') }}"
-                            class="group btn-news bg-blue-600 hover:bg-blue-700 text-white shadow-lg transition-all duration-500 ease-in-out transform hover:scale-110 hover:shadow-2xl animate-pulse hover:animate-none whitespace-nowrap">
+                            class="group btn-news bg-blue-600 hover:bg-blue-700 text-white shadow-lg transition-all duration-500 ease-in-out transform hover:scale-110 hover:shadow-2xl animate-pulse whitespace-nowrap">
                             <span class="relative font-bold tracking-wider">
                                 Lihat Berita Terbaru
                                 <span class="absolute inset-0 bg-gradient-to-r from-transparent via-white to-transparent opacity-0 group-hover:opacity-30 group-hover:animate-shimmer transform -skew-x-12"></span>
@@ -70,7 +67,7 @@
                 {{-- Bagian Video Lokal --}}
                 <div class="md:w-1/2 flex justify-center px-4">
                     <video controls autoplay muted loop class="rounded-lg shadow-xl w-full max-w-lg md:max-w-none">
-                        <source src="{{ asset('videos/acol.mp4') }}" type="video/mp4">
+                        <source src="{{ asset('videos/Compro_Selaras.mp4') }}" type="video/mp4">
                         {{-- Anda bisa menambahkan source lain untuk format video berbeda jika diperlukan --}}
                         {{-- <source src="{{ asset('videos/video_profil.webm') }}" type="video/webm"> --}}
                         Browser Anda tidak mendukung tag video.
@@ -83,31 +80,34 @@
 
     {{-- Bagian "Tentang Kami" --}}
     <section class="py-12 bg-white rounded-lg shadow-md mt-8 px-4 relative overflow-hidden">
-        <!-- Floating Bubbles Background -->
+        <!-- Professional About Background -->
         <div class="absolute inset-0 pointer-events-none">
-            <!-- Large Bubbles -->
-            <div class="absolute top-10 left-10 w-32 h-32 bg-gradient-to-br from-blue-200 to-blue-300 rounded-full opacity-20 animate-float"></div>
-            <div class="absolute top-32 right-20 w-24 h-24 bg-gradient-to-br from-purple-200 to-purple-300 rounded-full opacity-25 animate-float-delay-1"></div>
-            <div class="absolute bottom-20 left-32 w-40 h-40 bg-gradient-to-br from-indigo-200 to-indigo-300 rounded-full opacity-15 animate-float-delay-2"></div>
-            <div class="absolute bottom-32 right-10 w-28 h-28 bg-gradient-to-br from-cyan-200 to-cyan-300 rounded-full opacity-20 animate-float-delay-3"></div>
+            <!-- Subtle Corporate Grid -->
+            <div class="absolute inset-0 bg-grid-small opacity-3"></div>
             
-            <!-- Medium Bubbles -->
-            <div class="absolute top-24 left-1/3 w-16 h-16 bg-gradient-to-br from-yellow-200 to-yellow-300 rounded-full opacity-30 animate-float-reverse"></div>
-            <div class="absolute top-48 right-1/3 w-20 h-20 bg-gradient-to-br from-pink-200 to-pink-300 rounded-full opacity-25 animate-float-reverse-delay-1"></div>
-            <div class="absolute bottom-48 left-1/4 w-14 h-14 bg-gradient-to-br from-green-200 to-green-300 rounded-full opacity-35 animate-float-reverse-delay-2"></div>
-            <div class="absolute bottom-24 right-1/4 w-18 h-18 bg-gradient-to-br from-orange-200 to-orange-300 rounded-full opacity-30 animate-float-reverse-delay-3"></div>
+            <!-- Professional Geometric Elements -->
+            <div class="absolute top-10 left-16 w-20 h-20 border border-blue-100 opacity-30 transform rotate-45 animate-drift-gentle"></div>
+            <div class="absolute top-32 right-24 w-16 h-16 border border-slate-200 opacity-25 transform -rotate-45 animate-drift-gentle-delay"></div>
+            <div class="absolute bottom-20 left-32 w-24 h-24 border border-indigo-100 opacity-20 transform rotate-12 animate-drift-gentle-delay-2"></div>
+            <div class="absolute bottom-32 right-16 w-18 h-18 border border-blue-200 opacity-35 transform -rotate-12 animate-drift-gentle-delay-3"></div>
             
-            <!-- Small Bubbles -->
-            <div class="absolute top-16 left-2/3 w-8 h-8 bg-gradient-to-br from-blue-300 to-blue-400 rounded-full opacity-40 animate-bounce-slow"></div>
-            <div class="absolute top-40 right-2/3 w-10 h-10 bg-gradient-to-br from-purple-300 to-purple-400 rounded-full opacity-35 animate-bounce-slow-delay-1"></div>
-            <div class="absolute bottom-40 left-3/4 w-6 h-6 bg-gradient-to-br from-indigo-300 to-indigo-400 rounded-full opacity-45 animate-bounce-slow-delay-2"></div>
-            <div class="absolute bottom-16 right-3/4 w-12 h-12 bg-gradient-to-br from-cyan-300 to-cyan-400 rounded-full opacity-35 animate-bounce-slow-delay-3"></div>
+            <!-- Minimal Accent Lines -->
+            <div class="absolute top-24 left-1/4 w-12 h-0.5 bg-gradient-to-r from-blue-200 to-transparent opacity-40 animate-fade-in-out"></div>
+            <div class="absolute top-48 right-1/3 w-16 h-0.5 bg-gradient-to-r from-slate-300 to-transparent opacity-30 animate-fade-in-out-delay"></div>
+            <div class="absolute bottom-48 left-1/3 w-14 h-0.5 bg-gradient-to-r from-indigo-200 to-transparent opacity-35 animate-fade-in-out-delay-2"></div>
+            <div class="absolute bottom-24 right-1/4 w-10 h-0.5 bg-gradient-to-r from-blue-300 to-transparent opacity-25 animate-fade-in-out-delay-3"></div>
             
-            <!-- Decorative Shapes -->
-            <div class="absolute top-8 left-1/2 w-6 h-6 bg-gradient-to-br from-yellow-300 to-yellow-400 transform rotate-45 opacity-40 animate-spin-slow"></div>
-            <div class="absolute top-56 right-1/2 w-8 h-8 bg-gradient-to-br from-pink-300 to-pink-400 transform rotate-45 opacity-35 animate-spin-slow-reverse"></div>
-            <div class="absolute bottom-56 left-1/2 w-4 h-4 bg-gradient-to-br from-green-300 to-green-400 transform rotate-45 opacity-45 animate-spin-slow-delay-1"></div>
-            <div class="absolute bottom-8 right-1/2 w-10 h-10 bg-gradient-to-br from-orange-300 to-orange-400 transform rotate-45 opacity-30 animate-spin-slow-reverse-delay-1"></div>
+            <!-- Corporate Corner Elements -->
+            <div class="absolute top-0 left-0 w-12 h-12 border-l border-t border-blue-100 opacity-40"></div>
+            <div class="absolute top-0 right-0 w-12 h-12 border-r border-t border-slate-200 opacity-30"></div>
+            <div class="absolute bottom-0 left-0 w-12 h-12 border-l border-b border-indigo-100 opacity-40"></div>
+            <div class="absolute bottom-0 right-0 w-12 h-12 border-r border-b border-blue-200 opacity-30"></div>
+            
+            <!-- Subtle Professional Dots -->
+            <div class="absolute top-16 left-1/2 w-1 h-1 bg-blue-300 rounded-full opacity-50 animate-pulse-gentle"></div>
+            <div class="absolute top-40 right-1/2 w-1.5 h-1.5 bg-slate-400 rounded-full opacity-40 animate-pulse-gentle-delay"></div>
+            <div class="absolute bottom-40 left-1/2 w-1 h-1 bg-indigo-300 rounded-full opacity-60 animate-pulse-gentle-delay-2"></div>
+            <div class="absolute bottom-16 right-1/2 w-1.5 h-1.5 bg-blue-400 rounded-full opacity-35 animate-pulse-gentle-delay-3"></div>
         </div>
         
         <div class="relative z-10">
@@ -132,32 +132,35 @@
     </section>
 
     {{-- Bagian "Klien Kami" --}}
-    <section class="py-12 mt-8 px-4 relative overflow-hidden">
-        <!-- Floating Bubbles Background for Klien Section -->
+    <section class="py-12 mt-8 px-4 relative overflow-hidden bg-gradient-to-br from-gray-50 to-slate-100">
+        <!-- Professional Client Section Background -->
         <div class="absolute inset-0 pointer-events-none">
-            <!-- Large Decorative Bubbles -->
-            <div class="absolute top-5 left-5 w-24 h-24 bg-gradient-to-br from-blue-100 to-blue-200 rounded-full opacity-30 animate-float-slow"></div>
-            <div class="absolute top-20 right-12 w-32 h-32 bg-gradient-to-br from-purple-100 to-purple-200 rounded-full opacity-25 animate-float-slow-delay-1"></div>
-            <div class="absolute bottom-12 left-20 w-28 h-28 bg-gradient-to-br from-indigo-100 to-indigo-200 rounded-full opacity-35 animate-float-slow-delay-2"></div>
-            <div class="absolute bottom-5 right-5 w-36 h-36 bg-gradient-to-br from-cyan-100 to-cyan-200 rounded-full opacity-20 animate-float-slow-delay-3"></div>
+            <!-- Corporate Grid Pattern -->
+            <div class="absolute inset-0 bg-grid-corporate opacity-4"></div>
             
-            <!-- Medium Floating Elements -->
-            <div class="absolute top-32 left-1/4 w-16 h-16 bg-gradient-to-br from-yellow-100 to-yellow-200 rounded-full opacity-40 animate-float-medium"></div>
-            <div class="absolute top-48 right-1/4 w-20 h-20 bg-gradient-to-br from-pink-100 to-pink-200 rounded-full opacity-35 animate-float-medium-delay-1"></div>
-            <div class="absolute bottom-32 left-3/4 w-18 h-18 bg-gradient-to-br from-green-100 to-green-200 rounded-full opacity-45 animate-float-medium-delay-2"></div>
-            <div class="absolute bottom-48 right-3/4 w-14 h-14 bg-gradient-to-br from-orange-100 to-orange-200 rounded-full opacity-40 animate-float-medium-delay-3"></div>
+            <!-- Professional Elements -->
+            <div class="absolute top-8 left-12 w-16 h-16 border border-gray-200 opacity-30 transform rotate-45 animate-drift-professional"></div>
+            <div class="absolute top-24 right-20 w-20 h-20 border border-slate-300 opacity-25 transform -rotate-30 animate-drift-professional-delay"></div>
+            <div class="absolute bottom-16 left-24 w-18 h-18 border border-blue-200 opacity-35 transform rotate-30 animate-drift-professional-delay-2"></div>
+            <div class="absolute bottom-8 right-12 w-22 h-22 border border-gray-300 opacity-20 transform -rotate-45 animate-drift-professional-delay-3"></div>
             
-            <!-- Small Decorative Dots -->
-            <div class="absolute top-12 left-1/3 w-6 h-6 bg-gradient-to-br from-blue-200 to-blue-300 rounded-full opacity-50 animate-pulse-slow"></div>
-            <div class="absolute top-24 right-1/3 w-8 h-8 bg-gradient-to-br from-purple-200 to-purple-300 rounded-full opacity-45 animate-pulse-slow-delay-1"></div>
-            <div class="absolute bottom-24 left-2/3 w-4 h-4 bg-gradient-to-br from-indigo-200 to-indigo-300 rounded-full opacity-55 animate-pulse-slow-delay-2"></div>
-            <div class="absolute bottom-12 right-2/3 w-10 h-10 bg-gradient-to-br from-cyan-200 to-cyan-300 rounded-full opacity-40 animate-pulse-slow-delay-3"></div>
+            <!-- Minimal Corporate Lines -->
+            <div class="absolute top-32 left-1/5 w-8 h-0.5 bg-gradient-to-r from-gray-300 to-transparent opacity-40 animate-slide-professional"></div>
+            <div class="absolute top-48 right-1/4 w-12 h-0.5 bg-gradient-to-r from-slate-400 to-transparent opacity-30 animate-slide-professional-delay"></div>
+            <div class="absolute bottom-32 left-1/3 w-10 h-0.5 bg-gradient-to-r from-blue-300 to-transparent opacity-35 animate-slide-professional-delay-2"></div>
+            <div class="absolute bottom-48 right-1/5 w-14 h-0.5 bg-gradient-to-r from-gray-400 to-transparent opacity-25 animate-slide-professional-delay-3"></div>
             
-            <!-- Geometric Shapes -->
-            <div class="absolute top-16 left-1/2 w-5 h-5 bg-gradient-to-br from-yellow-200 to-yellow-300 transform rotate-45 opacity-45 animate-wiggle"></div>
-            <div class="absolute top-40 right-1/2 w-7 h-7 bg-gradient-to-br from-pink-200 to-pink-300 transform rotate-45 opacity-40 animate-wiggle-delay-1"></div>
-            <div class="absolute bottom-40 left-1/2 w-3 h-3 bg-gradient-to-br from-green-200 to-green-300 transform rotate-45 opacity-50 animate-wiggle-delay-2"></div>
-            <div class="absolute bottom-16 right-1/2 w-9 h-9 bg-gradient-to-br from-orange-200 to-orange-300 transform rotate-45 opacity-35 animate-wiggle-delay-3"></div>
+            <!-- Corporate Accent Points -->
+            <div class="absolute top-12 left-1/3 w-1 h-1 bg-gray-400 rounded-full opacity-50 animate-blink-professional"></div>
+            <div class="absolute top-24 right-1/3 w-1.5 h-1.5 bg-slate-500 rounded-full opacity-40 animate-blink-professional-delay"></div>
+            <div class="absolute bottom-24 left-2/3 w-1 h-1 bg-blue-400 rounded-full opacity-60 animate-blink-professional-delay-2"></div>
+            <div class="absolute bottom-12 right-2/3 w-1.5 h-1.5 bg-gray-500 rounded-full opacity-35 animate-blink-professional-delay-3"></div>
+            
+            <!-- Professional Corner Accents -->
+            <div class="absolute top-0 left-0 w-8 h-8 border-l border-t border-gray-200 opacity-50"></div>
+            <div class="absolute top-0 right-0 w-8 h-8 border-r border-t border-slate-300 opacity-40"></div>
+            <div class="absolute bottom-0 left-0 w-8 h-8 border-l border-b border-blue-200 opacity-50"></div>
+            <div class="absolute bottom-0 right-0 w-8 h-8 border-r border-b border-gray-300 opacity-40"></div>
         </div>
         
         <div class="relative z-10">
@@ -185,79 +188,710 @@
         </div>
     </section>
 
-    <section class="bg-blue-700 text-white py-16 px-4">
-        <div class="container mx-auto text-center">
-            <h2 class="text-4xl md:text-6xl font-black mb-16 bg-gradient-to-r from-white via-yellow-200 to-yellow-400 bg-clip-text text-transparent tracking-tight leading-tight">Mengapa memilih kami?</h2>
-            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 justify-items-center">
-
-                <div class="relative w-40 h-40 transform rotate-45 flex items-center justify-center bg-blue-900 shadow-xl rounded-lg transition-all duration-500 hover:scale-110 hover:shadow-2xl hover:rotate-[50deg] cursor-pointer group">
-                    <div class="absolute w-full h-full transform -rotate-45 flex items-center justify-center p-4 transition-transform duration-300 group-hover:scale-105">
-                        <span class="text-center font-bold text-lg tracking-wide">Kept Confidential</span>
+    <section class="bg-gradient-to-br from-gray-50 via-slate-50 to-blue-50 text-gray-800 py-16 px-4 relative overflow-hidden">
+        <!-- Professional Background Pattern -->
+        <div class="absolute inset-0 pointer-events-none">
+            <!-- Subtle Grid Pattern -->
+            <div class="absolute inset-0 bg-grid-pattern opacity-3"></div>
+            
+            <!-- Professional Elements -->
+            <div class="absolute top-16 left-20 w-20 h-20 border border-gray-200 opacity-25 transform rotate-45 animate-drift-gentle"></div>
+            <div class="absolute top-32 right-24 w-16 h-16 border border-slate-300 opacity-20 transform -rotate-30 animate-drift-gentle-delay"></div>
+            <div class="absolute bottom-20 left-32 w-24 h-24 border border-blue-200 opacity-30 transform rotate-12 animate-drift-gentle-delay-2"></div>
+            <div class="absolute bottom-32 right-20 w-18 h-18 border border-gray-300 opacity-25 transform -rotate-45 animate-drift-gentle-delay-3"></div>
+            
+            <!-- Subtle Lines -->
+            <div class="absolute top-24 left-1/4 w-12 h-0.5 bg-gradient-to-r from-gray-300 to-transparent opacity-30 animate-fade-in-out"></div>
+            <div class="absolute top-48 right-1/3 w-16 h-0.5 bg-gradient-to-r from-slate-400 to-transparent opacity-25 animate-fade-in-out-delay"></div>
+            <div class="absolute bottom-48 left-1/3 w-14 h-0.5 bg-gradient-to-r from-blue-300 to-transparent opacity-35 animate-fade-in-out-delay-2"></div>
+            <div class="absolute bottom-24 right-1/4 w-10 h-0.5 bg-gradient-to-r from-gray-400 to-transparent opacity-20 animate-fade-in-out-delay-3"></div>
+            
+            <!-- Corner Elements -->
+            <div class="absolute top-0 left-0 w-16 h-16 border-l-2 border-t-2 border-gray-200 opacity-30"></div>
+            <div class="absolute top-0 right-0 w-16 h-16 border-r-2 border-t-2 border-slate-300 opacity-25"></div>
+            <div class="absolute bottom-0 left-0 w-16 h-16 border-l-2 border-b-2 border-blue-200 opacity-30"></div>
+            <div class="absolute bottom-0 right-0 w-16 h-16 border-r-2 border-b-2 border-gray-300 opacity-25"></div>
+        </div>
+        
+        <div class="container mx-auto text-center relative z-10">
+            <h2 class="text-4xl md:text-6xl font-black mb-16 bg-gradient-to-r from-slate-800 via-blue-700 to-indigo-800 bg-clip-text text-transparent tracking-tight leading-tight">Mengapa memilih kami?</h2>
+            
+            <!-- Carousel Container -->
+            <div class="relative max-w-lg mx-auto px-20">
+                <!-- Main Card Display -->
+                <div class="carousel-container relative overflow-hidden">
+                    <div class="carousel-track flex transition-transform duration-500 ease-in-out" id="carouselTrack">
+                        <!-- Card 1 -->
+                        <div class="carousel-item w-full flex-shrink-0 flex justify-center">
+                            <div class="relative w-40 h-40 transform rotate-45 flex items-center justify-center bg-white border-2 border-blue-200 text-blue-800 shadow-xl rounded-lg transition-all duration-500 hover:scale-110 hover:shadow-2xl hover:rotate-[50deg] cursor-pointer group">
+                                <div class="absolute w-full h-full transform -rotate-45 flex items-center justify-center p-4 transition-transform duration-300 group-hover:scale-105">
+                                    <span class="text-center font-bold text-lg tracking-wide">Kept Confidential</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Card 2 -->
+                        <div class="carousel-item w-full flex-shrink-0 flex justify-center">
+                            <div class="relative w-40 h-40 transform rotate-45 flex items-center justify-center bg-gradient-to-br from-blue-600 to-blue-700 text-white shadow-xl rounded-lg transition-all duration-500 hover:scale-110 hover:shadow-2xl hover:rotate-[50deg] cursor-pointer group">
+                                <div class="absolute w-full h-full transform -rotate-45 flex items-center justify-center p-4 transition-transform duration-300 group-hover:scale-105">
+                                    <span class="text-center font-bold text-lg tracking-wide">Monitoring Proses</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Card 3 -->
+                        <div class="carousel-item w-full flex-shrink-0 flex justify-center">
+                            <div class="relative w-40 h-40 transform rotate-45 flex items-center justify-center bg-white border-2 border-slate-300 text-slate-800 shadow-xl rounded-lg transition-all duration-500 hover:scale-110 hover:shadow-2xl hover:rotate-[50deg] cursor-pointer group">
+                                <div class="absolute w-full h-full transform -rotate-45 flex items-center justify-center p-4 transition-transform duration-300 group-hover:scale-105">
+                                    <span class="text-center font-bold text-lg tracking-wide">Simple</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Card 4 -->
+                        <div class="carousel-item w-full flex-shrink-0 flex justify-center">
+                            <div class="relative w-40 h-40 transform rotate-45 flex items-center justify-center bg-gradient-to-br from-indigo-600 to-indigo-700 text-white shadow-xl rounded-lg transition-all duration-500 hover:scale-110 hover:shadow-2xl hover:rotate-[50deg] cursor-pointer group">
+                                <div class="absolute w-full h-full transform -rotate-45 flex items-center justify-center p-4 transition-transform duration-300 group-hover:scale-105">
+                                    <span class="text-center font-bold text-lg tracking-wide">Unlimited Participant</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Card 5 -->
+                        <div class="carousel-item w-full flex-shrink-0 flex justify-center">
+                            <div class="relative w-40 h-40 transform rotate-45 flex items-center justify-center bg-white border-2 border-gray-300 text-gray-800 shadow-xl rounded-lg transition-all duration-500 hover:scale-110 hover:shadow-2xl hover:rotate-[50deg] cursor-pointer group">
+                                <div class="absolute w-full h-full transform -rotate-45 flex items-center justify-center p-4 transition-transform duration-300 group-hover:scale-105">
+                                    <span class="text-center font-bold text-lg tracking-wide">Fleksibel</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Card 6 -->
+                        <div class="carousel-item w-full flex-shrink-0 flex justify-center">
+                            <div class="relative w-40 h-40 transform rotate-45 flex items-center justify-center bg-gradient-to-br from-slate-600 to-slate-700 text-white shadow-xl rounded-lg transition-all duration-500 hover:scale-110 hover:shadow-2xl hover:rotate-[50deg] cursor-pointer group">
+                                <div class="absolute w-full h-full transform -rotate-45 flex items-center justify-center p-4 transition-transform duration-300 group-hover:scale-105">
+                                    <span class="text-center font-bold text-lg tracking-wide">Hasil Terverifikasi</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Card 7 -->
+                        <div class="carousel-item w-full flex-shrink-0 flex justify-center">
+                            <div class="relative w-40 h-40 transform rotate-45 flex items-center justify-center bg-gradient-to-br from-blue-500 to-blue-600 text-white shadow-xl rounded-lg transition-all duration-500 hover:scale-110 hover:shadow-2xl hover:rotate-[50deg] cursor-pointer group">
+                                <div class="absolute w-full h-full transform -rotate-45 flex items-center justify-center p-4 transition-transform duration-300 group-hover:scale-105">
+                                    <span class="text-center font-bold text-lg tracking-wide">Customize</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Card 8 -->
+                        <div class="carousel-item w-full flex-shrink-0 flex justify-center">
+                            <div class="relative w-40 h-40 transform rotate-45 flex items-center justify-center bg-white border-2 border-indigo-300 text-indigo-800 shadow-xl rounded-lg transition-all duration-500 hover:scale-110 hover:shadow-2xl hover:rotate-[50deg] cursor-pointer group">
+                                <div class="absolute w-full h-full transform -rotate-45 flex items-center justify-center p-4 transition-transform duration-300 group-hover:scale-105">
+                                    <span class="text-center font-bold text-lg tracking-wide">Tools Up to Date</span>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
-
-                <div class="relative w-40 h-40 transform rotate-45 flex items-center justify-center bg-yellow-500 shadow-xl rounded-lg transition-all duration-500 hover:scale-110 hover:shadow-2xl hover:rotate-[50deg] cursor-pointer group">
-                    <div class="absolute w-full h-full transform -rotate-45 flex items-center justify-center p-4 transition-transform duration-300 group-hover:scale-105">
-                        <span class="text-center font-bold text-lg tracking-wide">Monitoring Proses</span>
-                    </div>
-                </div>
-
-                <div class="relative w-40 h-40 transform rotate-45 flex items-center justify-center bg-white text-blue-800 shadow-xl rounded-lg transition-all duration-500 hover:scale-110 hover:shadow-2xl hover:rotate-[50deg] cursor-pointer group">
-                    <div class="absolute w-full h-full transform -rotate-45 flex items-center justify-center p-4 transition-transform duration-300 group-hover:scale-105">
-                        <span class="text-center font-bold text-lg tracking-wide">Simple</span>
-                    </div>
-                </div>
-
-                <div class="relative w-40 h-40 transform rotate-45 flex items-center justify-center bg-blue-900 shadow-xl rounded-lg transition-all duration-500 hover:scale-110 hover:shadow-2xl hover:rotate-[50deg] cursor-pointer group">
-                    <div class="absolute w-full h-full transform -rotate-45 flex items-center justify-center p-4 transition-transform duration-300 group-hover:scale-105">
-                        <span class="text-center font-bold text-lg tracking-wide">Unlimited Participant</span>
-                    </div>
-                </div>
-
-                <div class="relative w-40 h-40 transform rotate-45 flex items-center justify-center bg-white text-blue-800 shadow-xl rounded-lg transition-all duration-500 hover:scale-110 hover:shadow-2xl hover:rotate-[50deg] cursor-pointer group">
-                    <div class="absolute w-full h-full transform -rotate-45 flex items-center justify-center p-4 transition-transform duration-300 group-hover:scale-105">
-                        <span class="text-center font-bold text-lg tracking-wide">Fleksibel</span>
-                    </div>
-                </div>
-
-                <div class="relative w-40 h-40 transform rotate-45 flex items-center justify-center bg-blue-900 shadow-xl rounded-lg transition-all duration-500 hover:scale-110 hover:shadow-2xl hover:rotate-[50deg] cursor-pointer group">
-                    <div class="absolute w-full h-full transform -rotate-45 flex items-center justify-center p-4 transition-transform duration-300 group-hover:scale-105">
-                        <span class="text-center font-bold text-lg tracking-wide">Hasil Terverifikasi</span>
-                    </div>
-                </div>
-
-                <div class="relative w-40 h-40 transform rotate-45 flex items-center justify-center bg-yellow-500 shadow-xl rounded-lg transition-all duration-500 hover:scale-110 hover:shadow-2xl hover:rotate-[50deg] cursor-pointer group">
-                    <div class="absolute w-full h-full transform -rotate-45 flex items-center justify-center p-4 transition-transform duration-300 group-hover:scale-105">
-                        <span class="text-center font-bold text-lg tracking-wide">Customize</span>
-                    </div>
-                </div>
-
-                <div class="relative w-40 h-40 transform rotate-45 flex items-center justify-center bg-white text-blue-800 shadow-xl rounded-lg transition-all duration-500 hover:scale-110 hover:shadow-2xl hover:rotate-[50deg] cursor-pointer group">
-                    <div class="absolute w-full h-full transform -rotate-45 flex items-center justify-center p-4 transition-transform duration-300 group-hover:scale-105">
-                        <span class="text-center font-bold text-lg tracking-wide">Tools Up to Date</span>
-                    </div>
+                
+                <!-- Navigation Buttons -->
+                <button type="button" class="carousel-btn carousel-btn-prev absolute left-0 top-1/2 transform -translate-y-1/2 bg-gray-600 bg-opacity-20 hover:bg-opacity-40 text-gray-700 p-3 rounded-full transition-all duration-300 hover:scale-110 shadow-lg backdrop-blur-sm border border-gray-400 border-opacity-30" id="prevBtn">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path>
+                    </svg>
+                </button>
+                <button type="button" class="carousel-btn carousel-btn-next absolute right-0 top-1/2 transform -translate-y-1/2 bg-gray-600 bg-opacity-20 hover:bg-opacity-40 text-gray-700 p-3 rounded-full transition-all duration-300 hover:scale-110 shadow-lg backdrop-blur-sm border border-gray-400 border-opacity-30" id="nextBtn">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                    </svg>
+                </button>
+                
+                <!-- Dots Indicator -->
+                <div class="flex justify-center mt-8 space-x-2">
+                    <button class="dot w-3 h-3 rounded-full bg-gray-500 bg-opacity-30 hover:bg-opacity-60 transition-all duration-300 active"></button>
+                    <button class="dot w-3 h-3 rounded-full bg-gray-500 bg-opacity-30 hover:bg-opacity-60 transition-all duration-300"></button>
+                    <button class="dot w-3 h-3 rounded-full bg-gray-500 bg-opacity-30 hover:bg-opacity-60 transition-all duration-300"></button>
+                    <button class="dot w-3 h-3 rounded-full bg-gray-500 bg-opacity-30 hover:bg-opacity-60 transition-all duration-300"></button>
+                    <button class="dot w-3 h-3 rounded-full bg-gray-500 bg-opacity-30 hover:bg-opacity-60 transition-all duration-300"></button>
+                    <button class="dot w-3 h-3 rounded-full bg-gray-500 bg-opacity-30 hover:bg-opacity-60 transition-all duration-300"></button>
+                    <button class="dot w-3 h-3 rounded-full bg-gray-500 bg-opacity-30 hover:bg-opacity-60 transition-all duration-300"></button>
+                    <button class="dot w-3 h-3 rounded-full bg-gray-500 bg-opacity-30 hover:bg-opacity-60 transition-all duration-300"></button>
                 </div>
             </div>
 
             <div class="mt-16">
-                <a href="{{ route('contact') }}" class="group relative inline-block bg-yellow-500 text-blue-900 px-12 py-5 rounded-full text-2xl font-black hover:bg-yellow-400 transition-all duration-500 shadow-lg transform hover:scale-110 hover:shadow-2xl hover:-translate-y-2 animate-bounce hover:animate-none overflow-hidden tracking-wider">
-                    <span class="relative z-10">KONSULTASI SEKARANG</span>
-                    <span class="absolute inset-0 bg-gradient-to-r from-yellow-400 to-yellow-600 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-500 origin-left"></span>
-                    <span class="absolute inset-0 bg-white opacity-0 group-hover:opacity-20 transition-opacity duration-300"></span>
-                </a>
-                <p class="mt-6">
-                    <a href="{{ route('services') }}" class="group inline-flex items-center px-6 py-3 text-base font-bold text-white bg-blue-600 bg-opacity-20 rounded-xl border border-white border-opacity-30 hover:bg-opacity-40 hover:border-opacity-60 transition-all duration-500 ease-in-out transform hover:scale-110 hover:shadow-xl backdrop-blur-sm hover:-translate-y-1 hover:rotate-1 tracking-wide">
-                        <svg class="w-5 h-5 mr-3 transition-all duration-500 group-hover:-translate-x-1 group-hover:rotate-12" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <div class="flex flex-col sm:flex-row gap-4 justify-center items-center">
+                    <a href="{{ route('contact') }}" class="group relative inline-block bg-blue-600 text-white px-8 py-4 rounded-full text-lg font-black hover:bg-blue-700 transition-all duration-500 shadow-lg hover:shadow-2xl animate-pulse overflow-hidden tracking-wider">
+                        <span class="relative z-10">KONSULTASI SEKARANG</span>
+                        <span class="absolute inset-0 bg-gradient-to-r from-blue-700 to-indigo-700 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-500 origin-left"></span>
+                        <span class="absolute inset-0 bg-white opacity-0 group-hover:opacity-20 transition-opacity duration-300"></span>
+                    </a>
+                    
+                    <a href="{{ route('services') }}" class="group inline-flex items-center px-6 py-4 text-base font-bold text-gray-700 bg-green-500 bg-opacity-60 rounded-xl border border-gray-300 border-opacity-50 hover:bg-opacity-80 hover:border-opacity-70 transition-all duration-500 ease-in-out transform hover:scale-110 hover:shadow-xl backdrop-blur-sm hover:-translate-y-1 hover:rotate-1 tracking-wide">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18"></path>
                         </svg>
-                        <span class="transition-transform duration-300 group-hover:scale-105">Kembali ke menu layanan</span>
+                        <span class="transition-transform duration-300 group-hover:scale-105">Lihat Menu Layanan</span>
                     </a>
-                </p>
+                </div>
             </div>
         </div>
+    </section>
 @endsection
 
+<script>
+// Carousel functionality
+let currentSlideIndex = 0;
+const totalSlides = 8;
+
+function showSlide(index) {
+    const track = document.getElementById('carouselTrack');
+    const dots = document.querySelectorAll('.dot');
+    
+    console.log('showSlide called with index:', index, 'current index:', currentSlideIndex);
+    
+    // Ensure index is a number
+    index = parseInt(index);
+    
+    // Keep index within bounds
+    if (index >= totalSlides) {
+        currentSlideIndex = 0;
+    } else if (index < 0) {
+        currentSlideIndex = totalSlides - 1;
+    } else {
+        currentSlideIndex = index;
+    }
+    
+    console.log('Final slide index:', currentSlideIndex);
+    
+    if (!track) {
+        console.error('Carousel track not found!');
+        return;
+    }
+    
+    // Move carousel track
+    track.style.transform = `translateX(-${currentSlideIndex * 100}%)`;
+    
+    // Update dots
+    dots.forEach((dot, i) => {
+        dot.classList.remove('active');
+        if (i === currentSlideIndex) {
+            dot.classList.add('active');
+        }
+    });
+    
+    console.log('Slide changed to:', currentSlideIndex);
+}
+
+function nextSlide() {
+    console.log('nextSlide called, current index:', currentSlideIndex);
+    showSlide(currentSlideIndex + 1);
+}
+
+function prevSlide() {
+    console.log('prevSlide called, current index:', currentSlideIndex);
+    showSlide(currentSlideIndex - 1);
+}
+
+function goToSlide(index) {
+    console.log('goToSlide called with index:', index);
+    showSlide(index);
+}
+
+// Event listeners
+document.addEventListener('DOMContentLoaded', function() {
+    const nextBtn = document.getElementById('nextBtn');
+    const prevBtn = document.getElementById('prevBtn');
+    
+    console.log('DOM loaded, buttons found:', { nextBtn, prevBtn });
+    
+    // Initialize first slide
+    showSlide(0);
+    
+    if (nextBtn) {
+        nextBtn.addEventListener('click', function(e) {
+            e.preventDefault();
+            e.stopPropagation();
+            console.log('Next button clicked via event listener');
+            nextSlide();
+        });
+    }
+    
+    if (prevBtn) {
+        prevBtn.addEventListener('click', function(e) {
+            e.preventDefault();
+            e.stopPropagation();
+            console.log('Prev button clicked via event listener');
+            prevSlide();
+        });
+    }
+    
+    // Keyboard navigation
+    document.addEventListener('keydown', function(e) {
+        if (e.key === 'ArrowLeft') {
+            prevSlide();
+        } else if (e.key === 'ArrowRight') {
+            nextSlide();
+        }
+    });
+    
+    // Touch/swipe support for mobile
+    let startX = 0;
+    let endX = 0;
+    
+    const carousel = document.querySelector('.carousel-container');
+    
+    if (carousel) {
+        carousel.addEventListener('touchstart', function(e) {
+            startX = e.touches[0].clientX;
+        });
+        
+        carousel.addEventListener('touchend', function(e) {
+            endX = e.changedTouches[0].clientX;
+            handleSwipe();
+        });
+    }
+    
+    function handleSwipe() {
+        const threshold = 50;
+        const diff = startX - endX;
+        
+        if (Math.abs(diff) > threshold) {
+            if (diff > 0) {
+                nextSlide();
+            } else {
+                prevSlide();
+            }
+        }
+    }
+    
+    // Handle dot clicks
+    const dots = document.querySelectorAll('.dot');
+    dots.forEach((dot, index) => {
+        dot.addEventListener('click', function(e) {
+            e.preventDefault();
+            console.log('Dot clicked, index:', index);
+            goToSlide(index);
+        });
+    });
+});
+</script>
+
 <style>
+/* Carousel Styles */
+.carousel-container {
+    position: relative;
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+    border-radius: 1rem;
+    margin: 0 auto;
+}
+
+.carousel-track {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    height: 100%;
+}
+
+.carousel-item {
+    width: 100%;
+    flex-shrink: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.carousel-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1000;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    transition: all 0.3s ease;
+    cursor: pointer;
+    outline: none;
+    user-select: none;
+    pointer-events: auto;
+}
+
+.carousel-btn:hover {
+    background: rgba(255, 255, 255, 0.4);
+    transform: translateY(-50%) scale(1.1);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+.carousel-btn:active {
+    transform: translateY(-50%) scale(0.95);
+}
+
+.carousel-btn-prev {
+    left: -60px;
+}
+
+.carousel-btn-next {
+    right: -60px;
+}
+
+.dot {
+    cursor: pointer;
+    transition: all 0.3s ease;
+    z-index: 1000;
+    pointer-events: auto;
+    user-select: none;
+    outline: none;
+    border: none;
+}
+
+.dot.active {
+    background: rgba(255, 255, 255, 0.9) !important;
+    transform: scale(1.2);
+}
+
+.dot:hover {
+    transform: scale(1.1);
+}
+
+.dot:active {
+    transform: scale(0.9);
+}
+
+/* Responsive adjustments for carousel */
+@media (max-width: 768px) {
+    .carousel-btn-prev {
+        left: -50px;
+    }
+    
+    .carousel-btn-next {
+        right: -50px;
+    }
+    
+    .carousel-btn {
+        padding: 0.5rem;
+    }
+    
+    .carousel-btn svg {
+        width: 1rem;
+        height: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .carousel-btn-prev {
+        left: -30px;
+    }
+    
+    .carousel-btn-next {
+        right: -30px;
+    }
+    
+    .carousel-btn {
+        padding: 0.4rem;
+        width: 2.5rem;
+        height: 2.5rem;
+    }
+    
+    .carousel-btn svg {
+        width: 0.9rem;
+        height: 0.9rem;
+    }
+    
+    /* Adjust container padding for mobile */
+    .relative.max-w-lg.mx-auto.px-20 {
+        padding-left: 3rem;
+        padding-right: 3rem;
+    }
+}
+
+/* Professional Animation Keyframes */
+@keyframes float-professional {
+    0%, 100% { transform: translateY(0px) rotate(0deg); opacity: 0.2; }
+    50% { transform: translateY(-10px) rotate(5deg); opacity: 0.4; }
+}
+
+@keyframes drift-slow {
+    0%, 100% { transform: translateX(0px) translateY(0px) rotate(0deg); }
+    33% { transform: translateX(5px) translateY(-3px) rotate(2deg); }
+    66% { transform: translateX(-3px) translateY(5px) rotate(-2deg); }
+}
+
+@keyframes pulse-professional {
+    0%, 100% { opacity: 0.2; transform: scaleX(1); }
+    50% { opacity: 0.5; transform: scaleX(1.2); }
+}
+
+@keyframes rotate-professional {
+    0% { transform: rotate(0deg); opacity: 0.25; }
+    50% { transform: rotate(180deg); opacity: 0.4; }
+    100% { transform: rotate(360deg); opacity: 0.25; }
+}
+
+@keyframes fade-professional {
+    0%, 100% { opacity: 0.3; }
+    50% { opacity: 0.6; }
+}
+
+@keyframes drift-gentle {
+    0%, 100% { transform: translateY(0px) rotate(0deg); opacity: 0.3; }
+    50% { transform: translateY(-5px) rotate(3deg); opacity: 0.5; }
+}
+
+@keyframes fade-in-out {
+    0%, 100% { opacity: 0.2; transform: scaleX(0.8); }
+    50% { opacity: 0.6; transform: scaleX(1.1); }
+}
+
+@keyframes pulse-gentle {
+    0%, 100% { opacity: 0.4; transform: scale(1); }
+    50% { opacity: 0.7; transform: scale(1.2); }
+}
+
+@keyframes drift-professional {
+    0%, 100% { transform: translateX(0px) translateY(0px) rotate(0deg); opacity: 0.3; }
+    25% { transform: translateX(3px) translateY(-2px) rotate(1deg); opacity: 0.4; }
+    75% { transform: translateX(-2px) translateY(3px) rotate(-1deg); opacity: 0.5; }
+}
+
+@keyframes slide-professional {
+    0%, 100% { transform: translateX(-10px); opacity: 0.2; }
+    50% { transform: translateX(0px); opacity: 0.6; }
+}
+
+@keyframes blink-professional {
+    0%, 100% { opacity: 0.3; transform: scale(1); }
+    50% { opacity: 0.8; transform: scale(1.3); }
+}
+
+/* Professional Animation Classes */
+.animate-float-professional {
+    animation: float-professional 8s ease-in-out infinite;
+}
+
+.animate-float-professional-delay {
+    animation: float-professional 8s ease-in-out infinite;
+    animation-delay: 2s;
+}
+
+.animate-drift-slow {
+    animation: drift-slow 12s ease-in-out infinite;
+}
+
+.animate-drift-slow-delay {
+    animation: drift-slow 12s ease-in-out infinite;
+    animation-delay: 3s;
+}
+
+.animate-pulse-professional {
+    animation: pulse-professional 6s ease-in-out infinite;
+}
+
+.animate-pulse-professional-delay {
+    animation: pulse-professional 6s ease-in-out infinite;
+    animation-delay: 1s;
+}
+
+.animate-pulse-professional-delay-2 {
+    animation: pulse-professional 6s ease-in-out infinite;
+    animation-delay: 2s;
+}
+
+.animate-pulse-professional-delay-3 {
+    animation: pulse-professional 6s ease-in-out infinite;
+    animation-delay: 3s;
+}
+
+.animate-rotate-professional {
+    animation: rotate-professional 15s linear infinite;
+}
+
+.animate-rotate-professional-reverse {
+    animation: rotate-professional 15s linear infinite reverse;
+}
+
+.animate-rotate-professional-delay {
+    animation: rotate-professional 15s linear infinite;
+    animation-delay: 3s;
+}
+
+.animate-rotate-professional-reverse-delay {
+    animation: rotate-professional 15s linear infinite reverse;
+    animation-delay: 5s;
+}
+
+.animate-fade-professional {
+    animation: fade-professional 4s ease-in-out infinite;
+}
+
+.animate-fade-professional-delay {
+    animation: fade-professional 4s ease-in-out infinite;
+    animation-delay: 1s;
+}
+
+.animate-fade-professional-delay-2 {
+    animation: fade-professional 4s ease-in-out infinite;
+    animation-delay: 2s;
+}
+
+.animate-fade-professional-delay-3 {
+    animation: fade-professional 4s ease-in-out infinite;
+    animation-delay: 3s;
+}
+
+.animate-drift-gentle {
+    animation: drift-gentle 10s ease-in-out infinite;
+}
+
+.animate-drift-gentle-delay {
+    animation: drift-gentle 10s ease-in-out infinite;
+    animation-delay: 2s;
+}
+
+.animate-drift-gentle-delay-2 {
+    animation: drift-gentle 10s ease-in-out infinite;
+    animation-delay: 4s;
+}
+
+.animate-drift-gentle-delay-3 {
+    animation: drift-gentle 10s ease-in-out infinite;
+    animation-delay: 6s;
+}
+
+.animate-fade-in-out {
+    animation: fade-in-out 5s ease-in-out infinite;
+}
+
+.animate-fade-in-out-delay {
+    animation: fade-in-out 5s ease-in-out infinite;
+    animation-delay: 1s;
+}
+
+.animate-fade-in-out-delay-2 {
+    animation: fade-in-out 5s ease-in-out infinite;
+    animation-delay: 2s;
+}
+
+.animate-fade-in-out-delay-3 {
+    animation: fade-in-out 5s ease-in-out infinite;
+    animation-delay: 3s;
+}
+
+.animate-pulse-gentle {
+    animation: pulse-gentle 4s ease-in-out infinite;
+}
+
+.animate-pulse-gentle-delay {
+    animation: pulse-gentle 4s ease-in-out infinite;
+    animation-delay: 1s;
+}
+
+.animate-pulse-gentle-delay-2 {
+    animation: pulse-gentle 4s ease-in-out infinite;
+    animation-delay: 2s;
+}
+
+.animate-pulse-gentle-delay-3 {
+    animation: pulse-gentle 4s ease-in-out infinite;
+    animation-delay: 3s;
+}
+
+.animate-drift-professional {
+    animation: drift-professional 9s ease-in-out infinite;
+}
+
+.animate-drift-professional-delay {
+    animation: drift-professional 9s ease-in-out infinite;
+    animation-delay: 2s;
+}
+
+.animate-drift-professional-delay-2 {
+    animation: drift-professional 9s ease-in-out infinite;
+    animation-delay: 4s;
+}
+
+.animate-drift-professional-delay-3 {
+    animation: drift-professional 9s ease-in-out infinite;
+    animation-delay: 6s;
+}
+
+.animate-slide-professional {
+    animation: slide-professional 7s ease-in-out infinite;
+}
+
+.animate-slide-professional-delay {
+    animation: slide-professional 7s ease-in-out infinite;
+    animation-delay: 1.5s;
+}
+
+.animate-slide-professional-delay-2 {
+    animation: slide-professional 7s ease-in-out infinite;
+    animation-delay: 3s;
+}
+
+.animate-slide-professional-delay-3 {
+    animation: slide-professional 7s ease-in-out infinite;
+    animation-delay: 4.5s;
+}
+
+.animate-blink-professional {
+    animation: blink-professional 3s ease-in-out infinite;
+}
+
+.animate-blink-professional-delay {
+    animation: blink-professional 3s ease-in-out infinite;
+    animation-delay: 0.5s;
+}
+
+.animate-blink-professional-delay-2 {
+    animation: blink-professional 3s ease-in-out infinite;
+    animation-delay: 1s;
+}
+
+.animate-blink-professional-delay-3 {
+    animation: blink-professional 3s ease-in-out infinite;
+    animation-delay: 1.5s;
+}
+
+/* Grid Pattern Backgrounds */
+.bg-grid-pattern {
+    background-image: 
+        linear-gradient(rgba(59, 130, 246, 0.1) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(59, 130, 246, 0.1) 1px, transparent 1px);
+    background-size: 50px 50px;
+}
+
+.bg-grid-small {
+    background-image: 
+        linear-gradient(rgba(148, 163, 184, 0.1) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(148, 163, 184, 0.1) 1px, transparent 1px);
+    background-size: 25px 25px;
+}
+
+.bg-grid-corporate {
+    background-image: 
+        linear-gradient(rgba(107, 114, 128, 0.1) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(107, 114, 128, 0.1) 1px, transparent 1px);
+    background-size: 30px 30px;
+}
+
+/* Responsive Professional Adjustments */
+@media (max-width: 768px) {
+    .animate-float-professional, 
+    .animate-drift-slow, 
+    .animate-pulse-professional,
+    .animate-rotate-professional,
+    .animate-fade-professional,
+    .animate-drift-gentle,
+    .animate-fade-in-out,
+    .animate-pulse-gentle,
+    .animate-drift-professional,
+    .animate-slide-professional,
+    .animate-blink-professional {
+        animation-duration: 6s;
+    }
+}
+
 /* Floating Animation Keyframes */
 @keyframes float {
     0%, 100% { transform: translateY(0px) rotate(0deg); }

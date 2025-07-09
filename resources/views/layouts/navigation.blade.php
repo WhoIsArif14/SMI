@@ -43,17 +43,23 @@
                 <x-dropdown align="right" width="48">
                     <x-slot name="trigger">
                         <button
-                            class="group inline-flex items-center px-4 py-2 border border-white/20 text-sm leading-4 font-semibold rounded-xl text-white bg-white/10 backdrop-blur-sm hover:bg-white/20 hover:border-white/30 focus:outline-none transition-all duration-300 ease-in-out transform hover:scale-105 hover:shadow-lg">
+                            class="group inline-flex items-center px-5 py-3 border border-blue-400/30 text-sm leading-4 font-semibold rounded-xl text-white bg-gradient-to-r from-blue-500/20 to-cyan-500/20 backdrop-blur-sm hover:from-blue-500/30 hover:to-cyan-500/30 hover:border-blue-300/50 focus:outline-none transition-all duration-300 ease-in-out transform hover:scale-105 hover:shadow-xl hover:shadow-blue-500/25">
                             @auth
-                                <div class="flex items-center space-x-2">
-                                    <div class="w-8 h-8 bg-gradient-to-br from-yellow-400 to-orange-500 rounded-full flex items-center justify-center text-white font-bold text-sm">
-                                        {{ substr(Auth::user()->name, 0, 1) }}
+                                <div class="flex items-center space-x-3">
+                                    <div class="relative">
+                                        <div class="w-9 h-9 bg-gradient-to-br from-blue-400 via-cyan-400 to-blue-500 rounded-full flex items-center justify-center text-white font-bold text-sm shadow-lg ring-2 ring-blue-300/30">
+                                            {{ substr(Auth::user()->name, 0, 2) }}
+                                        </div>
+                                        <div class="absolute -bottom-1 -right-1 w-3 h-3 bg-green-400 rounded-full border-2 border-slate-700 animate-pulse"></div>
                                     </div>
-                                    <span>{{ Auth::user()->name }}</span>
+                                    <div class="flex flex-col items-start">
+                                        <span class="text-white font-semibold text-sm">{{ Auth::user()->name }}</span>
+                                        <span class="text-blue-200 text-xs">Administrator</span>
+                                    </div>
                                 </div>
                             @endauth
-                            <div class="ms-2">
-                                <svg class="fill-current h-4 w-4 transition-transform duration-300 group-hover:rotate-180" xmlns="http://www.w3.org/2000/svg"
+                            <div class="ms-3">
+                                <svg class="fill-current h-4 w-4 text-blue-200 transition-all duration-300 group-hover:rotate-180 group-hover:text-white" xmlns="http://www.w3.org/2000/svg"
                                     viewBox="0 0 20 20">
                                     <path fill-rule="evenodd"
                                         d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
@@ -64,27 +70,64 @@
                     </x-slot>
 
                     <x-slot name="content">
-                        <div class="bg-white/95 backdrop-blur-lg border border-gray-200/50 rounded-xl shadow-2xl overflow-hidden">
-                            <x-dropdown-link :href="route('profile.edit')" class="flex items-center space-x-3 px-4 py-3 text-gray-700 hover:bg-blue-50 hover:text-blue-700 transition-all duration-200">
-                                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"/>
-                                </svg>
-                                <span class="font-medium">{{ __('Profile') }}</span>
-                            </x-dropdown-link>
+                        <div class="bg-white/95 backdrop-blur-xl border border-blue-200/50 rounded-2xl shadow-2xl overflow-hidden ring-1 ring-blue-100/50">
+                            {{-- User Info Header --}}
+                            <div class="px-6 py-4 bg-gradient-to-r from-blue-50 to-cyan-50 border-b border-blue-100/50">
+                                <div class="flex items-center space-x-3">
+                                    <div class="w-12 h-12 bg-gradient-to-br from-blue-400 via-cyan-400 to-blue-500 rounded-full flex items-center justify-center text-white font-bold shadow-lg ring-2 ring-blue-200">
+                                        {{ substr(Auth::user()->name, 0, 2) }}
+                                    </div>
+                                    <div>
+                                        <p class="font-semibold text-gray-800">{{ Auth::user()->name }}</p>
+                                        <p class="text-sm text-blue-600">{{ Auth::user()->email }}</p>
+                                    </div>
+                                </div>
+                            </div>
 
-                            <div class="border-t border-gray-200/50"></div>
-
-                            <form method="POST" action="{{ route('logout') }}">
-                                @csrf
-                                <x-dropdown-link :href="route('logout')"
-                                    onclick="event.preventDefault(); this.closest('form').submit();"
-                                    class="flex items-center space-x-3 px-4 py-3 text-red-600 hover:bg-red-50 hover:text-red-700 transition-all duration-200">
-                                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 16l4-4m0 0l-4-4m4 4H7m6 4v1a3 3 0 01-3 3H6a3 3 0 01-3-3V7a3 3 0 013-3h4a3 3 0 013 3v1"/>
+                            {{-- Menu Items --}}
+                            <div class="py-2">
+                                <x-dropdown-link :href="route('profile.edit')" class="group flex items-center space-x-3 px-6 py-3 text-gray-700 hover:bg-gradient-to-r hover:from-blue-50 hover:to-cyan-50 hover:text-blue-700 transition-all duration-300 hover:pl-8">
+                                    <div class="w-8 h-8 rounded-lg bg-blue-100 group-hover:bg-blue-200 flex items-center justify-center transition-colors duration-300">
+                                        <svg class="w-4 h-4 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"/>
+                                        </svg>
+                                    </div>
+                                    <div>
+                                        <span class="font-medium">{{ __('Profile') }}</span>
+                                        <p class="text-xs text-gray-500 group-hover:text-blue-600">Kelola informasi akun</p>
+                                    </div>
+                                    <svg class="w-4 h-4 ml-auto text-gray-400 group-hover:text-blue-600 group-hover:translate-x-1 transition-all duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
                                     </svg>
-                                    <span class="font-medium">{{ __('Log Out') }}</span>
                                 </x-dropdown-link>
-                            </form>
+
+                                <div class="mx-6 my-2 border-t border-gray-200"></div>
+
+                                <form method="POST" action="{{ route('logout') }}">
+                                    @csrf
+                                    <x-dropdown-link :href="route('logout')"
+                                        onclick="event.preventDefault(); this.closest('form').submit();"
+                                        class="group flex items-center space-x-3 px-6 py-3 text-red-600 hover:bg-gradient-to-r hover:from-red-50 hover:to-pink-50 hover:text-red-700 transition-all duration-300 hover:pl-8">
+                                        <div class="w-8 h-8 rounded-lg bg-red-100 group-hover:bg-red-200 flex items-center justify-center transition-colors duration-300">
+                                            <svg class="w-4 h-4 text-red-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 16l4-4m0 0l-4-4m4 4H7m6 4v1a3 3 0 01-3 3H6a3 3 0 01-3-3V7a3 3 0 013-3h4a3 3 0 013 3v1"/>
+                                            </svg>
+                                        </div>
+                                        <div>
+                                            <span class="font-medium">{{ __('Log Out') }}</span>
+                                            <p class="text-xs text-red-500 group-hover:text-red-600">Keluar dari sistem</p>
+                                        </div>
+                                        <svg class="w-4 h-4 ml-auto text-red-400 group-hover:text-red-600 group-hover:translate-x-1 transition-all duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+                                        </svg>
+                                    </x-dropdown-link>
+                                </form>
+                            </div>
+
+                            {{-- Footer --}}
+                            <div class="px-6 py-3 bg-gradient-to-r from-slate-50 to-gray-50 border-t border-gray-100">
+                                <p class="text-xs text-gray-500 text-center">SMI Admin Panel v2.0</p>
+                            </div>
                         </div>
                     </x-slot>
                 </x-dropdown>
