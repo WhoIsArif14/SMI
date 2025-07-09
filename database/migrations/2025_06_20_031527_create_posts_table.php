@@ -13,14 +13,14 @@ return new class extends Migration
     {
         Schema::create('posts', function (Blueprint $table) {
             $table->id();
-            $table->string('title'); // Judul berita
-            $table->string('slug')->unique(); // URL berita yang rapi
-            $table->longText('content'); // Konten berita
-            $table->string('image')->nullable(); // Path gambar thumbnail (opsional)
-            $table->boolean('is_published')->default(false); // Status publikasi (draft/published)
-            $table->timestamp('published_at')->nullable(); // Tanggal publikasi
-            $table->foreignId('user_id')->constrained()->onDelete('cascade'); // Siapa yang memposting (relasi ke tabel users)
-            $table->timestamps(); // created_at dan updated_at
+            $table->foreignId('user_id')->constrained()->onDelete('cascade'); // Jika berita punya penulis
+            $table->string('title');
+            $table->string('slug')->unique(); // Untuk URL yang rapi
+            $table->text('content');
+            $table->string('image')->nullable(); // Kolom untuk menyimpan path gambar
+            $table->boolean('is_published')->default(false);
+            $table->timestamp('published_at')->nullable();
+            $table->timestamps(); // created_at, updated_at
         });
     }
 

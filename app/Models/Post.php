@@ -4,6 +4,7 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Support\Facades\Storage;
 
 class Post extends Model
 {
@@ -19,13 +20,40 @@ class Post extends Model
         'user_id',
     ];
 
-    // Laravel akan secara otomatis mengelola konversi published_at ke objek Carbon
     protected $casts = [
-        'published_at' => 'datetime',
         'is_published' => 'boolean',
+        'published_at' => 'datetime',
     ];
 
-    // Definisi relasi: Sebuah Post dimiliki oleh satu User
+    // Accessor untuk mendapatkan URL gambar
+    public function getImageUrlAttribute()
+    {
+        if ($this->image) {
+            // Cek apakah file benar-benar ada
+            if (Storage::disk('public')->exists($this->image)) {
+                return asset('storage/' . $this->image);
+            }
+        }
+        return null;
+    }
+
+    // Accessor untuk mendapatkan URL gambar dengan fallback
+    public function getImageUrlWithFallbackAttribute()
+    {
+        if ($this->image && Storage::disk('public')->exists($this->image)) {
+            return asset('storage/' . $this->image);
+        }
+        // Return default image atau null
+        return asset('images/default-news.jpg'); // Sesuaikan dengan path default image Anda
+    }
+
+    // Scope untuk post yang dipublikasikan
+    public function scopePublished($query)
+    {
+        return $query->where('is_published', true);
+    }
+
+    // Relasi dengan User
     public function user()
     {
         return $this->belongsTo(User::class);
