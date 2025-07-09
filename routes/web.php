@@ -97,9 +97,7 @@ Route::get('/services/outbound', function () {
 })->name('services.outbound');
 
 // Halaman Statis: Expert Kami
-Route::get('/experts', function () {
-    return view('experts.index'); // Pastikan Anda memiliki resources/views/experts/static.blade.php
-})->name('experts.index');
+Route::get('/experts', [ExpertController::class, 'index'])->name('experts.index');
 
 Route::get('/careers', function () {
     return view('careers.static');
