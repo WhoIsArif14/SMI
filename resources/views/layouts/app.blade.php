@@ -133,6 +133,44 @@
                                 </div>
                                 <span class="font-medium text-red-200 group-hover:text-red-100 transition-colors duration-300">{{ __('Log Out') }}</span>
                             </x-sidebar-link>
+
+                        </li>
+                        <li class="mb-2">
+                            <x-sidebar-link :href="route('admin.posts.index')" :active="request()->routeIs('admin.posts.*')">
+                                <svg class="w-5 h-5 me-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 20H5a2 2 0 01-2-2V6a2 2 0 012-2h10a2 2 0 012 2v10m2-2h-3L13 22l3-3h3"></path></svg>
+                                {{ __('Berita') }}
+                            </x-sidebar-link>
+                        </li>
+                        <li class="mb-2">
+                            <x-sidebar-link :href="route('admin.clients.index')" :active="request()->routeIs('admin.clients.*')">
+                                <svg class="w-5 h-5 me-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h2a2 2 0 002-2V4a2 2 0 00-2-2H5a2 2 0 00-2 2v14a2 2 0 002 2h2m0 0l4 4m-4-4v-4m0 4h-4m4 0h4m-4-4l-4-4"></path></svg>
+                                {{ __('Klien Kami') }}
+                            </x-sidebar-link>
+                        </li>
+                        <li class="mb-2">
+                            <x-sidebar-link :href="route('admin.experts.index')" :active="request()->routeIs('admin.experts.*')">
+                                <svg class="w-5 h-5 me-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h2a2 2 0 002-2V4a2 2 0 00-2-2H5a2 2 0 00-2 2v14a2 2 0 002 2h2m0 0l4 4m-4-4v-4m0 4h-4m4 0h4m-4-4l-4-4"></path></svg>
+                                {{ __('Expert Kami') }}
+                            </x-sidebar-link>
+                        </li>
+                        <li class="mb-2">
+                            <x-sidebar-link :href="route('profile.edit')" :active="request()->routeIs('profile.edit')">
+                                <svg class="w-5 h-5 me-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H5a2 2 0 00-2 2v9a2 2 0 002 2h10a2 2 0 002-2V8a2 2 0 00-2-2h-5m-4 0V5a2 2 0 012-2h2a2 2 0 012 2v1m-4 0h4m-4 0v1H7v-1h3zm0-4V3m-4 0v1"></path></svg>
+                                {{ __('Profile') }}
+                            </x-sidebar-link>
+                        </li>
+                        <li class="mb-2">
+                            <form method="POST" action="{{ route('logout') }}">
+                                @csrf
+                                <x-sidebar-link :href="route('logout')"
+                                    onclick="event.preventDefault(); this.closest('form').submit();">
+                                    <svg class="w-5 h-5 me-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 16l4-4m0 0l-4-4m4 4H7m6 4v1a3 3 0 01-3 3H6a3 3 0 01-3-3V7a3 3 0 013-3h4a3 3 0 013 3v1"></path></svg>
+                                    {{ __('Log Out') }}
+                                </x-sidebar-link>
+                            </form>
+                        </li>
+                    </ul>
+
                         </form>
                     </div>
                 </nav>

@@ -8,7 +8,8 @@
             <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center p-8">
                 {{-- Bagian Kiri: Gambar --}}
                 <div>
-                    <img src="{{ asset('images/rkrt.jpg') }}" alt="Ilustrasi Rekrutmen" class="w-full h-auto rounded-lg shadow-md">
+                    <img src="{{ asset('images/rkrt.jpg') }}" alt="Ilustrasi Rekrutmen"
+                        class="w-full h-auto rounded-lg shadow-md">
                     {{-- Pastikan Anda memiliki gambar ini di public/images/rekrutmen-main.jpg --}}
                 </div>
 
@@ -19,7 +20,10 @@
                         Menempatkan orang yang tepat dalam posisi yang tepat menjadi salah satu kunci kesuksesan bisnis.
                     </p>
                     <p class="text-lg mb-6">
-                        Kami percaya bahwa organisasi membutuhkan sumber daya manusia yang dapat berkembang di dalam organisasi secara produktif. Oleh karenanya, rekrutmen merupakan proses yang penting bagi suatu organisasi untuk mendapatkan orang yang tepat untuk posisi yang tepat. PT Selaras Mitra Integra menawarkan solusi yang terintegrasi untuk mencapai tujuan tersebut.
+                        Kami percaya bahwa organisasi membutuhkan sumber daya manusia yang dapat berkembang di dalam
+                        organisasi secara produktif. Oleh karenanya, rekrutmen merupakan proses yang penting bagi suatu
+                        organisasi untuk mendapatkan orang yang tepat untuk posisi yang tepat. PT Selaras Mitra Integra
+                        menawarkan solusi yang terintegrasi untuk mencapai tujuan tersebut.
                     </p>
                     <p class="text-lg font-semibold mb-2">Layanan kami terdiri dari:</p>
                     <ul class="list-disc list-inside text-lg mb-6">
@@ -27,12 +31,20 @@
                         <li>Proses Seleksi</li>
                     </ul>
                     <p class="text-right text-gray-600">
-                      <a href="{{ route('services') }}" class="group inline-flex items-center px-6 py-3 text-lg font-bold text-white bg-blue-600 bg-opacity-100 rounded-xl border border-white border-opacity-30 hover:bg-opacity-40 hover:border-opacity-60 transition-all duration-500 ease-in-out transform hover:scale-110 hover:shadow-xl backdrop-blur-sm">
-                            <span class="mr-3">Kembali ke Menu Layanan</span>
-                            <svg class="w-5 h-5 transition-all duration-500 group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"></path>
-                            </svg>
-                        </a>
+
+                        <a href="{{ route('services') }}" class="text-blue-600 hover:underline">Kembali ke menu layanan</a>
+                    </p>
+
+                    <a href="{{ route('services') }}"
+                        class="group inline-flex items-center px-6 py-3 text-lg font-bold text-white bg-blue-600 bg-opacity-100 rounded-xl border border-white border-opacity-30 hover:bg-opacity-40 hover:border-opacity-60 transition-all duration-500 ease-in-out transform hover:scale-110 hover:shadow-xl backdrop-blur-sm">
+                        <span class="mr-3">Kembali ke Menu Layanan</span>
+                        <svg class="w-5 h-5 transition-all duration-500 group-hover:translate-x-1" fill="none"
+                            stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M13 7l5 5m0 0l-5 5m5-5H6"></path>
+                        </svg>
+                    </a>
+
                 </div>
             </div>
         </div>
