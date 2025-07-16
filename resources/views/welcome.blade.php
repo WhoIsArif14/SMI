@@ -217,12 +217,12 @@
             <h2 class="text-4xl md:text-6xl font-black mb-16 bg-gradient-to-r from-slate-800 via-blue-700 to-indigo-800 bg-clip-text text-transparent tracking-tight leading-tight">Mengapa memilih kami?</h2>
             
             <!-- Carousel Container -->
-            <div class="relative max-w-lg mx-auto px-20">
+            <div class="relative max-w-5xl mx-auto px-20">
                 <!-- Main Card Display -->
                 <div class="carousel-container relative overflow-hidden">
                     <div class="carousel-track flex transition-transform duration-500 ease-in-out" id="carouselTrack">
                         <!-- Card 1 -->
-                        <div class="carousel-item w-full flex-shrink-0 flex justify-center">
+                        <div class="carousel-item w-1/4 flex-shrink-0 flex justify-center">
                             <div class="relative w-40 h-40 transform rotate-45 flex items-center justify-center bg-white border-2 border-blue-200 text-blue-800 shadow-xl rounded-lg transition-all duration-500 hover:scale-110 hover:shadow-2xl hover:rotate-[50deg] cursor-pointer group">
                                 <div class="absolute w-full h-full transform -rotate-45 flex items-center justify-center p-4 transition-transform duration-300 group-hover:scale-105">
                                     <span class="text-center font-bold text-lg tracking-wide">Kept Confidential</span>
@@ -231,7 +231,7 @@
                         </div>
                         
                         <!-- Card 2 -->
-                        <div class="carousel-item w-full flex-shrink-0 flex justify-center">
+                        <div class="carousel-item w-1/4 flex-shrink-0 flex justify-center">
                             <div class="relative w-40 h-40 transform rotate-45 flex items-center justify-center bg-gradient-to-br from-blue-600 to-blue-700 text-white shadow-xl rounded-lg transition-all duration-500 hover:scale-110 hover:shadow-2xl hover:rotate-[50deg] cursor-pointer group">
                                 <div class="absolute w-full h-full transform -rotate-45 flex items-center justify-center p-4 transition-transform duration-300 group-hover:scale-105">
                                     <span class="text-center font-bold text-lg tracking-wide">Monitoring Proses</span>
@@ -240,7 +240,7 @@
                         </div>
                         
                         <!-- Card 3 -->
-                        <div class="carousel-item w-full flex-shrink-0 flex justify-center">
+                        <div class="carousel-item w-1/4 flex-shrink-0 flex justify-center">
                             <div class="relative w-40 h-40 transform rotate-45 flex items-center justify-center bg-white border-2 border-slate-300 text-slate-800 shadow-xl rounded-lg transition-all duration-500 hover:scale-110 hover:shadow-2xl hover:rotate-[50deg] cursor-pointer group">
                                 <div class="absolute w-full h-full transform -rotate-45 flex items-center justify-center p-4 transition-transform duration-300 group-hover:scale-105">
                                     <span class="text-center font-bold text-lg tracking-wide">Simple</span>
@@ -249,7 +249,7 @@
                         </div>
                         
                         <!-- Card 4 -->
-                        <div class="carousel-item w-full flex-shrink-0 flex justify-center">
+                        <div class="carousel-item w-1/4 flex-shrink-0 flex justify-center">
                             <div class="relative w-40 h-40 transform rotate-45 flex items-center justify-center bg-gradient-to-br from-indigo-600 to-indigo-700 text-white shadow-xl rounded-lg transition-all duration-500 hover:scale-110 hover:shadow-2xl hover:rotate-[50deg] cursor-pointer group">
                                 <div class="absolute w-full h-full transform -rotate-45 flex items-center justify-center p-4 transition-transform duration-300 group-hover:scale-105">
                                     <span class="text-center font-bold text-lg tracking-wide">Unlimited Participant</span>
@@ -258,7 +258,7 @@
                         </div>
                         
                         <!-- Card 5 -->
-                        <div class="carousel-item w-full flex-shrink-0 flex justify-center">
+                        <div class="carousel-item w-1/4 flex-shrink-0 flex justify-center">
                             <div class="relative w-40 h-40 transform rotate-45 flex items-center justify-center bg-white border-2 border-gray-300 text-gray-800 shadow-xl rounded-lg transition-all duration-500 hover:scale-110 hover:shadow-2xl hover:rotate-[50deg] cursor-pointer group">
                                 <div class="absolute w-full h-full transform -rotate-45 flex items-center justify-center p-4 transition-transform duration-300 group-hover:scale-105">
                                     <span class="text-center font-bold text-lg tracking-wide">Fleksibel</span>
@@ -267,7 +267,7 @@
                         </div>
                         
                         <!-- Card 6 -->
-                        <div class="carousel-item w-full flex-shrink-0 flex justify-center">
+                        <div class="carousel-item w-1/4 flex-shrink-0 flex justify-center">
                             <div class="relative w-40 h-40 transform rotate-45 flex items-center justify-center bg-gradient-to-br from-slate-600 to-slate-700 text-white shadow-xl rounded-lg transition-all duration-500 hover:scale-110 hover:shadow-2xl hover:rotate-[50deg] cursor-pointer group">
                                 <div class="absolute w-full h-full transform -rotate-45 flex items-center justify-center p-4 transition-transform duration-300 group-hover:scale-105">
                                     <span class="text-center font-bold text-lg tracking-wide">Hasil Terverifikasi</span>
@@ -276,7 +276,7 @@
                         </div>
                         
                         <!-- Card 7 -->
-                        <div class="carousel-item w-full flex-shrink-0 flex justify-center">
+                        <div class="carousel-item w-1/4 flex-shrink-0 flex justify-center">
                             <div class="relative w-40 h-40 transform rotate-45 flex items-center justify-center bg-gradient-to-br from-blue-500 to-blue-600 text-white shadow-xl rounded-lg transition-all duration-500 hover:scale-110 hover:shadow-2xl hover:rotate-[50deg] cursor-pointer group">
                                 <div class="absolute w-full h-full transform -rotate-45 flex items-center justify-center p-4 transition-transform duration-300 group-hover:scale-105">
                                     <span class="text-center font-bold text-lg tracking-wide">Customize</span>
@@ -285,7 +285,7 @@
                         </div>
                         
                         <!-- Card 8 -->
-                        <div class="carousel-item w-full flex-shrink-0 flex justify-center">
+                        <div class="carousel-item w-1/4 flex-shrink-0 flex justify-center">
                             <div class="relative w-40 h-40 transform rotate-45 flex items-center justify-center bg-white border-2 border-indigo-300 text-indigo-800 shadow-xl rounded-lg transition-all duration-500 hover:scale-110 hover:shadow-2xl hover:rotate-[50deg] cursor-pointer group">
                                 <div class="absolute w-full h-full transform -rotate-45 flex items-center justify-center p-4 transition-transform duration-300 group-hover:scale-105">
                                     <span class="text-center font-bold text-lg tracking-wide">Tools Up to Date</span>
@@ -309,14 +309,14 @@
                 
                 <!-- Dots Indicator -->
                 <div class="flex justify-center mt-8 space-x-2">
-                    <button class="dot w-3 h-3 rounded-full bg-gray-500 bg-opacity-30 hover:bg-opacity-60 transition-all duration-300 active"></button>
-                    <button class="dot w-3 h-3 rounded-full bg-gray-500 bg-opacity-30 hover:bg-opacity-60 transition-all duration-300"></button>
-                    <button class="dot w-3 h-3 rounded-full bg-gray-500 bg-opacity-30 hover:bg-opacity-60 transition-all duration-300"></button>
-                    <button class="dot w-3 h-3 rounded-full bg-gray-500 bg-opacity-30 hover:bg-opacity-60 transition-all duration-300"></button>
-                    <button class="dot w-3 h-3 rounded-full bg-gray-500 bg-opacity-30 hover:bg-opacity-60 transition-all duration-300"></button>
-                    <button class="dot w-3 h-3 rounded-full bg-gray-500 bg-opacity-30 hover:bg-opacity-60 transition-all duration-300"></button>
-                    <button class="dot w-3 h-3 rounded-full bg-gray-500 bg-opacity-30 hover:bg-opacity-60 transition-all duration-300"></button>
-                    <button class="dot w-3 h-3 rounded-full bg-gray-500 bg-opacity-30 hover:bg-opacity-60 transition-all duration-300"></button>
+                    <button class="dot w-3 h-3 rounded-full bg-blue-500 bg-opacity-30 hover:bg-opacity-60 transition-all duration-300 active"></button>
+                    <button class="dot w-3 h-3 rounded-full bg-blue-500 bg-opacity-30 hover:bg-opacity-60 transition-all duration-300"></button>
+                    <button class="dot w-3 h-3 rounded-full bg-blue-500 bg-opacity-30 hover:bg-opacity-60 transition-all duration-300"></button>
+                    <button class="dot w-3 h-3 rounded-full bg-blue-500 bg-opacity-30 hover:bg-opacity-60 transition-all duration-300"></button>
+                    <button class="dot w-3 h-3 rounded-full bg-blue-500 bg-opacity-30 hover:bg-opacity-60 transition-all duration-300"></button>
+                    <button class="dot w-3 h-3 rounded-full bg-blue-500 bg-opacity-30 hover:bg-opacity-60 transition-all duration-300"></button>
+                    <button class="dot w-3 h-3 rounded-full bg-blue-500 bg-opacity-30 hover:bg-opacity-60 transition-all duration-300"></button>
+                    <button class="dot w-3 h-3 rounded-full bg-blue-500 bg-opacity-30 hover:bg-opacity-60 transition-all duration-300"></button>
                 </div>
             </div>
 
@@ -340,141 +340,69 @@
 @endsection
 
 <script>
-// Carousel functionality
-let currentSlideIndex = 0;
-const totalSlides = 8;
-
-function showSlide(index) {
-    const track = document.getElementById('carouselTrack');
-    const dots = document.querySelectorAll('.dot');
-    
-    console.log('showSlide called with index:', index, 'current index:', currentSlideIndex);
-    
-    // Ensure index is a number
-    index = parseInt(index);
-    
-    // Keep index within bounds
-    if (index >= totalSlides) {
-        currentSlideIndex = 0;
-    } else if (index < 0) {
-        currentSlideIndex = totalSlides - 1;
-    } else {
-        currentSlideIndex = index;
-    }
-    
-    console.log('Final slide index:', currentSlideIndex);
-    
-    if (!track) {
-        console.error('Carousel track not found!');
-        return;
-    }
-    
-    // Move carousel track
-    track.style.transform = `translateX(-${currentSlideIndex * 100}%)`;
-    
-    // Update dots
-    dots.forEach((dot, i) => {
-        dot.classList.remove('active');
-        if (i === currentSlideIndex) {
-            dot.classList.add('active');
-        }
-    });
-    
-    console.log('Slide changed to:', currentSlideIndex);
-}
-
-function nextSlide() {
-    console.log('nextSlide called, current index:', currentSlideIndex);
-    showSlide(currentSlideIndex + 1);
-}
-
-function prevSlide() {
-    console.log('prevSlide called, current index:', currentSlideIndex);
-    showSlide(currentSlideIndex - 1);
-}
-
-function goToSlide(index) {
-    console.log('goToSlide called with index:', index);
-    showSlide(index);
-}
-
-// Event listeners
 document.addEventListener('DOMContentLoaded', function() {
-    const nextBtn = document.getElementById('nextBtn');
+    let currentSlideIndex = 0;
+    const totalSlides = 8; // Total item
+    const slidesVisible = 4; // Jumlah item yang terlihat
+    const slideWidthPercentage = 100 / slidesVisible; // Lebar per item = 25%
+
+    const track = document.getElementById('carouselTrack');
     const prevBtn = document.getElementById('prevBtn');
-    
-    console.log('DOM loaded, buttons found:', { nextBtn, prevBtn });
-    
-    // Initialize first slide
+    const nextBtn = document.getElementById('nextBtn');
+    const dotsContainer = document.querySelector('.flex.justify-center.mt-8');
+
+    // Jumlah 'langkah' atau 'halaman' yang bisa digeser
+    const totalPages = totalSlides - slidesVisible + 1;
+
+    // Hapus dots yang ada dan buat yang baru sesuai jumlah halaman
+    dotsContainer.innerHTML = ''; 
+    for (let i = 0; i < totalPages; i++) {
+        const dotButton = document.createElement('button');
+        dotButton.className = 'dot w-3 h-3 rounded-full bg-blue-500 transition-all duration-300';
+        dotButton.addEventListener('click', () => goToSlide(i));
+        dotsContainer.appendChild(dotButton);
+    }
+    const dots = dotsContainer.querySelectorAll('.dot');
+
+    function showSlide(index) {
+        // Batasi pergerakan agar tidak ada ruang kosong di akhir
+        if (index >= totalPages) {
+            currentSlideIndex = 0; // Kembali ke awal jika looping
+        } else if (index < 0) {
+            currentSlideIndex = totalPages - 1; // Pergi ke akhir jika dari awal
+        } else {
+            currentSlideIndex = index;
+        }
+        
+        // Geser track berdasarkan index dan lebar item
+        track.style.transform = `translateX(-${currentSlideIndex * slideWidthPercentage}%)`;
+        
+        // Update active dot
+        dots.forEach((dot, i) => {
+            dot.classList.toggle('active', i === currentSlideIndex);
+        });
+    }
+
+    function nextSlide() {
+        showSlide(currentSlideIndex + 1);
+    }
+
+    function prevSlide() {
+        showSlide(currentSlideIndex - 1);
+    }
+
+    function goToSlide(index) {
+        showSlide(index);
+    }
+
+    // Event Listeners
+    nextBtn.addEventListener('click', nextSlide);
+    prevBtn.addEventListener('click', prevSlide);
+
+    // Inisialisasi tampilan pertama
     showSlide(0);
-    
-    if (nextBtn) {
-        nextBtn.addEventListener('click', function(e) {
-            e.preventDefault();
-            e.stopPropagation();
-            console.log('Next button clicked via event listener');
-            nextSlide();
-        });
-    }
-    
-    if (prevBtn) {
-        prevBtn.addEventListener('click', function(e) {
-            e.preventDefault();
-            e.stopPropagation();
-            console.log('Prev button clicked via event listener');
-            prevSlide();
-        });
-    }
-    
-    // Keyboard navigation
-    document.addEventListener('keydown', function(e) {
-        if (e.key === 'ArrowLeft') {
-            prevSlide();
-        } else if (e.key === 'ArrowRight') {
-            nextSlide();
-        }
-    });
-    
-    // Touch/swipe support for mobile
-    let startX = 0;
-    let endX = 0;
-    
-    const carousel = document.querySelector('.carousel-container');
-    
-    if (carousel) {
-        carousel.addEventListener('touchstart', function(e) {
-            startX = e.touches[0].clientX;
-        });
-        
-        carousel.addEventListener('touchend', function(e) {
-            endX = e.changedTouches[0].clientX;
-            handleSwipe();
-        });
-    }
-    
-    function handleSwipe() {
-        const threshold = 50;
-        const diff = startX - endX;
-        
-        if (Math.abs(diff) > threshold) {
-            if (diff > 0) {
-                nextSlide();
-            } else {
-                prevSlide();
-            }
-        }
-    }
-    
-    // Handle dot clicks
-    const dots = document.querySelectorAll('.dot');
-    dots.forEach((dot, index) => {
-        dot.addEventListener('click', function(e) {
-            e.preventDefault();
-            console.log('Dot clicked, index:', index);
-            goToSlide(index);
-        });
-    });
-});
+}
+);
 </script>
 
 <style>
