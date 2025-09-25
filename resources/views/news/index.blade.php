@@ -1,6 +1,10 @@
 @extends('layouts.frontend')
+
+@section('title', 'SMI - Berita')
+
 @section('content')
-    <h1 class="text-4xl font-bold text-gray-900 mb-8 text-center">Berita Terbaru</h1>
+    <h1 class="text-center py-2 text-4xl md:text-5xl font-black mb-6 bg-gradient-to-r from-blue-800 via-blue-600 to-indigo-700 bg-clip-text text-transparent tracking-tight">
+    BERITA TERBARU</h1>
 
     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
         @forelse ($posts as $post)

@@ -1,4 +1,7 @@
 @extends('layouts.frontend')
+
+@section('title', 'Karir - SMI')
+
 @section('content')
 
 <div class="min-h-screen bg-gradient-to-br from-slate-50 via-blue-50 to-indigo-50 relative overflow-hidden">
@@ -174,7 +177,7 @@
                 </div>
             </div>
         </div>
-
+        
         <!-- Call to Action -->
         <div class="mt-20 text-center">
             <div class="bg-gradient-to-r from-blue-600 to-indigo-700 rounded-3xl p-12 text-white shadow-2xl">

@@ -33,10 +33,6 @@
         <div class="bg-blue-600 text-white p-8 rounded-lg shadow-lg text-center mt-12 relative overflow-hidden">
             <h2 class="text-3xl font-bold mb-8">TUJUAN TES BAKAT MINAT</h2>
 
-            {{-- Gambar background panel surya (optional) --}}
-            <img src="{{ asset('images/solar-panels-bg.jpg') }}" alt="Background Solar Panels" class="absolute inset-0 w-full h-full object-cover opacity-20 z-0">
-            {{-- Pastikan Anda memiliki gambar ini di public/images/solar-panels-bg.jpg --}}
-
             <div class="relative z-10 flex flex-wrap justify-center items-center gap-6 py-8">
                 {{-- Item 1 --}}
                 <div class="bg-blue-800 text-white px-6 py-3 rounded-full shadow-md text-lg hover:bg-blue-700 transition duration-300">

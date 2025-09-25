@@ -1,7 +1,9 @@
 @extends('layouts.frontend')
+
+@section('title', 'Kontak Kami - SMI')
+
 @section('content')
     <div class="min-h-screen bg-gradient-to-br from-blue-50 via-indigo-50 to-purple-50 relative overflow-hidden">
-        <!-- Background Decorations -->
         <div class="absolute inset-0 overflow-hidden">
             <div
                 class="absolute top-20 left-20 w-32 h-32 bg-gradient-to-br from-blue-400 to-purple-400 rounded-full opacity-20 animate-pulse">
@@ -18,95 +20,85 @@
         </div>
 
         <div class="container mx-auto px-4 py-16 relative z-10">
-            <!-- Header Section -->
             <div class="text-center mb-16">
                 <h1
-                    class="text-6xl md:text-7xl font-extrabold bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 bg-clip-text text-transparent mb-8 leading-tight">
+                    class="text-6xl md:text-7xl font-extrabold bg-gradient-to-r via-[#002D62] to-[#FBB017] bg-clip-text text-transparent mb-8 leading-tight">
                     KONTAK KAMI
                 </h1>
-                <p class="text-xl text-gray-700 max-w-3xl mx-auto leading-relaxed mb-8">
-                    Hubungi kami untuk konsultasi dan informasi lebih lanjut mengenai layanan
-                    <span class="font-bold text-transparent bg-clip-text bg-gradient-to-r from-purple-600 to-pink-600">HR
-                        Consultant</span>
-                    terbaik
+               <p class="text-xl text-gray-700 max-w-3xl mx-auto leading-relaxed mb-8 text-center">
+                Hubungi kami untuk konsultasi dan informasi lebih lanjut mengenai layanan
+                <span class="block mt-2 font-bold text-transparent bg-clip-text bg-gradient-to-r from-yellow-600 to-blue-600">HR Consultant Terbaik</span>
                 </p>
             </div>
 
-            <!-- Contact Information Cards -->
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
-                <!-- Phone Contact -->
-                <div
-                    class="bg-white rounded-3xl shadow-2xl p-8 hover:shadow-3xl transform hover:-translate-y-4 transition-all duration-500 border border-gray-100 relative overflow-hidden">
-                    <div
-                        class="absolute top-0 right-0 w-24 h-24 bg-gradient-to-br from-green-500 to-blue-500 rounded-full opacity-10 transform translate-x-8 -translate-y-8">
-                    </div>
-                    <div class="relative z-10 text-center">
-                        <div
-                            class="w-20 h-20 bg-gradient-to-br from-green-500 to-blue-500 rounded-full flex items-center justify-center mx-auto mb-6 shadow-lg">
-                            <span class="text-3xl text-white">📞</span>
-                        </div>
-                        <h3 class="text-2xl font-bold text-gray-800 mb-4">Telepon</h3>
-                        <div class="space-y-3">
-                            <a href="tel:+6287752636196"
-                                class="block text-lg text-gray-600 hover:text-blue-600 transition-colors duration-300">
-                                +62 877-5263-6196
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Email Contact -->
-                <div
-                    class="bg-white rounded-3xl shadow-2xl p-8 hover:shadow-3xl transform hover:-translate-y-4 transition-all duration-500 border border-gray-100 relative overflow-hidden">
-                    <div
-                        class="absolute top-0 right-0 w-24 h-24 bg-gradient-to-br from-blue-500 to-purple-500 rounded-full opacity-10 transform translate-x-8 -translate-y-8">
-                    </div>
-                    <div class="relative z-10 text-center">
-                        <div
-                            class="w-20 h-20 bg-gradient-to-br from-blue-500 to-purple-500 rounded-full flex items-center justify-center mx-auto mb-6 shadow-lg">
-                            <span class="text-3xl text-white">✉️</span>
-                        </div>
-                        <h3 class="text-2xl font-bold text-gray-800 mb-4">Email</h3>
-                        <div class="space-y-3">
-                            <a href="mailto:customercare@selarasmitraintegra.com"
-                                class="block text-lg text-gray-600 hover:text-blue-600 transition-colors duration-300">
-                                customercare@selarasmitraintegra.com
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Address Contact -->
-                <div
-                    class="bg-white rounded-3xl shadow-2xl p-8 hover:shadow-3xl transform hover:-translate-y-4 transition-all duration-500 border border-gray-100 relative overflow-hidden">
-                    <div
-                        class="absolute top-0 right-0 w-24 h-24 bg-gradient-to-br from-purple-500 to-pink-500 rounded-full opacity-10 transform translate-x-8 -translate-y-8">
-                    </div>
-                    <div class="relative z-10 text-center">
-                        <div
-                            class="w-20 h-20 bg-gradient-to-br from-purple-500 to-pink-500 rounded-full flex items-center justify-center mx-auto mb-6 shadow-lg">
-                            <span class="text-3xl text-white">📍</span>
-                        </div>
-                        <h3 class="text-2xl font-bold text-gray-800 mb-4">Alamat</h3>
-                        <p class="text-lg text-gray-600 leading-relaxed">
-                            Jl. Ketintang Madya No. 80<br>
-                            Ketintang, Gayungan 60231<br>
-                            Surabaya, Jawa Timur
-                        </p>
-
-                    </div>
-                </div>
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
+    <div
+        class="bg-white rounded-3xl shadow-xl p-8 hover:shadow-2xl transform hover:-translate-y-2 transition-all duration-300 border border-gray-100 relative overflow-hidden">
+        <div
+            class="absolute top-0 right-0 w-24 h-24 bg-gradient-to-br from-blue-800 to-indigo-900 rounded-full opacity-10 transform translate-x-8 -translate-y-8">
+        </div>
+        <div class="relative z-10 text-center">
+            <div
+                class="w-20 h-20 bg-gradient-to-br from-blue-800 to-indigo-900 rounded-full flex items-center justify-center mx-auto mb-6 shadow-lg">
+                <span class="text-3xl text-white">📞</span>
             </div>
+            <h3 class="text-2xl font-bold text-gray-800 mb-4">Telepon</h3>
+            <div class="space-y-3">
+                <a href="tel:+6287752636196"
+                    class="block text-lg text-gray-600 hover:text-amber-500 transition-colors duration-300">
+                    +62 877-5263-6196
+                </a>
+            </div>
+        </div>
+    </div>
 
-            <!-- Social Media Section -->
-            <div class="bg-gradient-to-r from-blue-600 to-purple-600 rounded-3xl p-12 text-white shadow-2xl mb-16">
+    <div
+        class="bg-white rounded-3xl shadow-xl p-8 hover:shadow-2xl transform hover:-translate-y-2 transition-all duration-300 border border-gray-100 relative overflow-hidden">
+        <div
+            class="absolute top-0 right-0 w-24 h-24 bg-gradient-to-br from-blue-900 to-amber-400 rounded-full opacity-10 transform translate-x-8 -translate-y-8">
+        </div>
+        <div class="relative z-10 text-center">
+            <div
+                class="w-20 h-20 bg-gradient-to-br from-blue-900 to-amber-400 rounded-full flex items-center justify-center mx-auto mb-6 shadow-lg">
+                <span class="text-3xl text-white">✉️</span>
+            </div>
+            <h3 class="text-2xl font-bold text-gray-800 mb-4">Email</h3>
+            <div class="space-y-3">
+                <a href="mailto:customercare@selarasmitraintegra.com"
+                    class="block text-lg text-gray-600 hover:text-amber-500 transition-colors duration-300 break-words">
+                    customercare@selarasmitraintegra.com
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div
+        class="bg-white rounded-3xl shadow-xl p-8 hover:shadow-2xl transform hover:-translate-y-2 transition-all duration-300 border border-gray-100 relative overflow-hidden">
+        <div
+            class="absolute top-0 right-0 w-24 h-24 bg-gradient-to-br from-amber-400 to-orange-500 rounded-full opacity-10 transform translate-x-8 -translate-y-8">
+        </div>
+        <div class="relative z-10 text-center">
+            <div
+                class="w-20 h-20 bg-gradient-to-br from-amber-400 to-orange-500 rounded-full flex items-center justify-center mx-auto mb-6 shadow-lg">
+                <span class="text-3xl text-white">📍</span>
+            </div>
+            <h3 class="text-2xl font-bold text-gray-800 mb-4">Alamat</h3>
+            <p class="text-lg text-gray-600 leading-relaxed">
+                Jl. Ketintang Madya No. 80<br>
+                Ketintang, Gayungan 60231<br>
+                Surabaya, Jawa Timur
+            </p>
+        </div>
+    </div>
+</div>
+
+            <div class="bg-gradient-to-r from-blue-900 to-amber-400 rounded-3xl p-12 text-white shadow-2xl mb-16">
                 <div class="text-center mb-12">
                     <h2 class="text-4xl font-bold mb-4">Ikuti Media Sosial Kami</h2>
                     <p class="text-xl opacity-90">Dapatkan update terbaru dan tips karir dari para ahli</p>
                 </div>
 
                 <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
-                    <!-- WhatsApp -->
                     <a href="https://wa.me/+6287752636196" target="_blank"
                         class="bg-white bg-opacity-20 rounded-2xl p-6 text-center hover:bg-opacity-30 transform hover:scale-105 transition-all duration-300 group">
                         <div class="text-4xl mb-3 group-hover:scale-110 transition-transform duration-300">💬</div>
@@ -114,7 +106,6 @@
                         <p class="text-sm opacity-80">Chat Langsung</p>
                     </a>
 
-                    <!-- Instagram -->
                     <a href="https://instagram.com/selaras_mitraintegra" target="_blank"
                         class="bg-white bg-opacity-20 rounded-2xl p-6 text-center hover:bg-opacity-30 transform hover:scale-105 transition-all duration-300 group">
                         <div class="text-4xl mb-3 group-hover:scale-110 transition-transform duration-300">📸</div>
@@ -122,7 +113,6 @@
                         <p class="text-sm opacity-80">@selaras_mitraintegra</p>
                     </a>
 
-                    <!-- LinkedIn -->
                     <a href="https://www.linkedin.com/company/pt-selarasmitraintegra/" target="_blank"
                         class="bg-white bg-opacity-20 rounded-2xl p-6 text-center hover:bg-opacity-30 transform hover:scale-105 transition-all duration-300 group">
                         <div class="text-4xl mb-3 group-hover:scale-110 transition-transform duration-300">💼</div>
@@ -130,7 +120,6 @@
                         <p class="text-sm opacity-80">PT Selaras Mitra Integra</p>
                     </a>
 
-                    <!-- Facebook -->
                     <a href="http://facebook.com/selarasmitraintegra" target="_blank"
                         class="bg-white bg-opacity-20 rounded-2xl p-6 text-center hover:bg-opacity-30 transform hover:scale-105 transition-all duration-300 group">
                         <div class="text-4xl mb-3 group-hover:scale-110 transition-transform duration-300">📘</div>
@@ -140,70 +129,6 @@
                 </div>
             </div>
 
-            <!-- Business Hours -->
-            <div class="text-center bg-gradient-to-r from-gray-800 to-gray-900 rounded-3xl p-12 text-white">
-                <h2 class="text-3xl font-bold mb-8">Jam Operasional</h2>
-                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                    <div>
-                        <h3 class="text-xl font-semibold mb-3 text-yellow-400">Senin - Jumat</h3>
-                        <p class="text-lg">08:00 - 16:00 WIB</p>
-                    </div>
-                    <div>
-                        <h3 class="text-xl font-semibold mb-3 text-yellow-400">Sabtu</h3>
-                        <p class="text-lg">09:00 - 15:00 WIB</p>
-                    </div>
-                    <div>
-                        <h3 class="text-xl font-semibold mb-3 text-yellow-400">Minggu</h3>
-                        <p class="text-lg">Tutup</p>
-
-
-                    </div>
-                </div>
-            </div>
-
-            <!-- Social Media Section -->
-            <div class="bg-gradient-to-r from-blue-600 to-purple-600 rounded-3xl p-12 text-white shadow-2xl mb-16">
-                <div class="text-center mb-12">
-                    <h2 class="text-4xl font-bold mb-4">Ikuti Media Sosial Kami</h2>
-                    <p class="text-xl opacity-90">Dapatkan update terbaru dan tips karir dari para ahli</p>
-                </div>
-
-                <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
-                    <!-- WhatsApp -->
-                    <a href="https://wa.me/+6287752636196" target="_blank"
-                        class="bg-white bg-opacity-20 rounded-2xl p-6 text-center hover:bg-opacity-30 transform hover:scale-105 transition-all duration-300 group">
-                        <div class="text-4xl mb-3 group-hover:scale-110 transition-transform duration-300">💬</div>
-                        <h3 class="text-lg font-semibold mb-2">WhatsApp</h3>
-                        <p class="text-sm opacity-80">Chat Langsung</p>
-                    </a>
-
-                    <!-- Instagram -->
-                    <a href="https://instagram.com/selaras_mitraintegra" target="_blank"
-                        class="bg-white bg-opacity-20 rounded-2xl p-6 text-center hover:bg-opacity-30 transform hover:scale-105 transition-all duration-300 group">
-                        <div class="text-4xl mb-3 group-hover:scale-110 transition-transform duration-300">📸</div>
-                        <h3 class="text-lg font-semibold mb-2">Instagram</h3>
-                        <p class="text-sm opacity-80">@selaras_mitraintegra</p>
-                    </a>
-
-                    <!-- LinkedIn -->
-                    <a href="https://www.linkedin.com/company/pt-selarasmitraintegra/" target="_blank"
-                        class="bg-white bg-opacity-20 rounded-2xl p-6 text-center hover:bg-opacity-30 transform hover:scale-105 transition-all duration-300 group">
-                        <div class="text-4xl mb-3 group-hover:scale-110 transition-transform duration-300">💼</div>
-                        <h3 class="text-lg font-semibold mb-2">LinkedIn</h3>
-                        <p class="text-sm opacity-80">PT Selaras Mitra Integra</p>
-                    </a>
-
-                    <!-- Facebook -->
-                    <a href="http://facebook.com/selarasmitraintegra" target="_blank"
-                        class="bg-white bg-opacity-20 rounded-2xl p-6 text-center hover:bg-opacity-30 transform hover:scale-105 transition-all duration-300 group">
-                        <div class="text-4xl mb-3 group-hover:scale-110 transition-transform duration-300">📘</div>
-                        <h3 class="text-lg font-semibold mb-2">Facebook</h3>
-                        <p class="text-sm opacity-80">Selaras Mitra Integra</p>
-                    </a>
-                </div>
-            </div>
-
-            <!-- Business Hours -->
             <div class="text-center bg-gradient-to-r from-gray-800 to-gray-900 rounded-3xl p-12 text-white">
                 <h2 class="text-3xl font-bold mb-8">Jam Operasional</h2>
 
@@ -221,7 +146,6 @@
                 </div>
             </div>
 
-            <!-- Custom Styles -->
             <style>
                 .shadow-3xl {
                     box-shadow: 0 35px 60px -12px rgba(0, 0, 0, 0.25);
@@ -251,7 +175,6 @@
                 }
             </style>
 
-            <!-- JavaScript for Enhanced Interactions -->
             <script>
                 document.addEventListener('DOMContentLoaded', function() {
                     // Contact form submission

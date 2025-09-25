@@ -1,43 +1,94 @@
 @extends('layouts.frontend')
 
-@section('title', 'Selaras Mitra Integra')
+@section('title', 'SMI - Beranda')
 
 @section('content')
-    <div class="py-12 px-4 relative min-h-screen bg-gradient-to-br from-slate-50 via-blue-50 to-indigo-50" style="overflow: visible;">
-        <!-- Professional Background Pattern -->
+    <div class="py-12 px-4 relative bg-gradient-to-br from-slate-900 via-blue-900 to-indigo-900" style="overflow: visible;">
+        <!-- Flowing Vector Art Background -->
         <div class="absolute inset-0 pointer-events-none" style="overflow: hidden;">
-            <!-- Grid Pattern -->
-            <div class="absolute inset-0 bg-grid-pattern opacity-5"></div>
+            <!-- Abstract Vector Art -->
+            <svg class="absolute inset-0 w-full h-full" viewBox="0 0 1200 800" preserveAspectRatio="xMidYMid slice" style="opacity: 0.6;">
+                <!-- Main Flowing Lines - Static Abstract Design -->
+                <path d="M0,400 Q300,200 600,400 T1200,400" stroke="url(#gradient1)" stroke-width="3" fill="none" opacity="0.5"/>
+                <path d="M0,420 Q300,220 600,420 T1200,420" stroke="url(#gradient1)" stroke-width="2" fill="none" opacity="0.35"/>
+                <path d="M0,440 Q300,240 600,440 T1200,440" stroke="url(#gradient1)" stroke-width="1.5" fill="none" opacity="0.25"/>
+                
+                <!-- Second Wave Set -->
+                <path d="M0,300 Q400,100 800,300 T1200,300" stroke="url(#gradient2)" stroke-width="3" fill="none" opacity="0.4"/>
+                <path d="M0,320 Q400,120 800,320 T1200,320" stroke="url(#gradient2)" stroke-width="2" fill="none" opacity="0.3"/>
+                
+                <!-- Third Wave Set -->
+                <path d="M0,500 Q250,300 500,500 T1200,500" stroke="url(#gradient3)" stroke-width="3" fill="none" opacity="0.35"/>
+                <path d="M0,520 Q250,320 500,520 T1200,520" stroke="url(#gradient3)" stroke-width="1.5" fill="none" opacity="0.25"/>
+                
+                <!-- Reverse Direction Lines -->
+                <path d="M1200,200 Q900,50 600,200 T0,200" stroke="url(#gradient4)" stroke-width="3" fill="none" opacity="0.4"/>
+                <path d="M1200,220 Q900,70 600,220 T0,220" stroke="url(#gradient4)" stroke-width="2" fill="none" opacity="0.3"/>
+                
+                <!-- Bottom Wave Set -->
+                <path d="M0,600 Q350,400 700,600 T1200,600" stroke="url(#gradient5)" stroke-width="3" fill="none" opacity="0.5"/>
+                <path d="M0,620 Q350,420 700,620 T1200,620" stroke="url(#gradient5)" stroke-width="1.5" fill="none" opacity="0.35"/>
+                
+                <!-- Additional Abstract Lines for Complexity -->
+                <path d="M0,150 Q200,50 400,150 Q600,250 800,150 Q1000,50 1200,150" stroke="url(#gradient6)" stroke-width="2" fill="none" opacity="0.3"/>
+                <path d="M0,650 Q300,550 600,650 T1200,650" stroke="url(#gradient6)" stroke-width="2" fill="none" opacity="0.4"/>
+                
+                <!-- Intersecting Lines for Abstract Effect -->
+                <path d="M0,250 Q400,150 800,250 T1200,250" stroke="url(#gradient7)" stroke-width="1.5" fill="none" opacity="0.25"/>
+                <path d="M0,550 Q400,450 800,550 T1200,550" stroke="url(#gradient7)" stroke-width="1.5" fill="none" opacity="0.3"/>
+                
+                <!-- Gradient Definitions -->
+                <defs>
+                    <linearGradient id="gradient1" x1="0%" y1="0%" x2="100%" y2="0%">
+                        <stop offset="0%" style="stop-color:#fbbf24;stop-opacity:1" />
+                        <stop offset="30%" style="stop-color:#f59e0b;stop-opacity:0.9" />
+                        <stop offset="70%" style="stop-color:#d97706;stop-opacity:0.7" />
+                        <stop offset="100%" style="stop-color:#b45309;stop-opacity:0.5" />
+                    </linearGradient>
+                    <linearGradient id="gradient2" x1="0%" y1="0%" x2="100%" y2="0%">
+                        <stop offset="0%" style="stop-color:#f59e0b;stop-opacity:1" />
+                        <stop offset="50%" style="stop-color:#d97706;stop-opacity:0.8" />
+                        <stop offset="100%" style="stop-color:#92400e;stop-opacity:0.4" />
+                    </linearGradient>
+                    <linearGradient id="gradient3" x1="0%" y1="0%" x2="100%" y2="0%">
+                        <stop offset="0%" style="stop-color:#d97706;stop-opacity:1" />
+                        <stop offset="50%" style="stop-color:#b45309;stop-opacity:0.9" />
+                        <stop offset="100%" style="stop-color:#92400e;stop-opacity:0.6" />
+                    </linearGradient>
+                    <linearGradient id="gradient4" x1="0%" y1="0%" x2="100%" y2="0%">
+                        <stop offset="0%" style="stop-color:#fbbf24;stop-opacity:0.9" />
+                        <stop offset="50%" style="stop-color:#f59e0b;stop-opacity:0.7" />
+                        <stop offset="100%" style="stop-color:#d97706;stop-opacity:0.4" />
+                    </linearGradient>
+                    <linearGradient id="gradient5" x1="0%" y1="0%" x2="100%" y2="0%">
+                        <stop offset="0%" style="stop-color:#f59e0b;stop-opacity:1" />
+                        <stop offset="50%" style="stop-color:#d97706;stop-opacity:0.8" />
+                        <stop offset="100%" style="stop-color:#b45309;stop-opacity:0.5" />
+                    </linearGradient>
+                    <linearGradient id="gradient6" x1="0%" y1="0%" x2="100%" y2="0%">
+                        <stop offset="0%" style="stop-color:#fcd34d;stop-opacity:0.8" />
+                        <stop offset="50%" style="stop-color:#fbbf24;stop-opacity:0.6" />
+                        <stop offset="100%" style="stop-color:#f59e0b;stop-opacity:0.3" />
+                    </linearGradient>
+                    <linearGradient id="gradient7" x1="0%" y1="0%" x2="100%" y2="0%">
+                        <stop offset="0%" style="stop-color:#fed7aa;stop-opacity:0.6" />
+                        <stop offset="50%" style="stop-color:#fdba74;stop-opacity:0.5" />
+                        <stop offset="100%" style="stop-color:#fb923c;stop-opacity:0.3" />
+                    </linearGradient>
+                </defs>
+            </svg>
             
-            <!-- Geometric Professional Elements -->
-            <div class="absolute top-20 left-10 w-32 h-32 border-2 border-blue-200 opacity-20 transform rotate-12 animate-float-professional"></div>
-            <div class="absolute top-40 right-20 w-24 h-24 border border-slate-300 opacity-15 transform rotate-45 animate-drift-slow"></div>
-            <div class="absolute bottom-32 left-32 w-40 h-40 border-2 border-indigo-200 opacity-10 transform -rotate-12 animate-float-professional-delay"></div>
-            <div class="absolute bottom-20 right-16 w-28 h-28 border border-blue-300 opacity-20 transform rotate-45 animate-drift-slow-delay"></div>
+            <!-- Static Accent Elements -->
+            <div class="absolute top-1/4 left-1/4 w-3 h-3 bg-yellow-400 rounded-full opacity-30 shadow-lg shadow-yellow-400/20"></div>
+            <div class="absolute top-1/3 right-1/3 w-2 h-2 bg-amber-400 rounded-full opacity-25 shadow-md shadow-amber-400/20"></div>
+            <div class="absolute bottom-1/3 left-1/3 w-4 h-4 bg-orange-400 rounded-full opacity-35 shadow-lg shadow-orange-400/20"></div>
+            <div class="absolute bottom-1/4 right-1/4 w-2.5 h-2.5 bg-yellow-500 rounded-full opacity-30 shadow-md shadow-yellow-500/20"></div>
             
-            <!-- Subtle Accent Lines -->
-            <div class="absolute top-32 left-1/4 w-16 h-0.5 bg-gradient-to-r from-blue-300 to-transparent opacity-30 transform rotate-45 animate-pulse-professional"></div>
-            <div class="absolute top-60 right-1/3 w-20 h-0.5 bg-gradient-to-r from-slate-400 to-transparent opacity-25 transform -rotate-45 animate-pulse-professional-delay"></div>
-            <div class="absolute bottom-60 left-1/3 w-24 h-0.5 bg-gradient-to-r from-indigo-300 to-transparent opacity-20 transform rotate-12 animate-pulse-professional-delay-2"></div>
-            <div class="absolute bottom-40 right-1/4 w-18 h-0.5 bg-gradient-to-r from-blue-400 to-transparent opacity-30 transform -rotate-12 animate-pulse-professional-delay-3"></div>
-            
-            <!-- Corporate Hexagons -->
-            <div class="absolute top-16 left-1/2 w-12 h-12 border border-blue-200 opacity-25 transform rotate-30 animate-rotate-professional" style="clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%)"></div>
-            <div class="absolute top-48 right-1/2 w-16 h-16 border border-slate-300 opacity-20 transform -rotate-30 animate-rotate-professional-reverse" style="clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%)"></div>
-            <div class="absolute bottom-48 left-1/2 w-10 h-10 border border-indigo-200 opacity-30 transform rotate-45 animate-rotate-professional-delay" style="clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%)"></div>
-            <div class="absolute bottom-16 right-1/2 w-14 h-14 border border-blue-300 opacity-15 transform -rotate-45 animate-rotate-professional-reverse-delay" style="clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%)"></div>
-            
-            <!-- Minimalist Dots -->
-            <div class="absolute top-24 left-1/5 w-2 h-2 bg-blue-400 rounded-full opacity-40 animate-fade-professional"></div>
-            <div class="absolute top-56 right-1/5 w-3 h-3 bg-slate-400 rounded-full opacity-35 animate-fade-professional-delay"></div>
-            <div class="absolute bottom-56 left-4/5 w-1.5 h-1.5 bg-indigo-400 rounded-full opacity-45 animate-fade-professional-delay-2"></div>
-            <div class="absolute bottom-24 right-4/5 w-2.5 h-2.5 bg-blue-500 rounded-full opacity-30 animate-fade-professional-delay-3"></div>
-            
-            <!-- Professional Corner Elements -->
-            <div class="absolute top-0 left-0 w-20 h-20 border-l-2 border-t-2 border-blue-200 opacity-20"></div>
-            <div class="absolute top-0 right-0 w-20 h-20 border-r-2 border-t-2 border-slate-300 opacity-15"></div>
-            <div class="absolute bottom-0 left-0 w-20 h-20 border-l-2 border-b-2 border-indigo-200 opacity-20"></div>
-            <div class="absolute bottom-0 right-0 w-20 h-20 border-r-2 border-b-2 border-blue-300 opacity-15"></div>
+            <!-- Additional Abstract Geometric Elements -->
+            <div class="absolute top-20 left-20 w-1 h-16 bg-gradient-to-b from-yellow-400 to-transparent opacity-20 transform rotate-45"></div>
+            <div class="absolute top-40 right-20 w-1 h-12 bg-gradient-to-b from-amber-400 to-transparent opacity-15 transform -rotate-45"></div>
+            <div class="absolute bottom-40 left-40 w-1 h-20 bg-gradient-to-b from-orange-400 to-transparent opacity-25 transform rotate-30"></div>
+            <div class="absolute bottom-20 right-40 w-1 h-14 bg-gradient-to-b from-yellow-500 to-transparent opacity-18 transform -rotate-30"></div>
         </div>
         
         {{-- Container dengan padding yang cukup untuk mencegah button terpotong --}}
@@ -46,20 +97,21 @@
             <div class="flex flex-col md:flex-row items-center justify-center gap-8 relative z-10">
                 {{-- Bagian Teks Selamat Datang --}}
                 <div class="md:w-1/2 text-center md:text-left px-4">
-                    <h1 class="text-4xl md:text-6xl font-extrabold bg-gradient-to-r from-blue-600 via-blue-800 to-indigo-900 bg-clip-text text-transparent mb-6 leading-tight tracking-tight animate-fade-in">
+                    <h1 class="text-4xl md:text-6xl font-extrabold bg-gradient-to-r from-yellow-400 via-amber-300 to-orange-400 bg-clip-text text-transparent mb-6 leading-tight tracking-tight animate-fade-in drop-shadow-lg">
                         <span class="block font-black text-5xl md:text-7xl">Selamat Datang</span>
-                        <span class="block text-3xl md:text-5xl font-light mt-2 text-gray-700">di Website Profil</span>
+                        <span class="block text-3xl md:text-5xl font-light mt-2 text-white drop-shadow-md">di Website Profil</span>
                         <span class="block text-3xl md:text-5xl font-bold bg-gradient-to-r from-yellow-500 to-orange-600 bg-clip-text text-transparent">Perusahaan Kami</span>
                     </h1>
-                    <p class="text-xl md:text-2xl text-gray-600 mb-10 font-light leading-relaxed tracking-wide max-w-2xl">
-                        Kami menyediakan <span class="font-semibold text-blue-700">solusi inovatif</span> untuk kebutuhan bisnis Anda.
+                    <p class="text-xl md:text-2xl text-gray-200 mb-10 font-light leading-relaxed tracking-wide max-w-2xl drop-shadow-sm">
+                        Kami menyediakan <span class="font-semibold text-yellow-300">solusi inovatif</span> untuk kebutuhan bisnis Anda.
                     </p>
                     <div class="mb-8 btn-container flex justify-center">
                         <a href="{{ route('news.index') }}"
-                            class="group btn-news bg-blue-600 hover:bg-blue-700 text-white shadow-lg transition-all duration-500 ease-in-out transform hover:scale-110 hover:shadow-2xl animate-pulse whitespace-nowrap">
+                            class="group btn-news bg-gradient-to-r from-yellow-500 to-amber-600 hover:from-yellow-600 hover:to-amber-700 text-white shadow-lg transition-all duration-500 ease-in-out transform hover:scale-110 hover:shadow-2xl whitespace-nowrap">
                             <span class="relative font-bold tracking-wider">
-                                Lihat Berita Terbaru
-                                <span class="absolute inset-0 bg-gradient-to-r from-transparent via-white to-transparent opacity-0 group-hover:opacity-30 group-hover:animate-shimmer transform -skew-x-12"></span>
+                                Lihat Berit1
+                                <span
+                                    class="absolute inset-0 bg-gradient-to-r from-transparent via-white to-transparent opacity-0 group-hover:opacity-30 group-hover:animate-shimmer transform -skew-x-12"></span>
                             </span>
                         </a>
                     </div>
@@ -92,16 +144,16 @@
             <div class="absolute bottom-32 right-16 w-18 h-18 border border-blue-200 opacity-35 transform -rotate-12 animate-drift-gentle-delay-3"></div>
             
             <!-- Minimal Accent Lines -->
-            <div class="absolute top-24 left-1/4 w-12 h-0.5 bg-gradient-to-r from-blue-200 to-transparent opacity-40 animate-fade-in-out"></div>
-            <div class="absolute top-48 right-1/3 w-16 h-0.5 bg-gradient-to-r from-slate-300 to-transparent opacity-30 animate-fade-in-out-delay"></div>
-            <div class="absolute bottom-48 left-1/3 w-14 h-0.5 bg-gradient-to-r from-indigo-200 to-transparent opacity-35 animate-fade-in-out-delay-2"></div>
-            <div class="absolute bottom-24 right-1/4 w-10 h-0.5 bg-gradient-to-r from-blue-300 to-transparent opacity-25 animate-fade-in-out-delay-3"></div>
+            <div class="absolute top-24 left-1/4 w-12 h-0.5 bg-gradient-to-r from-blue-300/60 to-transparent opacity-50 animate-fade-in-out"></div>
+            <div class="absolute top-48 right-1/3 w-16 h-0.5 bg-gradient-to-r from-slate-400/60 to-transparent opacity-40 animate-fade-in-out-delay"></div>
+            <div class="absolute bottom-48 left-1/3 w-14 h-0.5 bg-gradient-to-r from-indigo-300/60 to-transparent opacity-45 animate-fade-in-out-delay-2"></div>
+            <div class="absolute bottom-24 right-1/4 w-10 h-0.5 bg-gradient-to-r from-blue-400/60 to-transparent opacity-35 animate-fade-in-out-delay-3"></div>
             
             <!-- Corporate Corner Elements -->
-            <div class="absolute top-0 left-0 w-12 h-12 border-l border-t border-blue-100 opacity-40"></div>
-            <div class="absolute top-0 right-0 w-12 h-12 border-r border-t border-slate-200 opacity-30"></div>
-            <div class="absolute bottom-0 left-0 w-12 h-12 border-l border-b border-indigo-100 opacity-40"></div>
-            <div class="absolute bottom-0 right-0 w-12 h-12 border-r border-b border-blue-200 opacity-30"></div>
+            <div class="absolute top-0 left-0 w-12 h-12 border-l border-t border-blue-200/60 opacity-50"></div>
+            <div class="absolute top-0 right-0 w-12 h-12 border-r border-t border-slate-300/60 opacity-40"></div>
+            <div class="absolute bottom-0 left-0 w-12 h-12 border-l border-b border-indigo-200/60 opacity-50"></div>
+            <div class="absolute bottom-0 right-0 w-12 h-12 border-r border-b border-blue-300/60 opacity-40"></div>
             
             <!-- Subtle Professional Dots -->
             <div class="absolute top-16 left-1/2 w-1 h-1 bg-blue-300 rounded-full opacity-50 animate-pulse-gentle"></div>
@@ -110,16 +162,21 @@
             <div class="absolute bottom-16 right-1/2 w-1.5 h-1.5 bg-blue-400 rounded-full opacity-35 animate-pulse-gentle-delay-3"></div>
         </div>
         
-        <div class="relative z-10">
-            <h2 class="text-4xl md:text-5xl font-black text-center bg-gradient-to-r from-blue-800 via-blue-600 to-indigo-700 bg-clip-text text-transparent mb-8 tracking-tight">Tentang Kami</h2>
-        <p class="text-gray-700 text-xl md:text-2xl text-center leading-relaxed max-w-4xl mx-auto font-light tracking-wide">
-            <span class="font-semibold text-blue-800">PT Selaras Mitra Integra</span> telah berpengalaman lebih dari <span class="font-bold text-yellow-600">10 tahun</span> di bidang Human Resource Consultant. Lebih
-            dari <span class="font-bold text-blue-700">100 perusahaan</span> di berbagai bidang telah menggunakan layanan kami. Kami mengucapkan terima kasih atas
-            kepercayaan yang diberikan kepada PT Selaras Mitra Integra untuk terus melayani Anda sebagai mitra kami.
-            Kami berkomitmen untuk memberikan <span class="font-semibold text-green-600">pelayanan terbaik</span> untuk Anda.
-            <br><br>
-            Untuk Anda yang belum bermitra bersama kami, kami siap menunggu kabar dari Anda.
-        </p>
+     <div class="relative z-10">
+    <h2 class="py-2 text-4xl md:text-5xl font-black text-center bg-gradient-to-r from-blue-800 via-blue-600 to-indigo-700 bg-clip-text text-transparent mb-8 tracking-tight">
+        Tentang Kami
+    </h2>
+</div>
+    
+            <p class="text-gray-700 text-xl md:text-2xl text-justify leading-relaxed max-w-4xl mx-auto font-light tracking-wide">
+                <span class="font-semibold text-blue-800">PT Selaras Mitra Integra</span> telah berpengalaman lebih dari <span class="font-bold text-yellow-600">10 tahun</span> di bidang Human Resource Consultant. Lebih
+                dari <span class="font-bold text-blue-700">100 perusahaan</span> di berbagai bidang telah menggunakan layanan kami. Kami mengucapkan terima kasih atas
+                kepercayaan yang diberikan kepada PT Selaras Mitra Integra untuk terus melayani Anda sebagai mitra kami.
+                Kami berkomitmen untuk memberikan <span class="font-semibold text-blue-900">pelayanan terbaik</span> untuk Anda.
+                <br><br>
+                Untuk Anda yang belum bermitra bersama kami, kami siap menunggu kabar dari Anda.
+            </p>
+        </div>
         <div class="text-center mt-10 relative z-10">
             <a href="{{ route('about-us') }}" class="group inline-flex items-center px-8 py-4 text-lg font-bold text-blue-600 bg-blue-50 border-2 border-blue-200 rounded-2xl hover:bg-blue-100 hover:border-blue-300 hover:text-blue-700 transition-all duration-500 ease-in-out transform hover:scale-105 hover:shadow-xl hover:-translate-y-1 hover:rotate-1">
                 <span class="mr-3 transform transition-transform duration-300 group-hover:scale-110 tracking-wide">Baca Selengkapnya Tentang Kami</span>
@@ -131,169 +188,215 @@
         </div>
     </section>
 
-    {{-- Bagian "Klien Kami" --}}
-    <section class="py-12 mt-8 px-4 relative overflow-hidden bg-gradient-to-br from-gray-50 to-slate-100">
-        <!-- Professional Client Section Background -->
-        <div class="absolute inset-0 pointer-events-none">
-            <!-- Corporate Grid Pattern -->
-            <div class="absolute inset-0 bg-grid-corporate opacity-4"></div>
-            
-            <!-- Professional Elements -->
-            <div class="absolute top-8 left-12 w-16 h-16 border border-gray-200 opacity-30 transform rotate-45 animate-drift-professional"></div>
-            <div class="absolute top-24 right-20 w-20 h-20 border border-slate-300 opacity-25 transform -rotate-30 animate-drift-professional-delay"></div>
-            <div class="absolute bottom-16 left-24 w-18 h-18 border border-blue-200 opacity-35 transform rotate-30 animate-drift-professional-delay-2"></div>
-            <div class="absolute bottom-8 right-12 w-22 h-22 border border-gray-300 opacity-20 transform -rotate-45 animate-drift-professional-delay-3"></div>
-            
-            <!-- Minimal Corporate Lines -->
-            <div class="absolute top-32 left-1/5 w-8 h-0.5 bg-gradient-to-r from-gray-300 to-transparent opacity-40 animate-slide-professional"></div>
-            <div class="absolute top-48 right-1/4 w-12 h-0.5 bg-gradient-to-r from-slate-400 to-transparent opacity-30 animate-slide-professional-delay"></div>
-            <div class="absolute bottom-32 left-1/3 w-10 h-0.5 bg-gradient-to-r from-blue-300 to-transparent opacity-35 animate-slide-professional-delay-2"></div>
-            <div class="absolute bottom-48 right-1/5 w-14 h-0.5 bg-gradient-to-r from-gray-400 to-transparent opacity-25 animate-slide-professional-delay-3"></div>
-            
-            <!-- Corporate Accent Points -->
-            <div class="absolute top-12 left-1/3 w-1 h-1 bg-gray-400 rounded-full opacity-50 animate-blink-professional"></div>
-            <div class="absolute top-24 right-1/3 w-1.5 h-1.5 bg-slate-500 rounded-full opacity-40 animate-blink-professional-delay"></div>
-            <div class="absolute bottom-24 left-2/3 w-1 h-1 bg-blue-400 rounded-full opacity-60 animate-blink-professional-delay-2"></div>
-            <div class="absolute bottom-12 right-2/3 w-1.5 h-1.5 bg-gray-500 rounded-full opacity-35 animate-blink-professional-delay-3"></div>
-            
-            <!-- Professional Corner Accents -->
-            <div class="absolute top-0 left-0 w-8 h-8 border-l border-t border-gray-200 opacity-50"></div>
-            <div class="absolute top-0 right-0 w-8 h-8 border-r border-t border-slate-300 opacity-40"></div>
-            <div class="absolute bottom-0 left-0 w-8 h-8 border-l border-b border-blue-200 opacity-50"></div>
-            <div class="absolute bottom-0 right-0 w-8 h-8 border-r border-b border-gray-300 opacity-40"></div>
-        </div>
-        
-        <div class="relative z-10">
-            <h2 class="text-4xl md:text-5xl font-black text-center bg-gradient-to-r from-blue-800 via-purple-600 to-indigo-700 bg-clip-text text-transparent mb-10 tracking-tight">Klien Kami</h2>
+   {{-- Bagian "Klien Kami" --}}
+<section class="py-12 mt-8 px-4 relative overflow-hidden bg-gradient-to-br from-gray-50 to-slate-100">
+
+   <div class="absolute inset-0 z-0">
+    {{-- Gambar Kanan Atas --}}
+    <img src="{{ asset('images/Foto1.jpeg') }}" 
+         alt="Aesthetic background"
+         class="absolute -top-1/4 -right-1/4 w-3/4 h-auto object-contain transform rotate-12">
+    
+    {{-- Gambar Kiri Atas --}}
+    <img src="{{ asset('images/Foto2.jpeg') }}"
+         alt="Another aesthetic background"
+         class="absolute -top-1/4 -left-1/4 w-3/4 h-auto object-contain transform -rotate-12">
+</div>
+
+    <div class="flex justify-center">
+
+  <div class="relative inline-block mb-10">
+    <div class="absolute inset-0 bg-gradient-to-r from-blue-700 to-blue-900 rounded-lg shadow-lg"></div>
+    
+    <h2 class="relative text-4xl md:text-5xl font-black text-white tracking-tight px-8 py-3">
+      Klien Kami
+    </h2>
+  </div>
+
+</div>
         @if ($clients->isNotEmpty())
-            <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 justify-items-center">
-                @foreach ($clients as $client)
-                    <div
-                        class="group flex flex-col items-center p-4 bg-white rounded-lg shadow-md hover:shadow-2xl transition-all duration-500 ease-in-out transform hover:scale-105 hover:-translate-y-2 hover:rotate-1 cursor-pointer">
-                        @if ($client->logo)
-                            <img src="{{ asset('storage/' . $client->logo) }}" alt="{{ $client->name }}"
-                                class="h-24 object-contain mb-2 filter grayscale hover:grayscale-0 transition-all duration-500 transform group-hover:scale-110 group-hover:rotate-3">
-                        @else
-                            <div
-                                class="h-24 flex items-center justify-center text-gray-500 text-center border rounded-md p-2 w-full transition-all duration-500 group-hover:border-blue-300 group-hover:bg-blue-50 group-hover:text-blue-600">
-                                Tidak Ada Logo</div>
-                        @endif
-                        <p class="text-xl font-bold text-gray-800 text-center mt-3 transition-all duration-300 group-hover:text-blue-600 group-hover:scale-105 tracking-wide">{{ $client->name }}</p>
-                    </div>
-                @endforeach
+            <div class="overflow-hidden w-full relative">
+                <button id="client-prev" class="absolute left-0 top-1/2 -translate-y-1/2 z-10 bg-white/80 hover:bg-blue-100 text-blue-700 rounded-full shadow p-2 transition-all duration-300 focus:outline-none"><svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" /></svg></button>
+                <div id="client-slider" class="flex gap-8 items-center transition-transform duration-500" style="will-change: transform;">
+                    @foreach ($clients as $client)
+                        <div class="group flex-shrink-0 w-32 h-24 flex items-center justify-center p-3 bg-white rounded-lg shadow-md hover:shadow-2xl transition-all duration-500 ease-in-out transform hover:scale-105 hover:-translate-y-2 hover:rotate-1 cursor-pointer border border-gray-200 hover:border-blue-300">
+                            @if ($client->logo)
+                                <img src="{{ asset('storage/' . $client->logo) }}" alt="Logo Klien"
+                                     class="object-contain max-h-16 max-w-24 transition-all duration-500 transform group-hover:scale-110 group-hover:rotate-3">
+                            @else
+                                <div class="flex items-center justify-center text-gray-400 text-xs text-center h-full w-full border border-dashed border-gray-300 rounded transition-all duration-500 group-hover:border-blue-300 group-hover:bg-blue-50 group-hover:text-blue-600">
+                                    No Logo
+                                </div>
+                            @endif
+                        </div>
+                    @endforeach
+                </div>
+                <button id="client-next" class="absolute right-0 top-1/2 -translate-y-1/2 z-10 bg-white/80 hover:bg-blue-100 text-blue-700 rounded-full shadow p-2 transition-all duration-300 focus:outline-none"><svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" /></svg></button>
             </div>
+            <script>
+            document.addEventListener('DOMContentLoaded', function() {
+                const slider = document.getElementById('client-slider');
+                const prevBtn = document.getElementById('client-prev');
+                const nextBtn = document.getElementById('client-next');
+                const items = slider.children;
+                
+                // Responsive visibility: 6 on desktop, 4 on tablet, 2 on mobile
+                function getVisibleCount() {
+                    if (window.innerWidth >= 1024) return 6; // lg breakpoint
+                    if (window.innerWidth >= 768) return 4;  // md breakpoint
+                    return 2; // mobile
+                }
+                
+                let visible = getVisibleCount();
+                let position = 0;
+                let autoSlideInterval = null;
+                let autoPaused = false;
+                
+                function updateSlider() {
+                    visible = getVisibleCount();
+                    if (position > items.length - visible) {
+                        position = Math.max(0, items.length - visible);
+                    }
+                    const itemWidth = items[0].offsetWidth + 32; // 32 = gap-8 (2rem)
+                    slider.style.transform = `translateX(-${position * itemWidth}px)`;
+                }
+                
+                function nextSlide() {
+                    if (position < items.length - visible) {
+                        position++;
+                    } else {
+                        position = 0;
+                    }
+                    updateSlider();
+                }
+                
+                function prevSlide() {
+                    if (position > 0) {
+                        position--;
+                    } else {
+                        position = Math.max(0, items.length - visible);
+                    }
+                    updateSlider();
+                }
+                
+                function startAutoSlide() {
+                    if (autoSlideInterval) clearInterval(autoSlideInterval);
+                    autoSlideInterval = setInterval(() => {
+                        if (!autoPaused) nextSlide();
+                    }, 3000); // 3 detik
+                }
+                
+                function pauseAutoSlide() {
+                    autoPaused = true;
+                    if (autoSlideInterval) clearInterval(autoSlideInterval);
+                    setTimeout(() => {
+                        autoPaused = false;
+                        startAutoSlide();
+                    }, 5000); // pause 5 detik setelah interaksi manual
+                }
+                
+                prevBtn.addEventListener('click', function() {
+                    prevSlide();
+                    pauseAutoSlide();
+                });
+                
+                nextBtn.addEventListener('click', function() {
+                    nextSlide();
+                    pauseAutoSlide();
+                });
+                
+                // Update on window resize
+                window.addEventListener('resize', function() {
+                    updateSlider();
+                });
+                
+                // Initialize
+                updateSlider();
+                startAutoSlide();
+            });
+            </script>
         @else
             <p class="text-center text-gray-500 relative z-10">Belum ada klien yang ditambahkan.</p>
         @endif
-        </div>
-    </section>
+    </div>
+</section>
 
-    <section class="bg-gradient-to-br from-gray-50 via-slate-50 to-blue-50 text-gray-800 py-16 px-4 relative overflow-hidden">
-        <!-- Professional Background Pattern -->
-        <div class="absolute inset-0 pointer-events-none">
-            <!-- Subtle Grid Pattern -->
-            <div class="absolute inset-0 bg-grid-pattern opacity-3"></div>
-            
-            <!-- Professional Elements -->
-            <div class="absolute top-16 left-20 w-20 h-20 border border-gray-200 opacity-25 transform rotate-45 animate-drift-gentle"></div>
-            <div class="absolute top-32 right-24 w-16 h-16 border border-slate-300 opacity-20 transform -rotate-30 animate-drift-gentle-delay"></div>
-            <div class="absolute bottom-20 left-32 w-24 h-24 border border-blue-200 opacity-30 transform rotate-12 animate-drift-gentle-delay-2"></div>
-            <div class="absolute bottom-32 right-20 w-18 h-18 border border-gray-300 opacity-25 transform -rotate-45 animate-drift-gentle-delay-3"></div>
-            
-            <!-- Subtle Lines -->
-            <div class="absolute top-24 left-1/4 w-12 h-0.5 bg-gradient-to-r from-gray-300 to-transparent opacity-30 animate-fade-in-out"></div>
-            <div class="absolute top-48 right-1/3 w-16 h-0.5 bg-gradient-to-r from-slate-400 to-transparent opacity-25 animate-fade-in-out-delay"></div>
-            <div class="absolute bottom-48 left-1/3 w-14 h-0.5 bg-gradient-to-r from-blue-300 to-transparent opacity-35 animate-fade-in-out-delay-2"></div>
-            <div class="absolute bottom-24 right-1/4 w-10 h-0.5 bg-gradient-to-r from-gray-400 to-transparent opacity-20 animate-fade-in-out-delay-3"></div>
-            
-            <!-- Corner Elements -->
-            <div class="absolute top-0 left-0 w-16 h-16 border-l-2 border-t-2 border-gray-200 opacity-30"></div>
-            <div class="absolute top-0 right-0 w-16 h-16 border-r-2 border-t-2 border-slate-300 opacity-25"></div>
-            <div class="absolute bottom-0 left-0 w-16 h-16 border-l-2 border-b-2 border-blue-200 opacity-30"></div>
-            <div class="absolute bottom-0 right-0 w-16 h-16 border-r-2 border-b-2 border-gray-300 opacity-25"></div>
-        </div>
-        
+    {{-- Bagian "Mengapa memilih kami?" --}}
+    <section class="bg-gradient-to-br from-gray-50 via-slate-50 to-blue-50 text-gray-800 py-16 px-4 relative">  
         <div class="container mx-auto text-center relative z-10">
-            <h2 class="text-4xl md:text-6xl font-black mb-16 bg-gradient-to-r from-slate-800 via-blue-700 to-indigo-800 bg-clip-text text-transparent tracking-tight leading-tight">Mengapa memilih kami?</h2>
+            <h2 class="py-4 text-4xl md:text-6xl font-black mb-16 bg-gradient-to-r from-slate-800 via-blue-700 to-indigo-800 bg-clip-text text-transparent tracking-tight">Mengapa Memilih Kami?</h2>
             
-            <!-- Carousel Container -->
-            <div class="relative max-w-5xl mx-auto px-20">
-                <!-- Main Card Display -->
-                <div class="carousel-container relative overflow-hidden">
-                    <div class="carousel-track flex transition-transform duration-500 ease-in-out" id="carouselTrack">
-                        <!-- Card 1 -->
-                        <div class="carousel-item w-1/4 flex-shrink-0 flex justify-center">
-                            <div class="relative w-40 h-40 transform rotate-45 flex items-center justify-center bg-white border-2 border-blue-200 text-blue-800 shadow-xl rounded-lg transition-all duration-500 hover:scale-110 hover:shadow-2xl hover:rotate-[50deg] cursor-pointer group">
-                                <div class="absolute w-full h-full transform -rotate-45 flex items-center justify-center p-4 transition-transform duration-300 group-hover:scale-105">
-                                    <span class="text-center font-bold text-lg tracking-wide">Kept Confidential</span>
-                                </div>
-                            </div>
-                        </div>
-                        
-                        <!-- Card 2 -->
-                        <div class="carousel-item w-1/4 flex-shrink-0 flex justify-center">
-                            <div class="relative w-40 h-40 transform rotate-45 flex items-center justify-center bg-gradient-to-br from-blue-600 to-blue-700 text-white shadow-xl rounded-lg transition-all duration-500 hover:scale-110 hover:shadow-2xl hover:rotate-[50deg] cursor-pointer group">
-                                <div class="absolute w-full h-full transform -rotate-45 flex items-center justify-center p-4 transition-transform duration-300 group-hover:scale-105">
-                                    <span class="text-center font-bold text-lg tracking-wide">Monitoring Proses</span>
-                                </div>
-                            </div>
-                        </div>
-                        
-                        <!-- Card 3 -->
-                        <div class="carousel-item w-1/4 flex-shrink-0 flex justify-center">
-                            <div class="relative w-40 h-40 transform rotate-45 flex items-center justify-center bg-white border-2 border-slate-300 text-slate-800 shadow-xl rounded-lg transition-all duration-500 hover:scale-110 hover:shadow-2xl hover:rotate-[50deg] cursor-pointer group">
-                                <div class="absolute w-full h-full transform -rotate-45 flex items-center justify-center p-4 transition-transform duration-300 group-hover:scale-105">
-                                    <span class="text-center font-bold text-lg tracking-wide">Simple</span>
-                                </div>
-                            </div>
-                        </div>
-                        
-                        <!-- Card 4 -->
-                        <div class="carousel-item w-1/4 flex-shrink-0 flex justify-center">
-                            <div class="relative w-40 h-40 transform rotate-45 flex items-center justify-center bg-gradient-to-br from-indigo-600 to-indigo-700 text-white shadow-xl rounded-lg transition-all duration-500 hover:scale-110 hover:shadow-2xl hover:rotate-[50deg] cursor-pointer group">
-                                <div class="absolute w-full h-full transform -rotate-45 flex items-center justify-center p-4 transition-transform duration-300 group-hover:scale-105">
-                                    <span class="text-center font-bold text-lg tracking-wide">Unlimited Participant</span>
-                                </div>
-                            </div>
-                        </div>
-                        
-                        <!-- Card 5 -->
-                        <div class="carousel-item w-1/4 flex-shrink-0 flex justify-center">
-                            <div class="relative w-40 h-40 transform rotate-45 flex items-center justify-center bg-white border-2 border-gray-300 text-gray-800 shadow-xl rounded-lg transition-all duration-500 hover:scale-110 hover:shadow-2xl hover:rotate-[50deg] cursor-pointer group">
-                                <div class="absolute w-full h-full transform -rotate-45 flex items-center justify-center p-4 transition-transform duration-300 group-hover:scale-105">
-                                    <span class="text-center font-bold text-lg tracking-wide">Fleksibel</span>
-                                </div>
-                            </div>
-                        </div>
-                        
-                        <!-- Card 6 -->
-                        <div class="carousel-item w-1/4 flex-shrink-0 flex justify-center">
-                            <div class="relative w-40 h-40 transform rotate-45 flex items-center justify-center bg-gradient-to-br from-slate-600 to-slate-700 text-white shadow-xl rounded-lg transition-all duration-500 hover:scale-110 hover:shadow-2xl hover:rotate-[50deg] cursor-pointer group">
-                                <div class="absolute w-full h-full transform -rotate-45 flex items-center justify-center p-4 transition-transform duration-300 group-hover:scale-105">
-                                    <span class="text-center font-bold text-lg tracking-wide">Hasil Terverifikasi</span>
-                                </div>
-                            </div>
-                        </div>
-                        
-                        <!-- Card 7 -->
-                        <div class="carousel-item w-1/4 flex-shrink-0 flex justify-center">
-                            <div class="relative w-40 h-40 transform rotate-45 flex items-center justify-center bg-gradient-to-br from-blue-500 to-blue-600 text-white shadow-xl rounded-lg transition-all duration-500 hover:scale-110 hover:shadow-2xl hover:rotate-[50deg] cursor-pointer group">
-                                <div class="absolute w-full h-full transform -rotate-45 flex items-center justify-center p-4 transition-transform duration-300 group-hover:scale-105">
-                                    <span class="text-center font-bold text-lg tracking-wide">Customize</span>
-                                </div>
-                            </div>
-                        </div>
-                        
-                        <!-- Card 8 -->
-                        <div class="carousel-item w-1/4 flex-shrink-0 flex justify-center">
-                            <div class="relative w-40 h-40 transform rotate-45 flex items-center justify-center bg-white border-2 border-indigo-300 text-indigo-800 shadow-xl rounded-lg transition-all duration-500 hover:scale-110 hover:shadow-2xl hover:rotate-[50deg] cursor-pointer group">
-                                <div class="absolute w-full h-full transform -rotate-45 flex items-center justify-center p-4 transition-transform duration-300 group-hover:scale-105">
-                                    <span class="text-center font-bold text-lg tracking-wide">Tools Up to Date</span>
-                                </div>
-                            </div>
-                        </div>
+            <div class="relative max-w-5xl mx-auto px-8">
+            <div class="carousel-container relative overflow-hidden h-64">
+            <div class="carousel-track flex transition-transform duration-500 ease-in-out" id="carouselTrack">
+            
+            <div class="carousel-item w-1/4 flex-shrink-0 flex justify-center">
+                <div class="relative w-40 h-40 transform rotate-45 flex items-center justify-center bg-gradient-to-br from-blue-600 to-blue-700 text-white shadow-xl rounded-lg transition-all duration-500 hover:scale-110 hover:shadow-2xl hover:rotate-[50deg] cursor-pointer group">
+                    <div class="absolute w-full h-full transform -rotate-45 flex items-center justify-center p-4 transition-transform duration-300 group-hover:scale-105">
+                        <span class="text-center font-bold text-lg tracking-wide">Kept Confidential</span>
                     </div>
                 </div>
+            </div>
+            
+            <div class="carousel-item w-1/4 flex-shrink-0 flex justify-center">
+                <div class="relative w-40 h-40 transform rotate-45 flex items-center justify-center bg-gradient-to-br from-amber-500 to-amber-600 text-white shadow-xl rounded-lg transition-all duration-500 hover:scale-110 hover:shadow-2xl hover:rotate-[50deg] cursor-pointer group">
+                    <div class="absolute w-full h-full transform -rotate-45 flex items-center justify-center p-4 transition-transform duration-300 group-hover:scale-105">
+                        <span class="text-center font-bold text-lg tracking-wide">Monitoring Proses</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="carousel-item w-1/4 flex-shrink-0 flex justify-center">
+                <div class="relative w-40 h-40 transform rotate-45 flex items-center justify-center bg-gradient-to-br from-blue-600 to-blue-700 text-white shadow-xl rounded-lg transition-all duration-500 hover:scale-110 hover:shadow-2xl hover:rotate-[50deg] cursor-pointer group">
+                    <div class="absolute w-full h-full transform -rotate-45 flex items-center justify-center p-4 transition-transform duration-300 group-hover:scale-105">
+                        <span class="text-center font-bold text-lg tracking-wide">Simple</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="carousel-item w-1/4 flex-shrink-0 flex justify-center">
+                <div class="relative w-40 h-40 transform rotate-45 flex items-center justify-center bg-gradient-to-br from-amber-500 to-amber-600 text-white shadow-xl rounded-lg transition-all duration-500 hover:scale-110 hover:shadow-2xl hover:rotate-[50deg] cursor-pointer group">
+                    <div class="absolute w-full h-full transform -rotate-45 flex items-center justify-center p-4 transition-transform duration-300 group-hover:scale-105">
+                        <span class="text-center font-bold text-lg tracking-wide">Unlimited Participant</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="carousel-item w-1/4 flex-shrink-0 flex justify-center">
+                <div class="relative w-40 h-40 transform rotate-45 flex items-center justify-center bg-gradient-to-br from-blue-600 to-blue-700 text-white shadow-xl rounded-lg transition-all duration-500 hover:scale-110 hover:shadow-2xl hover:rotate-[50deg] cursor-pointer group">
+                    <div class="absolute w-full h-full transform -rotate-45 flex items-center justify-center p-4 transition-transform duration-300 group-hover:scale-105">
+                        <span class="text-center font-bold text-lg tracking-wide">Fleksibel</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="carousel-item w-1/4 flex-shrink-0 flex justify-center">
+                <div class="relative w-40 h-40 transform rotate-45 flex items-center justify-center bg-gradient-to-br from-amber-500 to-amber-600 text-white shadow-xl rounded-lg transition-all duration-500 hover:scale-110 hover:shadow-2xl hover:rotate-[50deg] cursor-pointer group">
+                    <div class="absolute w-full h-full transform -rotate-45 flex items-center justify-center p-4 transition-transform duration-300 group-hover:scale-105">
+                        <span class="text-center font-bold text-lg tracking-wide">Hasil Terverifikasi</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="carousel-item w-1/4 flex-shrink-0 flex justify-center">
+                <div class="relative w-40 h-40 transform rotate-45 flex items-center justify-center bg-gradient-to-br from-blue-600 to-blue-700 text-white shadow-xl rounded-lg transition-all duration-500 hover:scale-110 hover:shadow-2xl hover:rotate-[50deg] cursor-pointer group">
+                    <div class="absolute w-full h-full transform -rotate-45 flex items-center justify-center p-4 transition-transform duration-300 group-hover:scale-105">
+                        <span class="text-center font-bold text-lg tracking-wide">Customize</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="carousel-item w-1/4 flex-shrink-0 flex justify-center">
+                <div class="relative w-40 h-40 transform rotate-45 flex items-center justify-center bg-gradient-to-br from-amber-500 to-amber-600 text-white shadow-xl rounded-lg transition-all duration-500 hover:scale-110 hover:shadow-2xl hover:rotate-[50deg] cursor-pointer group">
+                    <div class="absolute w-full h-full transform -rotate-45 flex items-center justify-center p-4 transition-transform duration-300 group-hover:scale-105">
+                        <span class="text-center font-bold text-lg tracking-wide">Tools Up to Date</span>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+</div>
                 
                 <!-- Navigation Buttons -->
                 <button type="button" class="carousel-btn carousel-btn-prev absolute left-0 top-1/2 transform -translate-y-1/2 bg-gray-600 bg-opacity-20 hover:bg-opacity-40 text-gray-700 p-3 rounded-full transition-all duration-300 hover:scale-110 shadow-lg backdrop-blur-sm border border-gray-400 border-opacity-30" id="prevBtn">
@@ -322,13 +425,11 @@
 
             <div class="mt-16">
                 <div class="flex flex-col sm:flex-row gap-4 justify-center items-center">
-                    <a href="{{ route('contact') }}" class="group relative inline-block bg-blue-600 text-white px-8 py-4 rounded-full text-lg font-black hover:bg-blue-700 transition-all duration-500 shadow-lg hover:shadow-2xl animate-pulse overflow-hidden tracking-wider">
-                        <span class="relative z-10">KONSULTASI SEKARANG</span>
-                        <span class="absolute inset-0 bg-gradient-to-r from-blue-700 to-indigo-700 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-500 origin-left"></span>
-                        <span class="absolute inset-0 bg-white opacity-0 group-hover:opacity-20 transition-opacity duration-300"></span>
+                    <a href="{{ route('contact') }}" class="group relative inline-block bg-blue-600 text-white px-8 py-4 rounded-full text-lg font-black hover:bg-blue-700 transition-all duration-500 shadow-lg hover:shadow-2xl overflow-hidden tracking-wider transform hover:scale-110 hover:-translate-y-1 hover:rotate-1">
+                    <span class="relative z-10 transition-transform duration-300 group-hover:scale-105">KONSULTASI SEKARANG</span>
                     </a>
                     
-                    <a href="{{ route('services') }}" class="group inline-flex items-center px-6 py-4 text-base font-bold text-gray-700 bg-green-500 bg-opacity-60 rounded-xl border border-gray-300 border-opacity-50 hover:bg-opacity-80 hover:border-opacity-70 transition-all duration-500 ease-in-out transform hover:scale-110 hover:shadow-xl backdrop-blur-sm hover:-translate-y-1 hover:rotate-1 tracking-wide">
+                    <a href="{{ route('services') }}" class="group inline-flex items-center px-6 py-4 text-base font-bold text-gray-700 bg-yellow-500 bg-opacity-60 rounded-xl border border-gray-300 border-opacity-50 hover:bg-opacity-80 hover:border-opacity-70 transition-all duration-500 ease-in-out transform hover:scale-110 hover:shadow-xl backdrop-blur-sm hover:-translate-y-1 hover:rotate-1 tracking-wide">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18"></path>
                         </svg>
                         <span class="transition-transform duration-300 group-hover:scale-105">Lihat Menu Layanan</span>
@@ -345,7 +446,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const totalSlides = 8; // Total item
     const slidesVisible = 4; // Jumlah item yang terlihat
     const slideWidthPercentage = 100 / slidesVisible; // Lebar per item = 25%
-
+    
     const track = document.getElementById('carouselTrack');
     const prevBtn = document.getElementById('prevBtn');
     const nextBtn = document.getElementById('nextBtn');

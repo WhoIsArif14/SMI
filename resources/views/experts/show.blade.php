@@ -1,6 +1,6 @@
 @extends('layouts.frontend') {{-- Menggunakan layout frontend Anda --}}
 
-@section('title', $expert->name . ' - Expert Kami')
+@section('title', $expert->name . ' - Expert SMI')
 
 @section('content')
     <div class="container mx-auto px-4 py-8">

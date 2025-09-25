@@ -28,7 +28,6 @@
                         <div class="absolute inset-0 bg-gradient-to-r from-green-600 to-teal-600 rounded-lg opacity-0 group-hover:opacity-100 transition-all duration-300 transform scale-95 group-hover:scale-100"></div>
                     </x-nav-link>
 
-
                     {{-- Link ke Manajemen Klien --}}
                     <x-nav-link :href="route('admin.clients.index')" :active="request()->routeIs('admin.clients.*')"
                         class="group relative px-6 py-3 text-white/90 hover:text-white font-semibold transition-all duration-300 hover:scale-105">

@@ -35,7 +35,7 @@
                 </h1>
                 <p class="text-xl md:text-2xl text-gray-600 font-light leading-relaxed tracking-wide max-w-4xl mx-auto">
                     Mengenang perjalanan panjang <span class="font-semibold text-blue-700">PT Selaras Mitra Integra</span> dalam memberikan 
-                    <span class="font-semibold text-green-600">solusi terbaik</span> untuk kebutuhan Human Resource Consultant selama lebih dari 
+                    <span class="font-semibold text-yellow-400">solusi terbaik</span> untuk kebutuhan Human Resource Consultant selama lebih dari 
                     <span class="font-bold text-yellow-600">10 tahun</span>.
                 </p>
             </div>
@@ -86,16 +86,15 @@
                     </div>
                 </div>
 
-                <!-- Stat 2 -->
-                <div class="group relative bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-500 transform hover:scale-105 hover:-translate-y-2 overflow-hidden">
-                    <div class="absolute inset-0 bg-gradient-to-br from-green-400 to-green-600 opacity-0 group-hover:opacity-10 transition-opacity duration-500"></div>
+                                <div class="group relative bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-500 transform hover:scale-105 hover:-translate-y-2 overflow-hidden">
+                    <div class="absolute inset-0 bg-gradient-to-br from-blue-400 to-blue-600 opacity-0 group-hover:opacity-10 transition-opacity duration-500"></div>
                     <div class="relative z-10 p-8 text-center">
-                        <div class="w-16 h-16 bg-gradient-to-br from-green-500 to-green-600 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
+                        <div class="w-16 h-16 bg-gradient-to-br from-blue-500 to-blue-600 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
                             <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"></path>
                             </svg>
                         </div>
-                        <h3 class="text-4xl font-bold text-green-800 mb-2 group-hover:text-green-600 transition-colors">100+</h3>
+                        <h3 class="text-4xl font-bold text-blue-800 mb-2 group-hover:text-blue-600 transition-colors">100+</h3>
                         <p class="text-xl font-semibold text-gray-700 mb-2">Perusahaan Klien</p>
                         <p class="text-gray-600">Kepercayaan dari berbagai bidang industri</p>
                     </div>
@@ -145,19 +144,19 @@
                             <p class="text-gray-700">Memulai perjalanan dengan komitmen memberikan solusi HR terbaik untuk perusahaan Indonesia</p>
                         </div>
                     </div>
-
+                
                     <!-- Timeline Item 2 -->
-                    <div class="group relative bg-gradient-to-br from-green-50 to-green-100 rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-all duration-500 transform hover:scale-105 hover:-translate-y-2">
-                        <div class="absolute -top-4 -right-4 w-8 h-8 bg-gradient-to-br from-green-500 to-green-600 rounded-full flex items-center justify-center shadow-lg">
+                                    <div class="group relative bg-gradient-to-br from-blue-50 to-blue-100 rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-all duration-500 transform hover:scale-105 hover:-translate-y-2">
+                        <div class="absolute -top-4 -right-4 w-8 h-8 bg-gradient-to-br from-blue-500 to-blue-600 rounded-full flex items-center justify-center shadow-lg">
                             <span class="text-white font-bold text-sm">2</span>
                         </div>
                         <div class="mb-6">
-                            <div class="w-12 h-12 bg-gradient-to-br from-green-500 to-green-600 rounded-lg flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300">
+                            <div class="w-12 h-12 bg-gradient-to-br from-blue-500 to-blue-600 rounded-lg flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300">
                                 <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"></path>
                                 </svg>
                             </div>
-                            <h3 class="text-2xl font-bold text-green-800 mb-2">Membangun Tim</h3>
+                            <h3 class="text-2xl font-bold text-blue-800 mb-2">Membangun Tim</h3>
                             <p class="text-gray-700">Mengumpulkan para ahli terbaik di bidang HR untuk memberikan layanan berkualitas tinggi</p>
                         </div>
                     </div>

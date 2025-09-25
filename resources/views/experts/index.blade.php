@@ -1,5 +1,5 @@
 @extends('layouts.frontend')
-@section('title', 'Daftar Expert')
+@section('title', 'Daftar Expert - SMI')
 @section('content')
 
 <!-- Hero Section -->
@@ -17,7 +17,7 @@
     </div>
     
     <div class="container mx-auto text-center relative z-10">
-        <h1 class="text-4xl md:text-6xl font-black mb-6 bg-gradient-to-r from-blue-800 via-blue-600 to-indigo-700 bg-clip-text text-transparent tracking-tight">Tim Expert Kami</h1>
+        <h1 class="py-2 text-4xl md:text-5xl font-black mb-6 bg-gradient-to-r from-blue-800 via-blue-600 to-indigo-700 bg-clip-text text-transparent tracking-tight">TIM EXPERT KAMI</h1>
         <p class="text-xl md:text-2xl text-gray-600 mb-8 font-light leading-relaxed max-w-3xl mx-auto">
             Temukan expert terbaik sesuai dengan kebutuhan Anda dari berbagai bidang keahlian
         </p>
